@@ -350,15 +350,46 @@ body{
   margin-right: 5px;
   position: relative !important;
 }
-
-
-
-
-
-
-
-
-
+/* PREVIEW---------------------*/
+#book-preview{
+  width: 300px;
+  height:400px;
+  margin-top:10px;
+  float: left;
+  margin-right: 10px;
+  cursor:pointer;
+  overflow: hidden;
+}
+#interaction{
+  width: 300px;
+  height:400px;
+  margin-top:10px;
+  float: left;
+  margin-right: 10px;
+  cursor:pointer;
+  overflow: hidden;
+  border: 1px dashed black;
+}
+#interaction-text{
+  padding-top: 20px;
+  width: 95%;
+  margin: auto;
+  text-align: left;
+  font-size: 16px;
+  color: black;
+  font-family: Regular;
+  line-height: 120%;
+}
+#links{
+  margin-left: 20px;
+  float:left;
+}
+.link{
+  cursor: pointer;
+  font-family: Bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
 
 
 
