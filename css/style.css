@@ -231,7 +231,6 @@ body{
 #container{
   margin:auto;
   width:95%;
-  background:red;
 }
 /* BOOKS---------------------*/
 #books-container{
@@ -294,4 +293,18 @@ body{
   font-family: Regular;
   border-bottom: 1px dashed black;
   cursor: pointer;
+}
+/* FILTER---------------------*/
+#filter{
+  width:28%;
+  height:1000px;
+  float: left;
+}
+.filter-title{
+  font-size: 24px;
+  font-family: Bold;
+  width: 90%;
+  margin:auto;
+  margin-top:10px;
+  text-align: left;
 }
