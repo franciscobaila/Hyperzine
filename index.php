@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-	<?php include ('includes/header.php');?>
-	
-=======
+
 	<?php
 	include ('includes/header.php');
 	?>
->>>>>>> FETCH_HEAD
   <div id="container">
       <div id="books-container">
         <!-- book example ----------- -->
