@@ -1,6 +1,11 @@
-	<?php 
+<<<<<<< HEAD
+	<?php include ('includes/header.php');?>
+	
+=======
+	<?php
 	include ('includes/header.php');
 	?>
+>>>>>>> FETCH_HEAD
   <div id="container">
       <div id="books-container">
         <!-- book example ----------- -->
@@ -24,9 +29,6 @@
   </div>
 
 
-    <!-- Javascript at the bottom -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- for testing -->
-    <script type="text/javascript" src="js/main.js"></script>
-</body>
-</html>
+	<?php
+	include ('includes/footer.php');
+	?>
