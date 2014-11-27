@@ -234,7 +234,7 @@ body{
   background:red;
 }
 /* BOOKS---------------------*/
-#books{
+#books-container{
   width:70%;
   height:1000px;
   float: left;
@@ -247,6 +247,7 @@ body{
   margin-top:10px;
   float: left;
   margin-right: 10px;
+  cursor:pointer;
 }
 .pictogram{
   width: 35px;
