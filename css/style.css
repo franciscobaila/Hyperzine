@@ -308,3 +308,64 @@ body{
   margin-top:10px;
   text-align: left;
 }
+.filters{
+  height:200px;
+  width: 95%;
+  margin: auto;
+}
+.filters2{
+  height:300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------HACKS */
+label {
+  text-decoration: none;
+  [;-webkit-text-stroke-width: 0.8px;];
+  -webkit-font-smoothing: subpixel-antialiased;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  font-weight:normal;
+  font-family: Regular;
+  font-size: 16px;
+  pointer-events:visible !important;
+  margin-top: 15px;
+}
+input[type=checkbox] {
+  display: none;
+}
+label:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  margin-top: 3px;
+  left: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+input[type=checkbox]:checked + label:before {
+  background-color: black;
+}
