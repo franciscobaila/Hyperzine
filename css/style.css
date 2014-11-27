@@ -309,12 +309,15 @@ body{
   text-align: left;
 }
 .filters{
-  height:200px;
+  height:180px;
   width: 95%;
   margin: auto;
 }
 .filters2{
-  height:300px;
+  height:300px !important;
+}
+.filters3{
+  height:150px !important;
 }
 
 
