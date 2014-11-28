@@ -231,6 +231,7 @@ body{
 #container{
   margin:auto;
   width:95%;
+  margin-top:30px;
 }
 /* BOOKS---------------------*/
 #books-container{
@@ -390,8 +391,37 @@ body{
   font-size: 20px;
   margin-top: 20px;
 }
-
-
+/* CREATE-REVIEW---------------------*/
+.review-textarea{
+  font-family: Regular;
+  font-size: 16px;
+  padding: 10px;
+  width: 500px;
+  height: 300px;
+  resize: none;
+  border: 1px dashed black;
+  float: left;
+  margin-right: 30px;
+}
+#classification-form{
+  float:left;
+}
+#input-review{
+  border: 1px dashed black;
+  height: 30px;
+  padding: 5px;
+  width: 70px;
+}
+#input-review-submit{
+  background:rgba(230,230,230, 0.8);
+  color: black;
+  padding:10px;
+  text-align:center;
+  font-family:Bold;
+  font-size:20px;
+  cursor:pointer;
+  margin-left: 10px;
+}
 
 
 
@@ -401,6 +431,52 @@ body{
 
 
 /*--------------------HACKS */
+
+
+textarea.review-textarea::-webkit-input-placeholder { /* WebKit browsers */
+  color:grey;
+  opacity: 0.8;
+  font-family: Regular;
+  font-size: 16px;
+  padding-top: -20px;
+}
+textarea.review-textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:grey;
+  opacity: 0.8;
+  font-family: Regular;
+  font-size: 16px;
+  padding-top: -20px;
+}
+textarea.review-textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:grey;
+  opacity: 0.8;
+  font-family: Regular;
+  font-size: 16px;
+  padding-top: -20px;
+}
+textarea.review-textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:grey;
+  opacity: 0.8;
+  font-family: Regular;
+  font-size: 16px;
+  padding-top: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 label {
   text-decoration: none;
   [;-webkit-text-stroke-width: 0.8px;];
