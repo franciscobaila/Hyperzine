@@ -19,7 +19,7 @@
 		<!-- logo username -->
 		<div class="element-header big-text">HYPERZINE </div>
 		<!-- new user -->
-		<div class="element-header"> sign up </div>
+		<div class="element-header big-text link "> @sign up </div>
 	</nav>
 </section>
 <br>
