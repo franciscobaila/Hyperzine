@@ -1,3 +1,18 @@
+/*variaveis*/
+var categorys = [
+	"Interactive novel",
+	"Cybertext",
+	"Hypertext",
+	"Hypertext poetry",
+	"Storyspace",
+	"Text adventure",
+	"Visual novel",
+	"Web Comics"
+];
+
+var autor ="";
+var titulo = "";
+var categoria = "";
 
 function validateForm() {
 	var bname = false;
@@ -40,3 +55,30 @@ function validateForm() {
 	}
 	
 } 
+// probl feedback 
+function createBookProcess () {
+	if (document.forms["book-info"]["category"].value != "" &&  document.forms["book-info"]["bookName"].value != "" &&  document.forms["book-info"]["authorName"].value != "" ) {
+		alert ("heu");
+		titulo = document.forms["book-info"]["authorName"].value;
+		categoria = document.forms["book-info"]["category"].value;
+		titulo =  document.forms["book-info"]["bookName"].value;
+		$("#loading").show ();
+		$("#newBookPT1").hide();
+		startBookInterace ();	
+	}
+	else {
+		alert ("nada mau");
+		/**/
+		//prob: ver se os livros existem e assim
+	}
+}
+
+function startBookInterace () {
+	$("#loading").hide();
+	$("#newBookPT2").show();
+
+}
+
+function validateSearch () {
+	alert ("yolo");
+}

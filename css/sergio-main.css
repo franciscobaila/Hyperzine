@@ -152,7 +152,6 @@ html {
 	.center-form {
 		width: calc(50% - 250px);
 		margin: auto;
-		height: 400px;
 		position: relative;
 		top: 100px;
 		
@@ -173,7 +172,32 @@ html {
 		font-size: 24pt;
 	}
 	
+	.big-text::-webkit-input-placeholder{
+		font-size: 24pt;
+	}
 	
+	.big-input {
+		margin-top:50pt;
+		
+	}
+	
+	#input-click:hover {
+		color:red;
+	}
+	.selCategory {
+		
+	}
+	#categorySel {
+		background: rgba(253,253,253,0.3);
+		position: fixed;
+		top:150px;
+		font-size: 36pt;
+		display: none;
+	}
+	
+	#loading {
+		display: none;
+	} 
 }
 
 
