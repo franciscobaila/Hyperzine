@@ -102,7 +102,7 @@
       </div>
       <div class="comment-text">
         A British television producer’s foray into the “surreal heart” of 21st-century Russia.
-        <br> 7/10
+        <br> <b>7/10</b>
       </div>
     </div>
     <!-- review example ----------- -->
@@ -113,7 +113,7 @@
       </div>
       <div class="comment-text">
         A Parable About a Mouse at the New Yorker magazine.
-        <br> 5/10
+        <br> <b>5/10</b>
       </div>
     </div>
     <!-- review example ----------- -->
@@ -124,7 +124,7 @@
       </div>
       <div class="comment-text">
         A good year for book lovers.
-        <br> 3/10
+        <br> <b>3/10</b>
       </div>
     </div>
     <!-- review example ----------- -->

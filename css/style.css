@@ -224,6 +224,11 @@ body{
   src: url('../fonts/GenBasI.ttf');
 }
 
+b{
+  font-weight:normal;
+  font-family:Bold;
+}
+
 
 
 
