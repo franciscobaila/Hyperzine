@@ -26,6 +26,15 @@ app.events = function() {
     $("#reviews").fadeOut(10);
     $("#container").fadeIn(600);
   });
+  $(".img-book").click(function() {
+    window.location.href = "read.php";
+  });
+  $("#read").click(function() {
+    window.location.href = "read.php";
+  });
+  $("#interaction").click(function() {
+    window.location.href = "read.php";
+  });
 }
 
 app.review = function() {
