@@ -8,6 +8,7 @@
 	background-color: #ABB7B7;
 	display: block;
 	position: fixed;
+	z-index:1000;
 	right: 0px;
 
 }
@@ -24,11 +25,12 @@
 }
 
 #read-nav-subnav-font{
-	visibility: hidden;
-	margin-left: 135px;
-	padding-top: 15px;
 	background-color: #ABB7B7;
 	width: 40px;
+	top: -10px;
+	right: 0px;
+	position: fixed;
+	float:right;
 }
 
 #read-nav-subnav-font span{
@@ -39,7 +41,10 @@
 }
 
 #read-nav-subnav-font.open{
-	visibility: visible;
+	top: 40px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 #read-title{
@@ -75,12 +80,48 @@
 
 #word-link-pop{
 	visibility: hidden;
-	background-color: yellow;
-	width: 50px;
-	height: 50px;
+	background-color: #ABB7B7;
+	width: 150px;
+	height: 30px;
+}
+
+#word-link-pop span{
+	padding: 5px;
+	color:white;
 }
 
 #word-link-pop.open{
-	visibility: visible;	
+	visibility: visible;
 }
 
+#addComment, #addImage{
+	visibility: hidden;
+	padding-left:1%;
+	padding-top: 1%;
+	width: 50%;
+	height: 250px;
+	background-color: #ABB7B7;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+}
+
+#addComment p , #addImage p{
+	font-family: Bold;
+	line-height: 20px;
+}
+
+#addComment button, #addImage button{
+	background-color: white;
+	padding: 5px;
+	font-family: Bold;
+}
+
+#commentArea{
+	background-color: white;
+}
+
+#addComment.open, #addImage.open{
+	bottom: 50px;
+	visibility: visible;
+}
