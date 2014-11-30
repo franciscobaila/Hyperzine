@@ -198,6 +198,79 @@ html {
 	#loading {
 		display: none;
 	} 
+	
+	#newBookPT1 {
+		display:none;
+	
+	}
+	#newBookPT2 {
+		/*display: none;*/
+		vertical-align: top;
+	}
+	/*diagrama de criação de livro*/
+		#lateral-bar {
+	
+			width: 3%;
+			display: inline-block;
+			height: 700px;
+		}
+		#diagram {
+			display: inline-block;
+			width: 93%;
+			height: 600px;
+			background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAABJJREFUCB1jYGBg+A/ExAHsKgFV7gH/ssPq5wAAAABJRU5ErkJggg==) repeat;
+			float:right;
+		}
+		
+		#lateral-bar, #diagram {
+			vertical-align: top;
+		}
+		
+		#new-page-interface {
+			display: none;
+			position: fixed;
+			top: calc( 50% - 125px);
+			height: 250px;
+			left: calc(50% - 300px);
+			width: 600px;
+			margin:auto;
+			background: rgb(253,253,253);
+			border: 2pt solid rgb(189, 195, 199);
+			
+			
+		}
+		
+		#cabecalho {
+			background: rgba(189,195,199,1);
+			 color: rgb(253,253,253);
+			 height: 20px;
+			 font-weight: bold;
+		}
+		#baixo {
+			background: rgba(189,195,199,1);
+			width: 100px;
+			color: rgb(253,253,253);
+			font-weight: bold;
+			margin-left: 20px;
+			/*background: rgba(189,195,199,1);
+			 color: rgb(253,253,253);
+			 height: 20px;
+			 font-weight: bold;
+			 top: calc( 50% - 500px);*/
+		}
+		.lateral-bar-element {
+			cursor: pointer;
+			
+		}
+		
+		#write-text textarea  {
+			height: 140px;
+			width: 560px;
+			margin-left: 20px;
+			margin-top: 20px;
+			
+			font-size: 12pt;
+		}
 }
 
 

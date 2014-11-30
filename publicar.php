@@ -16,7 +16,24 @@
  </section>
  <section id="categorySel" class="center-form"></section>
  <!-- parte 2 -->
- <section id="newBookPT2"></section>
+ <section id="newBookPT2">
+	 <nav id="lateral-bar">
+	 	
+		 <img class="lateral-bar-element"  id="new-page" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=135&g=135&b=135"/><br><br>
+		
+		<img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-arrow-19-icon.png&r=189&g=195&b=199"/>
+		
+	 </nav>
+	 <section id="diagram"> <span id="titlename">Book Name </span> by <span id="autorname">Author name	</span> </section>
+	 <section id="new-page-interface">
+		 <div id="cabecalho"> Pagina <span id="numero">01</span></div>
+		 <div id="write-text"> <textarea></textarea></div>
+		 <div id="baixo" class="button">nova pagina </div>
+	 </section>
+	 
+	 
+	 
+ </section>
  
  </section>
  <script>
@@ -40,6 +57,10 @@
 	 
 	 
     });
+    
+	$('#new-page').click (function () {
+		$('#new-page-interface').show();
+	});
  </script>
  
  

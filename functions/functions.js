@@ -58,7 +58,7 @@ function validateForm() {
 // probl feedback 
 function createBookProcess () {
 	if (document.forms["book-info"]["category"].value != "" &&  document.forms["book-info"]["bookName"].value != "" &&  document.forms["book-info"]["authorName"].value != "" ) {
-		alert ("heu");
+		
 		titulo = document.forms["book-info"]["authorName"].value;
 		categoria = document.forms["book-info"]["category"].value;
 		titulo =  document.forms["book-info"]["bookName"].value;
@@ -67,7 +67,7 @@ function createBookProcess () {
 		startBookInterace ();	
 	}
 	else {
-		alert ("nada mau");
+	
 		/**/
 		//prob: ver se os livros existem e assim
 	}
