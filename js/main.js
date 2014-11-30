@@ -8,6 +8,7 @@ app.init = function() {
 }
 
 app.events = function() {
+  /* PREVIEW PAGE ---------------------*/
   $("#view-comments").click(function() {
     $("#container").fadeOut(10);
     $("#comments").fadeIn(600);
@@ -27,8 +28,15 @@ app.events = function() {
   });
 }
 
+app.review = function() {
+  $("#container").fadeOut(10);
+  $("#message").fadeIn(600);
+  setTimeout(function() {
+    window.location.href = "preview.php";
+  }, 500);
+}
+
 $(document).ready(function() {
   app.init();
-  app.setScroll();
   window.scrollTo(0,0);
 })

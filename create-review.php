@@ -7,10 +7,13 @@
         <textarea class="review-textarea" placeholder="Write your review."></textarea>
       </div>
 
-      <form action="" id="classification-form">
+      <form action="javascript:app.review()" id="classification-form">
         <input type="number" placeholder="0 to 10" id="input-review" min="0" max="10">
         <input type="submit" value="Submit" id="input-review-submit">
       </form>
+  </div>
+  <div id="message">
+    Review added to book with success.
   </div>
 
 
