@@ -62,19 +62,43 @@
     <button id="word-link-pop-film"><span class="fa fa-film"></span></button>
     <button id="word-link-pop-music"><span class="fa fa-music"></span></button>
     <button id="word-link-pop-text"><span class="fa fa-file-text-o"></span></button>
+    <button id="word-link-pop-exit"><span class="fa fa-times"></span></button>
   </div>
 
   <section id="addComment">
     <p>Escrever Comentário</p></br>
     <textarea rows="12" cols="115" id="commentArea"></textarea><br><br>
-    <button type="submit" id="commentBtn">Comentar</button>
+    <input type="submit" id="commentBtn" value="Comentar">
   </section>
 
-
   <section id="addImage">
+    <form action="">
     <p>Adicionar Imagem</p></br>
-    <input>
-    <button type="submit">Comentar</button>
+    Selecionar Ficheiro: <input type="file" name="imagem" accept="image/*"><br><br>
+    <input type="submit" value="Adicionar">
+  </form>
+  </section>
+
+  <section id="addFilm">
+    <form action="">
+      <p>Adicionar Video</p></br>
+      Selecionar Ficheiro: <input type="file" name="imagem" accept="video/*"><br><br>
+      <input type="submit" value="Adicionar">
+    </form>
+  </section>
+
+  <section id="addMusic">
+    <form action="">
+      <p>Adicionar Áudio</p></br>
+      Selecionar Ficheiro: <input type="file" name="imagem" accept="audio/*"><br><br>
+      <input type="submit" value="Adicionar">
+    </form>
+  </section>
+
+  <section id="addText">
+    <p>Complementar História</p></br>
+    <textarea rows="12" cols="115" id="complementArea"></textarea><br><br>
+    <input type="submit" id="complementBtn" value="Enviar">
   </section>
 
 
@@ -95,11 +119,14 @@
     }
   });
 
+
+
   $(".word-link").click(function() {
     $('#word-link-pop').css('left',event.pageX);
     $('#word-link-pop').css('top',event.pageY);
     $("#word-link-pop").css("position", "absolute");
-    $("#word-link-pop").addClass("open");
+      $("#word-link-pop").addClass("open");
+
   });
 
   $('#word-link-pop-comment').click(function(){
@@ -108,6 +135,9 @@
     } else {
       $('#addComment').addClass("open");
       $('#addImage').removeClass("open");
+      $('#addMusic').removeClass("open");
+      $('#addFilm').removeClass("open");
+      $('#addText').removeClass("open");
     }
   });
 
@@ -121,7 +151,51 @@
     } else {
       $('#addImage').addClass("open");
       $('#addComment').removeClass("open");
+      $('#addFilm').removeClass("open");
+      $('#addMusic').removeClass("open");
+      $('#addText').removeClass("open");
     }
+  });
+
+  $('#word-link-pop-film').click(function(){
+    if ($('#addFilm').hasClass("open")){
+      $('#addFilm').removeClass("open");
+    } else {
+      $('#addFilm').addClass("open");
+      $('#addComment').removeClass("open");
+      $('#addImage').removeClass("open");
+      $('#addMusic').removeClass("open");
+      $('#addText').removeClass("open");
+    }
+  });
+
+  $('#word-link-pop-music').click(function(){
+    if ($('#addMusic').hasClass("open")){
+      $('#addMusic').removeClass("open");
+    } else {
+      $('#addMusic').addClass("open");
+      $('#addComment').removeClass("open");
+      $('#addImage').removeClass("open");
+      $('#addFilm').removeClass("open");
+      $('#addText').removeClass("open");
+    }
+  });
+
+  $('#word-link-pop-text').click(function(){
+    if ($('#addText').hasClass("open")){
+      $('#addText').removeClass("open");
+    } else {
+      $('#addText').addClass("open");
+      $('#addComment').removeClass("open");
+      $('#addImage').removeClass("open");
+      $('#addFilm').removeClass("open");
+      $('#addMusic').removeClass("open");
+    }
+  });
+
+
+  $('#word-link-pop-exit').click(function(){
+    $("#word-link-pop").removeClass("open");
   });
 
   </script>

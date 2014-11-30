@@ -81,7 +81,7 @@
 #word-link-pop{
 	visibility: hidden;
 	background-color: #ABB7B7;
-	width: 150px;
+	width: 160px;
 	height: 30px;
 }
 
@@ -94,7 +94,7 @@
 	visibility: visible;
 }
 
-#addComment, #addImage{
+#addComment, #addImage, #addFilm, #addMusic, #addText{
 	visibility: hidden;
 	padding-left:1%;
 	padding-top: 1%;
@@ -106,22 +106,24 @@
 	left: 25%;
 }
 
-#addComment p , #addImage p{
+#addComment p , #addImage p, #addFilm p, #addMusic p, #addText p{
 	font-family: Bold;
 	line-height: 20px;
 }
 
-#addComment button, #addImage button{
+#addComment input[type="submit"], #addImage input[type="submit"],
+#addFilm input[type="submit"], #addMusic  input[type="submit"],
+#addText input[type="submit"]{
 	background-color: white;
 	padding: 5px;
 	font-family: Bold;
 }
 
-#commentArea{
+#commentArea, #complementArea{
 	background-color: white;
 }
 
-#addComment.open, #addImage.open{
+#addComment.open, #addImage.open, #addFilm.open, #addMusic.open, #addText.open{
 	bottom: 50px;
 	visibility: visible;
 }
