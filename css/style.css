@@ -371,6 +371,16 @@ body{
   overflow: hidden;
   border: 1px dashed black;
 }
+#interaction-author{
+  padding-top: 20px;
+  width: 95%;
+  margin: auto;
+  text-align: left;
+  font-size: 16px;
+  color: black;
+  font-family: Bold;
+  line-height: 120%;
+}
 #interaction-text{
   padding-top: 20px;
   width: 95%;
@@ -385,6 +395,9 @@ body{
   margin-left: 20px;
   float:left;
 }
+#read{
+  margin-top:300px;
+}
 .link{
   cursor: pointer;
   font-family: Bold;
@@ -394,7 +407,7 @@ body{
 .preview-links{
   display:none;
   margin:auto;
-  width:95%;
+  width:75%;
   margin-top:30px;
 }
 .comment-author{
@@ -405,10 +418,11 @@ body{
 .comment-text{
   font-family: Regular;
   font-size:16px;
+  line-height:120%;
 }
 .comment{
-  width:30%;
-  margin-bottom: 20px;
+  width:40%;
+  margin-bottom: 40px;
 }
 .close{
   cursor:pointer;

@@ -10,9 +10,9 @@
       <img class="img-book" src="img/book.jpg" />
     </div>
     <div id="interaction">
+      <div id="interaction-author">joão add:</div>
       <div id="interaction-text">
-        “Bryant & May and the Bleeding Heart” is the latest case for Christopher Fowler’s detective from the Peculiar Crimes Unit.
-      </div>
+        At the battle on the unfinished Great Naruto Bridge, Naruto unlocks the power of Shoton, Crystal Release, causing an entirely different set of events to unfold. Naruto has a new bloodline, and Haku is left alive, with all the power and wealth of Gato at her disposal, all to fulfill her master's dream.      </div>
     </div>
     <div id="links">
       <div class="link" id="view-comments">
@@ -20,6 +20,9 @@
       </div>
       <div class="link" id="view-reviews">
         View Reviews
+      </div>
+      <div class="link" id="read">
+        Read
       </div>
     </div>
   </div>
@@ -31,6 +34,56 @@
     <div class="comment">
       <div class="comment-author">
         antonio
+      </div>
+      <div class="comment-text">
+        The first volume of a new biography argues that Stalin had social as well as organizational skills.
+      </div>
+    </div>
+    <!-- comment example ----------- -->
+    <!-- comment example ----------- -->
+    <div class="comment">
+      <div class="comment-author">
+        jessica
+      </div>
+      <div class="comment-text">
+        The first volume of a new biography argues that Stalin had social as well as organizational skills.
+      </div>
+    </div>
+    <!-- comment example ----------- -->
+    <!-- comment example ----------- -->
+    <div class="comment">
+      <div class="comment-author">
+        manel
+      </div>
+      <div class="comment-text">
+        The first volume of a new biography argues that Stalin had social as well as organizational skills.
+      </div>
+    </div>
+    <!-- comment example ----------- -->
+    <!-- comment example ----------- -->
+    <div class="comment">
+      <div class="comment-author">
+        francisco
+      </div>
+      <div class="comment-text">
+        The first volume of a new biography argues that Stalin had social as well as organizational skills.
+      </div>
+    </div>
+    <!-- comment example ----------- -->
+    <!-- comment example ----------- -->
+    <div class="comment">
+      <div class="comment-author">
+        fu
+      </div>
+      <div class="comment-text">
+        The first volume of a new biography argues that Stalin had social as well as organizational skills.
+      </div>
+    </div>
+    <!-- comment example ----------- -->
+    <!-- comment example ----------- -->
+    <div class="comment">
+      <div class="comment-author">
+        sérgio
       </div>
       <div class="comment-text">
         The first volume of a new biography argues that Stalin had social as well as organizational skills.
@@ -49,6 +102,29 @@
       </div>
       <div class="comment-text">
         A British television producer’s foray into the “surreal heart” of 21st-century Russia.
+        <br> 7/10
+      </div>
+    </div>
+    <!-- review example ----------- -->
+    <!-- review example ----------- -->
+    <div class="comment">
+      <div class="comment-author">
+        jessica-critic
+      </div>
+      <div class="comment-text">
+        A Parable About a Mouse at the New Yorker magazine.
+        <br> 5/10
+      </div>
+    </div>
+    <!-- review example ----------- -->
+    <!-- review example ----------- -->
+    <div class="comment">
+      <div class="comment-author">
+        sérgio-critic
+      </div>
+      <div class="comment-text">
+        A good year for book lovers.
+        <br> 3/10
       </div>
     </div>
     <!-- review example ----------- -->
