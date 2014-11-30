@@ -1,4 +1,5 @@
 <?php include ('includes/header.php'); ?>
+ <script src="functions/jointJs/joint.js"></script>
  <section id="container">
  <section id="loading"> loading </section>
  <!--  parte 1-->
@@ -21,7 +22,7 @@
 	 	
 		 <img class="lateral-bar-element"  id="new-page" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=135&g=135&b=135"/><br><br>
 		
-		<img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-arrow-19-icon.png&r=189&g=195&b=199"/>
+		<img class="lateral-bar-element" id="create-link" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-arrow-19-icon.png&r=189&g=195&b=199"/>
 		
 	 </nav>
 	 <section id="diagram"> <span id="titlename">Book Name </span> by <span id="autorname">Author name	</span> </section>
@@ -29,16 +30,46 @@
 		 <div id="cabecalho"> Pagina <span id="numero">01</span></div>
 		 <div id="write-text"> <textarea></textarea></div>
 		 <div id="baixo" class="button">nova pagina </div>
-	 </section>$dom = new DOMDocument("1.0", "ISO-8859-1");
+	 </section>
 
-	 
+	  <section id="change-page-interface">
+		 <div id="cabecalho"> Pagina <span id="numero">01</span></div>
+		 <div id="write-text"> <textarea></textarea></div>
+		 <div id="change" class="button">Change</div>
+	 </section>
+
 	 
 	 
  </section>
  
  </section>
- <script>
+<script>
+var graph = new joint.dia.Graph;
+ 	var paper = new joint.dia.Paper({
+			el: $('#diagram'),
+			width: 1000,
+			height: 600,
+			model: graph,
+			gridSize: 1
+		});
+		
+	paper.on('cell:pointerdblclick ', 
+        function(cellView, evt, x, y) { 
+       // alert('cell view ' + cellView.model.id + ' was clicked'); 
+        for (var i=0; i<pages.length; i++) {
+	        if (pages[i][0].id ==  cellView.model.id) {
+		        $('#change-page-interface').show();
+		        //meter o texto que está no xml
+		        
+	        }
+        }
+    }
+);
+	
  $(function() {
+ 	//criação do diagrama
+ 	
+		
  	 for (var i=0; i<categorys.length; i++) {
 	 	$( "#categorySel" ).append("<span class='selCategory center-form link big-text'>"+categorys [i]+"</span><br> ");
 	 	//adicionar uma função a cada uma
@@ -62,9 +93,52 @@
 	$('#new-page').click (function () {
 		$('#new-page-interface').show();
 	});
+	
+	$('#baixo').click( function () {
+		$('#new-page-interface').hide();
+		//alert ("ad new page");
+		
+		console.log ("pagina criada="+(currentPage+1));
+		//criação da caixa
+		var s = "page "+(currentPage+1);
+		var rect = new joint.shapes.basic.Rect({
+			position: { x: 100, y: 30 },
+			size: { width: 100, height: 30 },
+			attrs: { rect: { fill: 'white' }, text: { text: s, fill: 'black' } }
+		});
+
+		pages.push([rect]);
+		graph.addCells([rect]);
+		
+		
+	
+		currentPage +=1;
+		//passar para o XML o escrito
+		
+	});
+	
+	$('#create-link').click (function() {
+		console.log ("criar hyperlink");
+		console.log (pages[0]);	
+		//parte dinamica
+		var link = new joint.dia.Link({
+			source: { id: pages[0][0].id},
+			target: { id: pages[1][0].id }
+	});
+		graph.addCells([link]);
+	});
+	
+	$('#change').click (function() {
+		$('#change-page-interface').hide();
+		//actualizar xml
+		
+	});
+	
  </script>
+
  
  <?php 
+ 	//crio um xml
  	$xml = new SimpleXMLElement('<xml/>');
  	$dom = new DOMDocument("1.0", "ISO-8859-1");
  	//retirar espaços em branco
@@ -72,32 +146,12 @@
  	//gerar o codigo 
  	$dom->formatOutput = true;
  	//criando o root (nó inicial);
- 	$root = $dom->createElement("agenda");
- 	#nó filho (contato)
-	$contato = $dom->createElement("contato");
-
-	#setanto nomes e atributos dos elementos xml (nós)
-	$nome = $dom->createElement("nome", "Rafael Clares");
-	$telefone = $dom->createElement("telefone", "(11) 5500-0055");
-	$endereco = $dom->createElement("endereco", "Av. longa n 1");
-	
-	#adiciona os nós (informacaoes do contato) em contato
-	$contato->appendChild($nome);
-	$contato->appendChild($telefone);
-	$contato->appendChild($endereco);
-	
-	#adiciona o nó contato em (root) agenda
-	$root->appendChild($contato);
-	$dom->appendChild($root);
-	
+ 	//arranjar maneira de ir a base de dados buscar o id e o nome
+ 	$root = $dom->createElement("book name='yolo'");
 	# Para salvar o arquivo, descomente a linha
-	$dom->save("contatos.xml");
+	$dom->save("book/book".date("D M j G:i:s T Y").".xml");
 	
-	#cabeçalho da página
-	header("Content-Type: text/xml");
 	
-	# imprime o xml na tela
-	print $dom->saveXML();
 
 
 

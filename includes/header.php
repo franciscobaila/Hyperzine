@@ -16,8 +16,7 @@
      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
      <script src="functions/functions.js"></script>
      <!-- Biblioteca de criação dos diagramas -->
-     <link rel="stylesheet" href="joint.css" />
-	 <script src="joint.js"></script>
+	 <link rel="stylesheet" href="functions/jointJs/joint.css" />
 </head>
 <body>
 <section id="h-user" class="header">

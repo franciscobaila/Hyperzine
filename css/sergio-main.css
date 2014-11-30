@@ -200,11 +200,11 @@ html {
 	} 
 	
 	#newBookPT1 {
-		display:none;
+		/*display:none;*/
 	
 	}
 	#newBookPT2 {
-		/*display: none;*/
+		display: none;
 		vertical-align: top;
 	}
 	/*diagrama de criação de livro*/
@@ -226,7 +226,7 @@ html {
 			vertical-align: top;
 		}
 		
-		#new-page-interface {
+		#new-page-interface, #change-page-interface {
 			display: none;
 			position: fixed;
 			top: calc( 50% - 125px);
@@ -246,7 +246,7 @@ html {
 			 height: 20px;
 			 font-weight: bold;
 		}
-		#baixo {
+		#baixo, #change {
 			background: rgba(189,195,199,1);
 			width: 100px;
 			color: rgb(253,253,253);
@@ -271,6 +271,8 @@ html {
 			
 			font-size: 12pt;
 		}
+		
+		
 }
 
 

@@ -14,6 +14,21 @@ var autor ="";
 var titulo = "";
 var categoria = "";
 
+var pages = new Array();
+var linksPages = new Array();
+var currentPage = 0;
+
+//variaveis para criação do graph
+/*var graph = new joint.dia.Graph;
+var paper = new joint.dia.Paper({
+			el: $('#diagram'),
+			width: 1000,
+			height: 600,
+			model: graph,
+			gridSize: 1
+});		*/
+
+
 function validateForm() {
 	var bname = false;
 	var bpass = false;
