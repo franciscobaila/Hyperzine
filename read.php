@@ -27,20 +27,20 @@
 <body id="read">
 
   <nav id="read-nav">
-    <button href="#" class="read-nav-a"><span class="fa fa-star"></span></button>
+    <button href="#" class="read-nav-a"><span class="fa fa-arrow-left"></span></button>
     <button href="#" class="read-nav-a"><span class="fa fa-pencil"></span></button>
-    <button href="#" class="read-nav-a"><span class="fa fa-share"></span></button>
+    <button href="#" class="read-nav-a"><span class="fa fa-star"></span></button>
     <button href="#" class="read-nav-a" id="editText"><span class="fa fa-font"></span></button>
-  </nav>
 
-  <nav id="read-nav-subnav-font">
-    <button class="read-nav-subnav-font-btn" id="plusText"><a href="#" class="read-nav-subnav-font-a"><span class="fa fa-plus"></span></a></button>
-    <button class="read-nav-subnav-font-btn" id="minusText"><a href="#" class="read-nav-subnav-font-a"><span class="fa fa-minus"></span></a></button>
+    <button class="word-link-pop read-nav-a" id="word-link-pop-comment"><span class="fa fa-comment"></span></button>
+    <button class="word-link-pop read-nav-a" id="word-link-pop-image"><span class="fa fa-image"></span></button>
+    <button class="word-link-pop read-nav-a" id="word-link-pop-film"><span class="fa fa-film"></span></button>
+    <button class="word-link-pop read-nav-a" id="word-link-pop-music"><span class="fa fa-music"></span></button>
+    <button class="word-link-pop read-nav-a" id="word-link-pop-text"><span class="fa fa-file-text-o"></span></button>
   </nav>
 
   <!-- Título do Livro -->
   <div id="read-title" href="#"><p id="read-title-title">O Namorado Do Papai Ronca</p><p id="read-title-author">por Plínio Camillo</p></div>
-
 
   <!-- Texto do Livro -->
   <div id="read-text" >
@@ -50,57 +50,60 @@
 
     <p>Bacon ipsum dolor amet <a href="#" class="word-link">turkey</a> turkey turkey turkey turkey turkey turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey.</p>
 
+    <div id="addImage">
+      <p>OI</p>
+    </div>
+
     <p>Bacon ipsum dolor amet <a href="#" class="word-link">turkey</a> turkey turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey <a href="#" class="word-link">turkey</a>, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey <a href="#" class="word-link">turkey</a> turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. </p>
 
     <p>Bacon ipsum dolor amet <a href="#" class="word-link">turkey</a> turkey turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey <a href="#" class="word-link">turkey</a>, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey <a href="#" class="word-link">turkey</a> turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. </p>
 
   </div>
 
-  <div id="word-link-pop">
-    <button id="word-link-pop-comment"><span class="fa fa-comment"></span></button>
-    <button id="word-link-pop-image"><span class="fa fa-image"></span></button>
-    <button id="word-link-pop-film"><span class="fa fa-film"></span></button>
-    <button id="word-link-pop-music"><span class="fa fa-music"></span></button>
-    <button id="word-link-pop-text"><span class="fa fa-file-text-o"></span></button>
-    <button id="word-link-pop-exit"><span class="fa fa-times"></span></button>
+  <div id="commentsWritten">
+    <p> </p>
   </div>
 
-  <section id="addComment">
+  <div id="addComment">
     <p>Escrever Comentário</p></br>
-    <textarea rows="12" cols="115" id="commentArea"></textarea><br><br>
-    <input type="submit" id="commentBtn" value="Comentar">
-  </section>
+    <input type="text" style="width:98%; height:160px;" id="commentArea"><br><br>
+    <input type="submit" class="completeBtn" value="Comentar">
+  </div>
 
-  <section id="addImage">
+  <div id="addImage">
     <form action="">
     <p>Adicionar Imagem</p></br>
     Selecionar Ficheiro: <input type="file" name="imagem" accept="image/*"><br><br>
-    <input type="submit" value="Adicionar">
+    <input type="submit" class="completeBtn" value="Adicionar">
   </form>
-  </section>
+  </div>
 
-  <section id="addFilm">
+  <div id="addFilm">
     <form action="">
       <p>Adicionar Video</p></br>
       Selecionar Ficheiro: <input type="file" name="imagem" accept="video/*"><br><br>
-      <input type="submit" value="Adicionar">
+      <input type="submit" class="completeBtn" value="Adicionar">
     </form>
-  </section>
+  </div>
 
-  <section id="addMusic">
+  <div id="addMusic">
     <form action="">
       <p>Adicionar Áudio</p></br>
       Selecionar Ficheiro: <input type="file" name="imagem" accept="audio/*"><br><br>
-      <input type="submit" value="Adicionar">
+      <input type="submit" class="completeBtn" value="Adicionar">
     </form>
-  </section>
+  </div>
 
-  <section id="addText">
+  <div id="addText">
     <p>Complementar História</p></br>
     <textarea rows="12" cols="115" id="complementArea"></textarea><br><br>
-    <input type="submit" id="complementBtn" value="Enviar">
-  </section>
+    <input type="submit" class="completeBtn" value="Enviar">
+  </div>
 
+  <div id="pageNumber">
+      <br><br><br><br>
+      <p>2</p>
+  </div>
 
   <?php
   include('includes/footer.php');
@@ -108,8 +111,8 @@
 
   <script>
   editText = document.getElementById('editText'),
-  showText = document.getElementById( 'read-nav-subnav-font');
-  popText = document.getElementById( 'word-link-pop' );
+  showText = document.getElementById( 'read-nav-subnav-font'),
+  popText = document.getElementById( 'word-link-pop' ),
 
   $(editText).click(function(){
     if ($(showText).hasClass("open")){
@@ -119,19 +122,14 @@
     }
   });
 
-
-
   $(".word-link").click(function() {
-    $('#word-link-pop').css('left',event.pageX);
-    $('#word-link-pop').css('top',event.pageY);
-    $("#word-link-pop").css("position", "absolute");
-      $("#word-link-pop").addClass("open");
-
+      $("#read-nav").addClass("open");
   });
 
   $('#word-link-pop-comment').click(function(){
     if ($('#addComment').hasClass("open")){
       $('#addComment').removeClass("open");
+      $('#read-nav').removeClass("open");
     } else {
       $('#addComment').addClass("open");
       $('#addImage').removeClass("open");
@@ -141,9 +139,15 @@
     }
   });
 
-  $('#commentBtn').click(function(){
+  $('.completeBtn').click(function(){
       $('#addComment').removeClass("open");
-  });
+      $('#addImage').removeClass("open");
+      $('#addFilm').removeClass("open");
+      $('#addMusic').removeClass("open");
+      $('#addText').removeClass("open");
+
+      $('#commentsWritten p').append("<p>"+$("input:text").val()+"<p>"+"<p>@sergiorebelo</p>");
+    });
 
   $('#word-link-pop-image').click(function(){
     if ($('#addImage').hasClass("open")){
