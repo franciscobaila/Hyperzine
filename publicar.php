@@ -29,7 +29,8 @@
 		 <div id="cabecalho"> Pagina <span id="numero">01</span></div>
 		 <div id="write-text"> <textarea></textarea></div>
 		 <div id="baixo" class="button">nova pagina </div>
-	 </section>
+	 </section>$dom = new DOMDocument("1.0", "ISO-8859-1");
+
 	 
 	 
 	 
@@ -63,6 +64,44 @@
 	});
  </script>
  
+ <?php 
+ 	$xml = new SimpleXMLElement('<xml/>');
+ 	$dom = new DOMDocument("1.0", "ISO-8859-1");
+ 	//retirar espaços em branco
+ 	$dom->preserveWhiteSpace = false;
+ 	//gerar o codigo 
+ 	$dom->formatOutput = true;
+ 	//criando o root (nó inicial);
+ 	$root = $dom->createElement("agenda");
+ 	#nó filho (contato)
+	$contato = $dom->createElement("contato");
+
+	#setanto nomes e atributos dos elementos xml (nós)
+	$nome = $dom->createElement("nome", "Rafael Clares");
+	$telefone = $dom->createElement("telefone", "(11) 5500-0055");
+	$endereco = $dom->createElement("endereco", "Av. longa n 1");
+	
+	#adiciona os nós (informacaoes do contato) em contato
+	$contato->appendChild($nome);
+	$contato->appendChild($telefone);
+	$contato->appendChild($endereco);
+	
+	#adiciona o nó contato em (root) agenda
+	$root->appendChild($contato);
+	$dom->appendChild($root);
+	
+	# Para salvar o arquivo, descomente a linha
+	$dom->save("contatos.xml");
+	
+	#cabeçalho da página
+	header("Content-Type: text/xml");
+	
+	# imprime o xml na tela
+	print $dom->saveXML();
+
+
+
+ ?>
  
  <?php
 	 /*
