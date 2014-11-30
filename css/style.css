@@ -391,6 +391,31 @@ body{
   font-size: 20px;
   margin-top: 20px;
 }
+.preview-links{
+  display:none;
+  margin:auto;
+  width:95%;
+  margin-top:30px;
+}
+.comment-author{
+  margin-bottom:10px;
+  font-family: Bold;
+  font-size:14px;
+}
+.comment-text{
+  font-family: Regular;
+  font-size:16px;
+}
+.comment{
+  width:30%;
+  margin-bottom: 20px;
+}
+.close{
+  cursor:pointer;
+  float:right;
+  font-family:Bold;
+  font-size:16px;
+}
 /* CREATE-REVIEW---------------------*/
 .review-textarea{
   font-family: Regular;

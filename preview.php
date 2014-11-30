@@ -15,16 +15,43 @@
       </div>
     </div>
     <div id="links">
-      <div class="link">
+      <div class="link" id="view-comments">
         View Comments
       </div>
-      <div class="link">
-        Comment
-      </div>
-      <div class="link">
+      <div class="link" id="view-reviews">
         View Reviews
       </div>
     </div>
+  </div>
+
+  <!-- VIEW COMMENTS ----------- -->
+  <div class="preview-links" id="comments">
+    <div class="close" id="close-comments">fechar</div>
+    <!-- comment example ----------- -->
+    <div class="comment">
+      <div class="comment-author">
+        antonio
+      </div>
+      <div class="comment-text">
+        The first volume of a new biography argues that Stalin had social as well as organizational skills.
+      </div>
+    </div>
+    <!-- comment example ----------- -->
+  </div>
+
+  <!-- VIEW REVIEWS ----------- -->
+  <div class="preview-links" id="reviews">
+    <div class="close" id="close-reviews">fechar</div>
+    <!-- review example ----------- -->
+    <div class="comment">
+      <div class="comment-author">
+        joao-critic
+      </div>
+      <div class="comment-text">
+        A British television producer’s foray into the “surreal heart” of 21st-century Russia.
+      </div>
+    </div>
+    <!-- review example ----------- -->
   </div>
 
   <?php
