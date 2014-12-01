@@ -3,6 +3,14 @@
     <!-- exemplo legenda ----------- -->
     <div class="legend">
       <div class="pictogram pictogram2">
+        <img class="img-insider" src="img/read.png" />
+      </div>
+      <div class="legend-message">Read</div>
+    </div>
+    <!-- exemplo legenda ----------- -->
+    <!-- exemplo legenda ----------- -->
+    <div class="legend">
+      <div class="pictogram pictogram2">
         <img class="img-insider" src="img/open.png" />
       </div>
       <div class="legend-message">Open Books</div>

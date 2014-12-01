@@ -49,6 +49,20 @@ app.events = function() {
       $("." + $(this).val()).show();
     });
   });
+  /* SHELF PAGE ---------------------*/
+  $("#filters2 :checkbox").click(function() {
+    $(".book").hide();
+    $("#filters2 :checkbox:checked").each(function() {
+      $("." + $(this).val()).show();
+    });
+  });
+
+  $("#filters3 :checkbox").click(function() {
+    $(".book").hide();
+    $("#filters3 :checkbox:checked").each(function() {
+      $("." + $(this).val()).show();
+    });
+  });
 }
 
 app.review = function() {

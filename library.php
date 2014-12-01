@@ -90,7 +90,7 @@ include ('includes/header.php');
         <!-- filtro ordenar ----------- -->
         <!-- filtro categorias ----------- -->
         <div id="categories" class="filters filters2">
-          <div class="filter-title" class="filters">Categories:</div>
+          <div class="filter-title">Categories:</div>
           <ul id="filters">
             <li>
               <p><input id="check2.1" type="checkbox" name="categoria" value="fiction" checked><label for="check2.1">Fiction</label></p>
