@@ -15,24 +15,8 @@
 	font-size: 150%;
 	color: white;
 	padding-top: 8px;
+	display:block;
 }
-
-#read-nav-subnav-font{
-	background-color: #ABB7B7;
-	width: 40px;
-	top: -10px;
-	right: 0px;
-	position: fixed;
-	float:right;
-}
-
-#read-nav-subnav-font span{
-	font-size: 150%;
-	padding-left: 10px;
-	padding-bottom: 5px;
-	color: white;
-}
-
 
 #read-title{
 	color: #ABB7B7;
@@ -60,12 +44,8 @@
 	column-count: 2;
 }
 
-.word-link-pop{
-	visibility: visible;
-}
-
 .word-link{
-	color:red;
+	color:black;
 	text-decoration: none;
 	font-family: Bold;
 }
@@ -127,4 +107,8 @@ padding: 10px;
 
 #read-text-image.open, #read-text-video.open{
 display:block;
+}
+
+.rate-text-pop {
+display:none;
 }
