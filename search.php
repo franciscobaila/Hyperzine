@@ -4,18 +4,45 @@ $data = mysql_escape_string($_POST['search']);
 echo $data;
 $query = "select * from books where book_name like '"%.$data.%"'or author like '"%.$data.%"'or category like '"%.$data.%"";
 
+<<<<<<< HEAD
 $result = mysql_query($query);
+=======
+$search = "select * from books where category like '%".$data."%' and  book_name  like '%".$data."%'";
+
+$result = mysql_query($search);
+>>>>>>> FETCH_HEAD
 $num = mysql_num_rows($result);
 
 if ($result) {
-	$num = mysql_num_rows($result);
-	if ($num >= 1) {
+	while ($row = mysql_fetch_array($result, MYSQL_BOTH)) {
+	$bookName = $row ["book_image"];
+	$autor = $row ["author"];
+	$id = $row["book_id"];
+	$image = $row["book_image"];
+	$category = $row ["category"];
+	echo "book name ".$bookName." autor ".$autor." id ".$id." image ".$image." categoria ".$category."<br>";
+	}
+} else {
+	echo "nenhum resultado encontrado ";
+}
 
-		}
-		echo 'result';
+
+/*echo $seatch;
+$result = mysql_query($search);
+$num = mysql_num_rows($result);
+if ($result) {
+	$num = mysql_num_rows($result);
+	while ($row = mysql_fetch_array($result, MYSQL_BOTH)) {
+	
+    //printf("ID: %s  Name: %s", $row[0], $row[1]);  
+	}
+	
+	
+	
+	echo 'result';
 	}
 }   else  {
 	echo "Nenhum resultado encontrado.";
 
-}
+}*/
 ?>

@@ -39,6 +39,9 @@ xw.indentation = 2;//add 2 spaces per level
 
 var text= "yolo";
 
+//selecção 
+var selection;
+
 function validateSignUp() {
 	var bname = false;
 	var bpass = false;
@@ -162,3 +165,21 @@ function endXML () {
 	xw.writeEndDocument();
    console.log( v.flush() );
 }
+
+
+
+
+function getTextSelection(s,number){
+		//alert (s);
+        var field = document.getElementById(s);
+       // console.log (field);
+		var startPos = field.selectionStart;
+        var endPos = field.selectionEnd;        
+        var field_value = field.value;
+        var selectedText = field_value.substring(startPos,endPos);
+       // str.link(selectedText);
+        var res = field_value.replace (selectedText, "<a href='book.php?p="+number+"'>"+selectedText+"</a>");
+        document.getElementById(s).value = res;
+       // alert (selectedText);
+        return selectedText;
+}   

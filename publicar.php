@@ -26,7 +26,7 @@
 		<img class="lateral-bar-element" id="create-link" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-arrow-19-icon.png&r=189&g=195&b=199"/>
 		
 	 </nav>
-	 <section id="diagram"> <span id="titlename">Book Name </span> by <span id="autorname">Author name	</span> </section>
+	 <section id="diagram" class="big-text"> <span id="titlename" >Book Name </span> by <span id="autorname">Author name	</span> </section>
 	 <section id="new-page-interface">
 		 <div id="cabecalho"> Pagina <span id="numero">01</span></div>
 		 <div id="write-text"> <textarea id="pageInfo" ></textarea></div>
@@ -34,7 +34,7 @@
 	 </section>
 
 	  <section id="change-page-interface">
-		 <div id="cabecalho"> Pagina <span id="numero">01</span></div>
+		 <div id="cabecalho"> Pagina <span id="numeroPagina">01</span></div>
 		 <div id="write-text"> <textarea id="pageInfo2"></textarea></div>
 		 <div id="change" class="button">Change</div>
 	 </section>
@@ -59,11 +59,14 @@ var graph = new joint.dia.Graph;
        // alert('cell view ' + cellView.model.id + ' was clicked'); 
         for (var i=0; i<pages.length; i++) {
 	        if (pages[i][0].id ==  cellView.model.id) {
-		        $('#change-page-interface').show();
+	        	
+	        	$('#numero').text (i+1);
+		        
 		        //meter o texto que está no xml
 		        console.log ("text = "+xw.root.c[i+1].c[0]);
 		        $('#pageInfo2').text(xw.root.c[i+1].c[0]);
 		        inUse =i;
+		        $('#change-page-interface').show();
 	        }
         }
     }
@@ -95,7 +98,9 @@ var graph = new joint.dia.Graph;
     
 	$('#new-page').click (function () {
 		$('textarea#pageInfo').val('');
+		$('#numero').text (currentPage+1);
 		$('#new-page-interface').show();
+		
 		
 		
 	});
@@ -105,6 +110,7 @@ var graph = new joint.dia.Graph;
 		//alert ("ad new page");
 		
 		console.log ("pagina criada="+(currentPage+1));
+		
 		//criação da caixa
 		var s = "page "+(currentPage+1);
 		var xValue = Math.round(Math.random()*600);
@@ -120,8 +126,8 @@ var graph = new joint.dia.Graph;
 		text = $('textarea#pageInfo').val();
 		xw.writeElementString('page id='+currentPage+'',text);
 			xw.writeAttributeString('page',currentPage);
-			$('textarea#pageInfo').html("");
-   
+			$('textarea#pageInfo').val("");
+			
 		 
 	
 		currentPage +=1;
@@ -132,21 +138,25 @@ var graph = new joint.dia.Graph;
 	});
 	
 	$('#create-link').click (function() {
-		console.log ("criar hyperlink");
-		console.log (pages[0]);	
-		//parte dinamica
+		
+		selection = getTextSelection("pageInfo",currentPage);
 		var link = new joint.dia.Link({
+		
+		});
+		
+		//parte dinamica
+		/*var link = new joint.dia.Link({
 			source: { id: pages[0][0].id},
 			target: { id: pages[1][0].id }
 	});
-		graph.addCells([link]);
+		graph.addCells([link]);*/
 	});
 	
 	$('#change').click (function() {
 		$('#change-page-interface').hide();
 		//actualizar xml
 		xw.root.c[inUse+1].c[0] =  $('textarea#pageInfo2').val();
-		$('textarea#pageInfo2').html("");
+		
 
 	});
 
