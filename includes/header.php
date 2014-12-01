@@ -51,7 +51,7 @@
 			</div>
 			<div class="element-header">
 					<!-- publish book -->
-					<img width="30px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=189&g=195&b=199"/>
+					<a href="publicar.php"><img width="30px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=189&g=195&b=199"/></a>
 
 			</div>
 		</section>
