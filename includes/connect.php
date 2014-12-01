@@ -6,6 +6,7 @@
 
 
 
+
 $dbhost = '127.0.0.1:8889';
 $dbuser = 'root';
 $dbpass = 'root';
@@ -14,6 +15,8 @@ $db_found = mysql_select_db('Hyperzine');
 if(! $conn )
 {
   die('Could not connect: ' . mysql_error());
+} else  {
+	echo " x";
 }
 
 //echo 'Conexão bem sucedida';
