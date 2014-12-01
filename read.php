@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include ('includes/connect.php');?>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -46,7 +47,7 @@
   </nav>
 
   <!-- Título do Livro -->
-  <div id="read-title" href="#"><p id="read-title-title">O Namorado Do Papai Ronca</p><p id="read-title-author">por Plínio Camillo</p><br><p id="read-title-title">Capítulo 1</p></div>
+  <div id="read-title" href="#"><p id="read-title-title">Chicago</p><p id="read-title-author">por José Mendes</p><br><p id="read-title-title">Capítulo 1</p></div>
 
   <!-- Texto do Livro -->
   <div id="read-text">
@@ -242,7 +243,7 @@ $('#word-link-pop-comment').click(function(){
 
 $('#commentBtn').click(function(){
   $('#addComment').removeClass("open");
-  $('#commentsWritten p').append("<p>"+$("#commentArea").val()+"<p>"+"<p>@sergiorebelo</p>");
+  $('#commentsWritten p').append("<p>"+$("#commentArea").val()+"<p>"+"<p>@sergiomrebelo</p>");
 });
 
 $("#imageBtn").click(function(){
