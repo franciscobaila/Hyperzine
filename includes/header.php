@@ -26,7 +26,7 @@
 <section id="h-user" class="header">
 	<nav id="nav-h">
 		<!-- logo username -->
-		<div class="element-header big-text">HYPERZINE <span class="swatch-grey"> @sergiomrebelo</span></div>
+		<a href="home.php"><div class="element-header big-text">HYPERZINE <span class="swatch-grey"> @sergiomrebelo</span></div></a>
 
 		<!-- search -->
 		<div class="element-header">
