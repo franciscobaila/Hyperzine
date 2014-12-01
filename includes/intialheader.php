@@ -27,7 +27,7 @@
 		<!-- logo username -->
 		<div class="element-header big-text">HYPERZINE </div> 
 		<!-- new user -->
-		<a style="text-decoration:none;" href="signup.php"><div class=" big-text link"> @sign up </div>
+		<div class=" big-text link"> <a style="text-decoration:none;" href="signup.php">@sign up</a> </div>
 	</nav>
 </section>
 <br>
