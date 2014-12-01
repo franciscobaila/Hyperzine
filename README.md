@@ -2,8 +2,9 @@ Hyperzine
 =========
 
 
-process:<br>
+<b>process:</b><br>
 preview book page - done;<br>
 create review - done;<br>
 home - done;<br>
-library - done;
+library - done;<br>
+shelf - done;<br>
