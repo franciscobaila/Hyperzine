@@ -2,7 +2,9 @@
  <script src="functions/jointJs/joint.js"></script>
  
  <section id="container">
- <section id="loading"> loading </section>
+ <section id="loading"> <span class="center-form big-text">
+ <center><img width="40px" src="http://sol.pt/images/loading.gif"/><br>
+  loading </span></section></center>
  <!--  parte 1-->
  <section id="newBookPT1">
 	 <form name="book-info" class="center-form" action="javascript:void(0);" onsubmit="createBookProcess ()" style="top:0px" method="post">
@@ -13,7 +15,7 @@
 	 	<!-- categoria -->
 	 	<input type="text" id="input-click" class="input  big-text big-input" placeholder="Category" name="category" readonly/><br>
 	 	<!-- submit -->
-	 	<input type="submit" class="input button big-text big-input" value="Let's Go" /><br>
+	 	<input type="submit" id="start2"class="input button big-text big-input" value="Let's Go" /><br>
 	 </form>
  </section>
  <section id="categorySel" class="center-form"></section>
@@ -22,9 +24,13 @@
 	 <nav id="lateral-bar">
 	 	
 		 <img class="lateral-bar-element"  id="new-page" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=135&g=135&b=135"/><br><br>
+		<img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-pencil-10-icon.png&r=189&g=195&b=199"/><br><br>
+		<img class="lateral-bar-element" id="create-link" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-arrow-19-icon.png&r=189&g=195&b=199"/><br><br>
 		
-		<img class="lateral-bar-element" id="create-link" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-arrow-19-icon.png&r=189&g=195&b=199"/>
+		<img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-picture-add-icon.png&r=189&g=195&b=199"/><br><br>
 		
+		<img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-video-add-icon.png&r=189&g=195&b=199"/><br><br>
+		<img  class="lateral-bar-element" id="finish-process" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-check-mark-icon.png&r=189&g=195&b=199"/>
 	 </nav>
 	 <section id="diagram" class="big-text"> <span id="titlename" >Book Name </span> by <span id="autorname">Author name	</span> </section>
 	 <section id="new-page-interface">
@@ -73,8 +79,24 @@ var graph = new joint.dia.Graph;
 );
 	
  $(function() {
- 	//criação do diagrama
  	
+    setTimeout(function(){
+    	$('#newBookPT1').show();
+    	$('#loading').hide();
+    	
+    }, 5000);
+	
+ 	//criação do diagrama
+ 	$('#start2').click(function(){
+ 		$('#loading').show();
+ 		autor = document.forms["book-info"]["bookName"].value;
+ 		titulo = document.forms["book-info"]["authorName"].value;
+	 	
+	 	$('#titlename').html (autor);
+	 	$('#autorname').html (titulo);
+	 	$('#loading').hide();
+	 	$('#newBookPT2').show();
+ 	});
 	test();
  	 for (var i=0; i<categorys.length; i++) {
 	 	$( "#categorySel" ).append("<span class='selCategory center-form link big-text'>"+categorys [i]+"</span><br> ");
@@ -138,11 +160,18 @@ var graph = new joint.dia.Graph;
 	});
 	
 	$('#create-link').click (function() {
-		
-		selection = getTextSelection("pageInfo",currentPage);
+	
+		var pageFuture = parseInt(prompt("Escolha a pagina a ligar\n 0 —"+currentPage,"2"))-1;
+		if (pageFuture > currentPage) {
+			pageFuture = currentPage;
+		}
+		selection = getTextSelection("pageInfo",pageFuture);
 		var link = new joint.dia.Link({
-		
+			source: { id: pages[inUse][0].id},
+			target: { id: pages[pageFuture][0].id }
 		});
+		linksPages.push([link]);
+		graph.addCells([link])
 		
 		//parte dinamica
 		/*var link = new joint.dia.Link({
@@ -160,6 +189,21 @@ var graph = new joint.dia.Graph;
 
 	});
 
+	$('#finish-process').click (function () {
+		endXML ();
+		$('#newBookPT2').hide();
+		$('#loading').show();
+		<?php 
+			//inserir na base de dados
+		 ?>
+		// window.location.assign("library.php");
+    	
+		$('#loading').html('<span class="center-form big-text">the book is add to library!</span>');
+		 setTimeout(function(){
+    	
+	    	window.location.assign("library.php");
+    	}, 3000);
+	})
 
 
 

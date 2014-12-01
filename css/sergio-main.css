@@ -208,7 +208,10 @@ a:hover {
 	}
 	
 	#loading {
-		display: none;
+		width: 300px;
+		height: 300px;
+		margin: auto;
+		
 	} 
 	
 	#newBookPT1 {
@@ -216,7 +219,7 @@ a:hover {
 	
 	}
 	#newBookPT2 {
-		/*display: none;*/
+		display: none;
 		vertical-align: top;
 	}
 	/*diagrama de criação de livro*/

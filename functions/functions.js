@@ -163,7 +163,7 @@ function test(){
 
 function endXML () {
 	xw.writeEndDocument();
-   console.log( v.flush() );
+   console.log( xw.flush() );
 }
 
 
