@@ -18,7 +18,7 @@ app.events = function() {
     $("#container").fadeIn(600);
   });
   $("#close-preview").click(function() {
-    window.location.href = "index.php";
+    window.location.href = "home.php";
   });
   /* ADD REVIEW PAGE ---------------------*/
   $("#view-reviews").click(function() {
@@ -38,7 +38,7 @@ app.events = function() {
   $("#interaction").click(function() {
     window.location.href = "read.php";
   });
-  /* INDEX PAGE ---------------------*/
+  /* HOME PAGE ---------------------*/
   $(".book").click(function() {
     window.location.href = "preview.php";
   });
