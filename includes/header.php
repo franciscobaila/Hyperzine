@@ -40,6 +40,7 @@
 			<div class="element-header">
 				<! -- preferences -->
 				<img width="30px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-gear-3-icon.png&r=189&g=195&b=199"/>
+				
 			</div>
 			<div class="element-header">
 				<!-- catalog -->

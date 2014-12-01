@@ -120,7 +120,8 @@ a:hover {
 	
 	#nav-h {
 		height: 40px;
-		border-bottom: 3pt solid rgba(189,195,199,0.6);;	
+		/*border-bottom: 3pt solid rgba(189,195,199,0.6);*/
+		
 	}
 	.h-user {
 		height: 50px;
