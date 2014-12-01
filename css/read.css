@@ -121,10 +121,11 @@
 }
 
 #read-text-image{
-	background-color:red;
-	visibility:hidden;
+display:none;
+text-align:center;
+padding: 10px;
 }
 
 #read-text-image.open{
-	visibility:visible;
+display:block;
 }
