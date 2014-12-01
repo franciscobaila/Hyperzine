@@ -3,9 +3,25 @@
     <!-- exemplo legenda ----------- -->
     <div class="legend">
       <div class="pictogram pictogram2">
-        <img class="img-insider" src="img/picto.png" />
+        <img class="img-insider" src="img/open.png" />
       </div>
-      <div class="legend-message">Read</div>
+      <div class="legend-message">Open Books</div>
+    </div>
+    <!-- exemplo legenda ----------- -->
+    <!-- exemplo legenda ----------- -->
+    <div class="legend">
+      <div class="pictogram pictogram2">
+        <img class="img-insider" src="img/top.png" />
+      </div>
+      <div class="legend-message">Top Read</div>
+    </div>
+    <!-- exemplo legenda ----------- -->
+    <!-- exemplo legenda ----------- -->
+    <div class="legend">
+      <div class="pictogram pictogram2">
+        <img class="img-insider" src="img/suggested.png" />
+      </div>
+      <div class="legend-message">Suggested Books</div>
     </div>
     <!-- exemplo legenda ----------- -->
   </div>

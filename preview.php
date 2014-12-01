@@ -3,9 +3,10 @@
   ?>
 
   <div id="container">
+    <div class="close" id="close-preview">fechar</div>
     <div id="book-preview">
       <div class="pictogram">
-        <img class="img-insider" src="img/picto.png" />
+        <img class="img-insider" src="img/open.png" />
       </div>
       <img class="img-book" src="img/book.jpg" />
     </div>
