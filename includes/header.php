@@ -30,7 +30,7 @@
 
 		<!-- search -->
 		<div class="element-header">
-			<form action="search.php">
+			<form action="search.php" method="post">
 			<!-- probelmas – validação -->
 			<a href="search.php"><img width="30px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-magnifier-icon.png&r=189&g=195&b=199"/> </a>
 			<input class="search input"  name="search" placeholder="Search" type="search"/>
