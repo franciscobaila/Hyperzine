@@ -13,7 +13,9 @@ if ($result) {
 		echo '<meta http-equiv="refresh" content="0; url=home.php">';
 	}
 }   else  {
-	echo "aconteceu um erro";
+	echo "Aconteceu um erro";
+	
+
 	//echo $name;
 	//echo $pass;
 	//echo '<meta http-equiv="refresh" content="1; url=login.php">';
