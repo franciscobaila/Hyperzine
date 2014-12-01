@@ -467,7 +467,10 @@ b{
   cursor:pointer;
   margin-left: 10px;
 }
-
+/* HEADER---------------------*/
+.element-header{
+  cursor:pointer;
+}
 
 
 

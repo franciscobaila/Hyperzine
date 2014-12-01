@@ -40,13 +40,13 @@
 			<div class="element-header">
 				<! -- preferences -->
 				<img width="30px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-gear-3-icon.png&r=189&g=195&b=199"/>
-				
+
 			</div>
-			<div class="element-header">
+			<div class="element-header" id="shelf-header">
 				<!-- catalog -->
 				<img width="35px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-17-icon.png&r=189&g=195&b=199">
 			</div>
-			<div class="element-header">
+			<div class="element-header" id="library-header">
 				<!-- library -->
 				<img width="30px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-help-8-icon.png&r=189&g=195&b=199"/>
 			</div>

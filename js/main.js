@@ -62,6 +62,13 @@ app.events = function() {
       $("." + $(this).val()).show();
     });
   });
+  /* HEADER ---------------------*/
+  $("#library-header").click(function() {
+    window.location.href = "library.php";
+  });
+  $("#shelf-header").click(function() {
+    window.location.href = "shelf.php";
+  });
 }
 
 app.review = function() {
