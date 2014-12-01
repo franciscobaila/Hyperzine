@@ -16,7 +16,7 @@ if(! $conn )
 {
   die('Could not connect: ' . mysql_error());
 } else  {
-	echo " x";
+	echo ".";
 }
 
 //echo 'Conexão bem sucedida';

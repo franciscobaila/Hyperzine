@@ -16,6 +16,14 @@
         At the battle on the unfinished Great Naruto Bridge, Naruto unlocks the power of Shoton, Crystal Release, causing an entirely different set of events to unfold. Naruto has a new bloodline, and Haku is left alive, with all the power and wealth of Gato at her disposal, all to fulfill her master's dream.      </div>
       <div id="interaction-author">Written by: José Mendes</div>
       <div id="interaction-author">Category: Fiction</div>
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     </div>
     <div id="links">
       <div class="link" id="view-comments">
