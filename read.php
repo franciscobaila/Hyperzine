@@ -35,6 +35,8 @@
     <button href="#" class="rate-text-pop read-nav-a" ><span id="rateText4" class="fa fa-star-o"></span></button>
     <button href="#" class="rate-text-pop read-nav-a" ><span id="rateText5" class="fa fa-star-o"></span></button>
     <button href="#" class="read-nav-a" id="editText"><span class="fa fa-font"></span></button>
+    <button href="#" class="edit-text-pop read-nav-a"><span id="editTextPlus" class="fa fa-plus"></span></button>
+    <button href="#" class="edit-text-pop read-nav-a"><span id="editTextMinus" class="fa fa-minus"></span></button>
 
     <button class="word-link-pop read-nav-a" id="word-link-pop-comment"><span class="fa fa-comment"></span></button>
     <button class="word-link-pop read-nav-a" id="word-link-pop-image"><span class="fa fa-image"></span></button>
@@ -124,6 +126,7 @@ editText = document.getElementById('editText'),
 showText = document.getElementById( 'read-nav-subnav-font'),
 popText = document.getElementById( 'word-link-pop' );
 
+var fontSize = parseInt($("body").css("font-size"));
 
 $(editText).click(function(){
   if ($(showText).hasClass("open")){
@@ -142,6 +145,8 @@ $('#starRating').click(function(){
     $('#rateText').addClass('fa fa-star');
   } else {
     $('.rate-text-pop').addClass("open");
+    $('.edit-text-pop').removeClass("open");
+    $('.edit-text-pop').css("display", "none");
     $('.rate-text-pop').css("display", "inline");
     $('#read-nav').animate({width:"38%"});
     $('#rateText').removeClass('fa fa-star');
@@ -195,6 +200,34 @@ $('#rateText5').click(function(){
   $('#rateText5').removeClass('fa fa-star-o');
   $('#rateText5').addClass('fa fa-star');
   });
+
+  $('#editText').click(function(){
+    if($('.edit-text-pop').hasClass("open")){
+      $('.edit-text-pop').removeClass("open");
+      $('.edit-text-pop').css("display", "none");
+      $('#read-nav').animate({width:"27%"});
+    } else {
+      $('.edit-text-pop').addClass("open");
+      $('.edit-text-pop').css("display", "inline");
+      $('#read-nav').animate({width:"32%"});
+      $('.rate-text-pop').removeClass("open");
+      $('.rate-text-pop').css("display", "none");      
+    }
+  });
+
+
+  $('#editTextPlus').click(function(){
+    fontSize += 1;
+    $('#read-text p').css('font-size', fontSize+"px");
+    return false;
+  });
+
+  $('#editTextMinus').click(function(){
+    fontSize -= 1;
+    $('#read-text p').css('font-size', fontSize+"px");
+    return false;
+  });
+
 
 $('#word-link-pop-comment').click(function(){
   if ($('#addComment').hasClass("open")){
