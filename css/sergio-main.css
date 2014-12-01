@@ -200,11 +200,11 @@ html {
 	} 
 	
 	#newBookPT1 {
-		/*display:none;*/
+		display:none;
 	
 	}
 	#newBookPT2 {
-		display: none;
+		/*display: none;*/
 		vertical-align: top;
 	}
 	/*diagrama de criação de livro*/

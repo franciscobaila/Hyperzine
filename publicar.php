@@ -1,5 +1,6 @@
 <?php include ('includes/header.php'); ?>
  <script src="functions/jointJs/joint.js"></script>
+ 
  <section id="container">
  <section id="loading"> loading </section>
  <!--  parte 1-->
@@ -34,7 +35,7 @@
 
 	  <section id="change-page-interface">
 		 <div id="cabecalho"> Pagina <span id="numero">01</span></div>
-		 <div id="write-text"> <textarea></textarea></div>
+		 <div id="write-text"> <textarea id="pageInfo"></textarea></div>
 		 <div id="change" class="button">Change</div>
 	 </section>
 
@@ -69,7 +70,7 @@ var graph = new joint.dia.Graph;
  $(function() {
  	//criação do diagrama
  	
-		
+	test();
  	 for (var i=0; i<categorys.length; i++) {
 	 	$( "#categorySel" ).append("<span class='selCategory center-form link big-text'>"+categorys [i]+"</span><br> ");
 	 	//adicionar uma função a cada uma
@@ -109,11 +110,16 @@ var graph = new joint.dia.Graph;
 
 		pages.push([rect]);
 		graph.addCells([rect]);
-		
-		
+		text = $('textarea#pageInfo').val();
+		xw.writeElementString('page',text);
+		xw.writeAttributeString('id',currentPage);
+   
+		 
 	
 		currentPage +=1;
+		console.log (xw);
 		//passar para o XML o escrito
+		
 		
 	});
 	
@@ -133,7 +139,11 @@ var graph = new joint.dia.Graph;
 		//actualizar xml
 		
 	});
-	
+
+
+
+
+
  </script>
 
  

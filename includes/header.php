@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include ('includes/connect.php');?>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -14,6 +15,9 @@
      <link href="css/sergio-main.css" rel="stylesheet" type="text/css">
      <!-- JS -->
      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <!-- Bibliotecas -->
+     <script src="functions/XMLWriter-1.0.0.js"></script>
+     <!-- folhas de JS -->
      <script src="functions/functions.js"></script>
      <!-- Biblioteca de criação dos diagramas -->
 	 <link rel="stylesheet" href="functions/jointJs/joint.css" />
