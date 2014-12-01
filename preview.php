@@ -11,9 +11,11 @@
       <img class="img-book" src="img/book.jpg" />
     </div>
     <div id="interaction">
-      <div id="interaction-author">joão add:</div>
+      <div id="interaction-author">João added:</div>
       <div id="interaction-text">
         At the battle on the unfinished Great Naruto Bridge, Naruto unlocks the power of Shoton, Crystal Release, causing an entirely different set of events to unfold. Naruto has a new bloodline, and Haku is left alive, with all the power and wealth of Gato at her disposal, all to fulfill her master's dream.      </div>
+      <div id="interaction-author">Written by: José Mendes</div>
+      <div id="interaction-author">Category: Fiction</div>
     </div>
     <div id="links">
       <div class="link" id="view-comments">
