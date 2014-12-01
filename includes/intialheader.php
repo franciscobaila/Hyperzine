@@ -16,6 +16,7 @@
      <link href="css/sergio-main.css" rel="stylesheet" type="text/css">
      <!-- JS -->
      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script src="functions/XMLWriter-1.0.0.js"></script>
      <script src="functions/functions.js"></script>
      
 </head>

@@ -119,3 +119,13 @@
 	padding-left: 15px;
 	width:120px;
 }
+
+#read-text-image{
+display:none;
+text-align:center;
+padding: 10px;
+}
+
+#read-text-image.open{
+display:block;
+}
