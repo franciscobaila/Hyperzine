@@ -50,9 +50,11 @@
 
     <p>Bacon ipsum dolor amet <a href="#" class="word-link">turkey</a> turkey turkey turkey turkey turkey turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey.</p>
 
-<!--    <div id="read-add-image">
-      <p>OI</p>
-    </div>-->
+<div id="read-text-image">
+  <br>
+      <p>OI IMAGE</p>
+      <br>
+    </div>
 
     <p>Bacon ipsum dolor amet <a href="#" class="word-link">turkey</a> turkey turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey <a href="#" class="word-link">turkey</a>, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey <a href="#" class="word-link">turkey</a> turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. </p>
 
@@ -67,14 +69,14 @@
   <div id="addComment">
     <p>Escrever Comentário</p></br>
     <input type="text" style="width:98%; height:160px;" id="commentArea"><br><br>
-    <input type="submit" class="completeBtn" value="Comentar">
+    <input type="submit" id="commentBtn" value="Comentar">
   </div>
 
   <div id="addImage">
     <form action="">
     <p>Adicionar Imagem</p></br>
-    Selecionar Ficheiro: <input type="file" name="imagem" accept="image/*"><br><br>
-    <input type="submit" class="completeBtn" value="Adicionar">
+    Selecionar Ficheiro: <input type="file" name="imagem" accept="image/*" id="imageArea"><br><br>
+    <input type="submit" id="imageBtn" value="Adicionar">
   </form>
   </div>
 
@@ -112,7 +114,7 @@
   <script>
   editText = document.getElementById('editText'),
   showText = document.getElementById( 'read-nav-subnav-font'),
-  popText = document.getElementById( 'word-link-pop' ),
+  popText = document.getElementById( 'word-link-pop' );
 
   $(editText).click(function(){
     if ($(showText).hasClass("open")){
@@ -139,14 +141,22 @@
     }
   });
 
-  $('.completeBtn').click(function(){
+  $('#commentBtn').click(function(){
       $('#addComment').removeClass("open");
-      $('#addImage').removeClass("open");
-      $('#addFilm').removeClass("open");
-      $('#addMusic').removeClass("open");
-      $('#addText').removeClass("open");
+      $('#commentsWritten p').append("<p>"+$("#commentArea").val()+"<p>"+"<p>@sergiorebelo</p>");
+    });
 
-      $('#commentsWritten p').append("<p>"+$("input:text").val()+"<p>"+"<p>@sergiorebelo</p>");
+    $("#imageBtn").click(function(){
+      $('#addImage').removeClass("open");
+
+      var img = new Image();
+      var div = document.getElementById('read-text-image');
+
+      img.src = $("#imageArea").val();
+
+      div.appendChild(img);
+
+      alert($("#imageArea").val());
     });
 
   $('#word-link-pop-image').click(function(){
