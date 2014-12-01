@@ -29,13 +29,13 @@
 	 <section id="diagram"> <span id="titlename">Book Name </span> by <span id="autorname">Author name	</span> </section>
 	 <section id="new-page-interface">
 		 <div id="cabecalho"> Pagina <span id="numero">01</span></div>
-		 <div id="write-text"> <textarea></textarea></div>
-		 <div id="baixo" class="button">nova pagina </div>
+		 <div id="write-text"> <textarea id="pageInfo" ></textarea></div>
+		<input type="submit" id="baixo" class="button" value="new page"/>
 	 </section>
 
 	  <section id="change-page-interface">
 		 <div id="cabecalho"> Pagina <span id="numero">01</span></div>
-		 <div id="write-text"> <textarea id="pageInfo"></textarea></div>
+		 <div id="write-text"> <textarea id="pageInfo2"></textarea></div>
 		 <div id="change" class="button">Change</div>
 	 </section>
 
@@ -61,7 +61,9 @@ var graph = new joint.dia.Graph;
 	        if (pages[i][0].id ==  cellView.model.id) {
 		        $('#change-page-interface').show();
 		        //meter o texto que está no xml
-		        
+		        console.log ("text = "+xw.root.c[i+1].c[0]);
+		        $('#pageInfo2').text(xw.root.c[i+1].c[0]);
+		        inUse =i;
 	        }
         }
     }
@@ -92,7 +94,10 @@ var graph = new joint.dia.Graph;
     });
     
 	$('#new-page').click (function () {
+		$('textarea#pageInfo').val('');
 		$('#new-page-interface').show();
+		
+		
 	});
 	
 	$('#baixo').click( function () {
@@ -102,8 +107,10 @@ var graph = new joint.dia.Graph;
 		console.log ("pagina criada="+(currentPage+1));
 		//criação da caixa
 		var s = "page "+(currentPage+1);
+		var xValue = Math.round(Math.random()*600);
+		var yValue = Math.round(Math.random()*300);
 		var rect = new joint.shapes.basic.Rect({
-			position: { x: 100, y: 30 },
+			position: { x: xValue, y: yValue },
 			size: { width: 100, height: 30 },
 			attrs: { rect: { fill: 'white' }, text: { text: s, fill: 'black' } }
 		});
@@ -111,13 +118,14 @@ var graph = new joint.dia.Graph;
 		pages.push([rect]);
 		graph.addCells([rect]);
 		text = $('textarea#pageInfo').val();
-		xw.writeElementString('page',text);
-		xw.writeAttributeString('id',currentPage);
+		xw.writeElementString('page id='+currentPage+'',text);
+			xw.writeAttributeString('page',currentPage);
+			$('textarea#pageInfo').html("");
    
 		 
 	
 		currentPage +=1;
-		console.log (xw);
+		console.log (xw.flush());
 		//passar para o XML o escrito
 		
 		
@@ -137,7 +145,9 @@ var graph = new joint.dia.Graph;
 	$('#change').click (function() {
 		$('#change-page-interface').hide();
 		//actualizar xml
-		
+		xw.root.c[inUse+1].c[0] =  $('textarea#pageInfo2').val();
+		$('textarea#pageInfo2').html("");
+
 	});
 
 
