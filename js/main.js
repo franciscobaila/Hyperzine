@@ -56,7 +56,6 @@ app.events = function() {
       $("." + $(this).val()).show();
     });
   });
-
   $("#filters3 :checkbox").click(function() {
     $(".book").hide();
     $("#filters3 :checkbox:checked").each(function() {
