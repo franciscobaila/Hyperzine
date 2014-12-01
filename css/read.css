@@ -64,7 +64,6 @@
 	visibility: visible;
 }
 
-
 .word-link{
 	color:red;
 	text-decoration: none;
@@ -120,12 +119,12 @@
 	width:120px;
 }
 
-#read-text-image{
+#read-text-image, #read-text-video{
 display:none;
 text-align:center;
 padding: 10px;
 }
 
-#read-text-image.open{
+#read-text-image.open, #read-text-video.open{
 display:block;
 }
