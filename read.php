@@ -27,7 +27,7 @@
 <body>
 
   <nav id="read-nav">
-    <button href="#" class="read-nav-a"><span class="fa fa-arrow-left"></span></button>
+    <button href="#" class="read-nav-a"><a href="preview.php" style="text-decoration:none;"><span class="fa fa-arrow-left"></span></a></button>
     <button href="#" class="read-nav-a"><span class="fa fa-pencil"></span></button>
     <button href="#" class="read-nav-a" id="starRating"><span id="rateText" class="fa fa-star-o"></span></button>
     <button href="#" class="rate-text-pop read-nav-a"><span id="rateText2" class="fa fa-star-o"></span></button>
@@ -46,7 +46,7 @@
   </nav>
 
   <!-- Título do Livro -->
-  <div id="read-title" href="#"><p id="read-title-title">O Namorado Do Papai Ronca</p><p id="read-title-author">por Plínio Camillo</p></div>
+  <div id="read-title" href="#"><p id="read-title-title">O Namorado Do Papai Ronca</p><p id="read-title-author">por Plínio Camillo</p><br><p id="read-title-title">Capítulo 1</p></div>
 
   <!-- Texto do Livro -->
   <div id="read-text">
@@ -211,10 +211,9 @@ $('#rateText5').click(function(){
       $('.edit-text-pop').css("display", "inline");
       $('#read-nav').animate({width:"32%"});
       $('.rate-text-pop').removeClass("open");
-      $('.rate-text-pop').css("display", "none");      
+      $('.rate-text-pop').css("display", "none");
     }
   });
-
 
   $('#editTextPlus').click(function(){
     fontSize += 1;
@@ -227,7 +226,6 @@ $('#rateText5').click(function(){
     $('#read-text p').css('font-size', fontSize+"px");
     return false;
   });
-
 
 $('#word-link-pop-comment').click(function(){
   if ($('#addComment').hasClass("open")){
