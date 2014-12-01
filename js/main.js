@@ -42,6 +42,13 @@ app.events = function() {
   $(".book").click(function() {
     window.location.href = "preview.php";
   });
+  /* LIBRARY PAGE ---------------------*/
+  $("#filters :checkbox").click(function() {
+    $(".book").hide();
+    $("#filters :checkbox:checked").each(function() {
+      $("." + $(this).val()).show();
+    });
+  });
 }
 
 app.review = function() {

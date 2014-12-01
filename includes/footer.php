@@ -13,7 +13,7 @@
       <div class="pictogram pictogram2">
         <img class="img-insider" src="img/top.png" />
       </div>
-      <div class="legend-message">Top Read</div>
+      <div class="legend-message">Top Rated</div>
     </div>
     <!-- exemplo legenda ----------- -->
     <!-- exemplo legenda ----------- -->
