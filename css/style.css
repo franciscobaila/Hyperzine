@@ -471,6 +471,12 @@ b{
 .element-header{
   cursor:pointer;
 }
+/* HEADER---------------------*/
+#search-message{
+  font-family:Bold;
+  font-size:24px;
+  margin-bottom:30px;
+}
 
 
 
