@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Dec 01, 2014 at 02:13 AM
+-- Generation Time: Dec 01, 2014 at 06:22 AM
 -- Server version: 5.5.38
 -- PHP Version: 5.6.2
 
@@ -17,6 +17,43 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `books`
+--
+
+CREATE TABLE `books` (
+`book_id` int(100) NOT NULL,
+  `book_name` varchar(100) NOT NULL,
+  `author` varchar(100) NOT NULL,
+  `category` varchar(100) NOT NULL,
+  `book_image` varchar(1000) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `books`
+--
+
+INSERT INTO `books` (`book_id`, `book_name`, `author`, `category`, `book_image`) VALUES
+(1, 'The Design of Everyday Things', 'Donald A. Norman', 'Design', 'http://yangsu.github.io/images/teapot-for-masochists.jpeg'),
+(2, 'Model-Based Design and Evaluation of Interactive Applications', 'Paterno, Fabio', 'Design', 'https://images.springer.com/sgw/books/medium/9781852331559.jpg'),
+(3, 'O Namorado do Papai Ronca', 'Pilinio Camillo', 'Drama', 'img/book2.jpg'),
+(5, 'A Clockwork Orange', 'Anthony Burgess', 'Fan Fiction', 'img/book3.jpg'),
+(6, 'Before Green Gables', 'João Maria', 'Fan Fiction', 'img/book4.jpg'),
+(7, 'Chicago', 'José Mendes', 'Fiction', 'img/book.jpg'),
+(8, 'Heal Your Mind', 'El Cisco Loco', 'Love Story', 'img/book5.jpg'),
+(9, 'Jagannath', 'Karin Tidbeck', 'Cenas', 'img/book6.jpg'),
+(10, 'Responsive Web Design', 'Ethan Marcotte', 'Cenas', 'img/book7.jpg'),
+(11, 'Asian Brand Strategy', 'Martin Roll', 'Love Story', 'img/book8.jpg'),
+(12, 'The Mayor’s Tongue', 'Nathaniel Rich', 'Fiction', 'img/book9.jpg'),
+(13, '117 In Tokyo', 'O.S.S', 'Drama', 'img/book10.jpg'),
+(14, 'Ripe', 'Julia Moulden', 'Cenas', 'img/book11.jpg'),
+(15, 'Pieces Of Light', 'Charles Fernyhough', 'Fan Fiction', 'img/book12.jpg'),
+(16, 'The Pain Detective', 'Hillel M.', 'Drama', 'img/book13.jpg'),
+(17, 'The Paris Review', 'Jean Rhys', 'Fiction', 'img/book14.jpg'),
+(18, 'Tattle Tables', 'Paul Leicester', 'Drama', 'img/book15.jpg');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -24,7 +61,7 @@ CREATE TABLE `users` (
 `user_id` int(100) NOT NULL,
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
@@ -32,13 +69,19 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`user_id`, `username`, `password`) VALUES
 (1, 'sergiomrebelo', '12345678'),
-(2, 'xufuou', '12345678'),
+(2, 'xufuoupt', '12345678'),
 (3, 'franciscob', '12345678'),
 (5, 'jessicaf', '12345678');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `books`
+--
+ALTER TABLE `books`
+ ADD PRIMARY KEY (`book_id`);
 
 --
 -- Indexes for table `users`
@@ -51,7 +94,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `books`
+--
+ALTER TABLE `books`
+MODIFY `book_id` int(100) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-MODIFY `user_id` int(100) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+MODIFY `user_id` int(100) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
