@@ -119,3 +119,12 @@
 	padding-left: 15px;
 	width:120px;
 }
+
+#read-text-image{
+	background-color:red;
+	visibility:hidden;
+}
+
+#read-text-image.open{
+	visibility:visible;
+}
