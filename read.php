@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include ('includes/connect.php');?>
+<!--<?php include ('includes/connect.php');?>-->
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Grupo X">
 
-  <title>Hyperzine</title>
+  <title>Hyperzine - Chicago</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -28,300 +28,300 @@
 <body>
 
   <nav id="read-nav">
-    <button href="#" class="read-nav-a"><a href="preview.php" style="text-decoration:none;"><span class="fa fa-arrow-left"></span></a></button>
-    <button href="#" class="read-nav-a"><span class="fa fa-pencil"></span></button>
-    <button href="#" class="read-nav-a" id="starRating"><span id="rateText" class="fa fa-star-o"></span></button>
-    <button href="#" class="rate-text-pop read-nav-a"><span id="rateText2" class="fa fa-star-o"></span></button>
-    <button href="#" class="rate-text-pop read-nav-a" ><span id="rateText3" class="fa fa-star-o"></span></button>
-    <button href="#" class="rate-text-pop read-nav-a" ><span id="rateText4" class="fa fa-star-o"></span></button>
-    <button href="#" class="rate-text-pop read-nav-a" ><span id="rateText5" class="fa fa-star-o"></span></button>
-    <button href="#" class="read-nav-a" id="editText"><span class="fa fa-font"></span></button>
-    <button href="#" class="edit-text-pop read-nav-a"><span id="editTextPlus" class="fa fa-plus"></span></button>
-    <button href="#" class="edit-text-pop read-nav-a"><span id="editTextMinus" class="fa fa-minus"></span></button>
+    <img class="read-nav-a" href="preview.php" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-home-4-icon.png&r=255&g=255&b=255"/><br>
+    <span class="read-nav-a-title">Início</span><br><br>
+    <img class="read-nav-a" href="#" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-pencil-10-icon.png&r=255&g=255&b=255"/><br>
+    <span class="read-nav-a-title">Fazer Anotações</span><br><br>
+    <img class="read-nav-a" id="starRating" href="#" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-2-icon.png&r=255&g=255&b=255"/><br>
+    <span class="read-nav-a-title">Classificar</span><br><br>
+    <img class="read-nav-a" id="editText" href="#" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-font-size-icon.png&r=255&g=255&b=255"/><br>
+    <span class="read-nav-a-title">Editar Texto</span><br><br>
+    <img class="read-nav-a" href="#" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=255&g=255&b=255"/><br>
+    <span class="read-nav-a-title">Adicionar Media</span><br><br>
 
-    <button class="word-link-pop read-nav-a" id="word-link-pop-comment"><span class="fa fa-comment"></span></button>
-    <button class="word-link-pop read-nav-a" id="word-link-pop-image"><span class="fa fa-image"></span></button>
-    <button class="word-link-pop read-nav-a" id="word-link-pop-film"><span class="fa fa-film"></span></button>
-    <button class="word-link-pop read-nav-a" id="word-link-pop-music"><span class="fa fa-music"></span></button>
-    <button class="word-link-pop read-nav-a" id="word-link-pop-text"><span class="fa fa-file-text-o"></span></button>
+      <!--  <li><button class="word-link-pop read-nav-a" id="word-link-pop-comment"><span class="fa fa-comment"></span></button></li>
+        <li><button class="word-link-pop read-nav-a" id="word-link-pop-image"><span class="fa fa-image"></span></button></li>
+        <li><button class="word-link-pop read-nav-a" id="word-link-pop-film"><span class="fa fa-film"></span></button></li>
+        <li><button class="word-link-pop read-nav-a" id="word-link-pop-music"><span class="fa fa-music"></span></button></li>
+        <li><button class="word-link-pop read-nav-a" id="word-link-pop-text"><span class="fa fa-file-text-o"></span></button></li>-->
   </nav>
 
-  <!-- Título do Livro -->
-  <div id="read-title" href="#"><p id="read-title-title">Chicago</p><p id="read-title-author">por José Mendes</p><br><p id="read-title-title">Capítulo 1</p></div>
+      <!-- Título do Livro -->
+      <div id="read-title" href="#"><p id="read-title-title">Chicago</p><p id="read-title-author">por José Mendes</p><br><p id="read-title-title">Capítulo 1</p></div>
 
-  <!-- Texto do Livro -->
-  <div id="read-text">
+      <!-- Texto do Livro -->
+      <div id="read-text">
 
-    <p>Bacon ipsum dolor amet <a href="#" class="word-link">turkey</a> turkey turkey turkey turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey <a href="#" class="word-link">turkey</a>. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. </p>
+        <p>Bacon ipsum dolor amet <a href="#" class="word-link">turkey</a> turkey turkey turkey turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey <a href="#" class="word-link">turkey</a>. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. </p>
 
-    <div id="read-text-video">
-      <iframe width="420" height="315"
-      src="http://www.youtube.com/embed/8GFm9NMFJUg">
-    </iframe>
-  </div>
+        <div id="read-text-video">
+          <iframe width="420" height="315"
+          src="http://www.youtube.com/embed/8GFm9NMFJUg">
+        </iframe>
+      </div>
 
-  <p>Bacon ipsum dolor amet <a href="#" class="word-link">turkey</a> turkey turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey <a href="#" class="word-link">turkey</a>, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey <a href="#" class="word-link">turkey</a>.</p>
+      <p>Bacon ipsum dolor amet <a href="#" class="word-link">turkey</a> turkey turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey <a href="#" class="word-link">turkey</a>, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey <a href="#" class="word-link">turkey</a>.</p>
 
-  <div id="read-text-image">
-    <img src="img/porco.png">
-  </div>
+      <div id="read-text-image">
+        <img src="img/porco.png">
+      </div>
 
-  <p>Bacon ipsum dolor amet <a href="#" class="word-link">turkey</a> turkey turkey turkey turkey turkey turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey.</p>
+      <p>Bacon ipsum dolor amet <a href="#" class="word-link">turkey</a> turkey turkey turkey turkey turkey turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey.</p>
 
-  <p>Bacon ipsum dolor amet <a href="#" class="word-link">turkey</a>. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey <a href="#" class="word-link">turkey</a>, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey <a href="#" class="word-link">turkey</a> turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. </p>
+      <p>Bacon ipsum dolor amet <a href="#" class="word-link">turkey</a>. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey <a href="#" class="word-link">turkey</a>, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey <a href="#" class="word-link">turkey</a> turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey <a href="#" class="word-link">turkey</a> turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. Turkey turkey turkey turkey. Turkey turkey turkey turkey turkey. Turkey turkey turkey turkey turkey, turkey turkey. Turkey turkey turkey, turkey turkey turkey turkey turkey turkey turkey turkey turkey. </p>
 
-</div>
+    </div>
 
-<div id="commentsWritten">
-  <p> </p>
-</div>
+    <div id="commentsWritten">
+      <p> </p>
+    </div>
 
-<div id="addComment">
-  <p>Escrever Comentário</p></br>
-  <input type="text" style="width:98%; height:160px;" id="commentArea"><br><br>
-  <input type="submit" id="commentBtn" value="Comentar">
-</div>
+    <div id="addComment">
+      <p>Escrever Comentário</p></br>
+      <input type="text" style="width:98%; height:160px;" id="commentArea"><br><br>
+      <input type="submit" id="commentBtn" value="Comentar">
+    </div>
 
-<div id="addImage">
-  <form action="">
-    <p>Adicionar Imagem</p></br>
-    Selecionar Ficheiro: <input type="file" name="imagem" accept="image/*" id="imageArea"><br><br>
-    <input type="submit" id="imageBtn" value="Adicionar">
-  </form>
-</div>
+    <div id="addImage">
+      <form action="">
+        <p>Adicionar Imagem</p></br>
+        Selecionar Ficheiro: <input type="file" name="imagem" accept="image/*" id="imageArea"><br><br>
+        <input type="submit" id="imageBtn" value="Adicionar">
+      </form>
+    </div>
 
-<div id="addFilm">
-  <form action="">
-    <p>Adicionar Video</p></br>
-    Selecionar Ficheiro: <input type="file" name="video" accept="video/*"><br><br>
-    <input type="submit" id="filmBtn" value="Video">
-  </form>
-</div>
+    <div id="addFilm">
+      <form action="">
+        <p>Adicionar Video</p></br>
+        Selecionar Ficheiro: <input type="file" name="video" accept="video/*"><br><br>
+        <input type="submit" id="filmBtn" value="Video">
+      </form>
+    </div>
 
-<div id="addMusic">
-  <form action="">
-    <p>Adicionar Áudio</p></br>
-    Selecionar Ficheiro: <input type="file" name="imagem" accept="audio/*"><br><br>
-    <input type="submit" id="completeBtn" value="Adicionar">
-  </form>
-</div>
+    <div id="addMusic">
+      <form action="">
+        <p>Adicionar Áudio</p></br>
+        Selecionar Ficheiro: <input type="file" name="imagem" accept="audio/*"><br><br>
+        <input type="submit" id="completeBtn" value="Adicionar">
+      </form>
+    </div>
 
-<div id="addText">
-  <p>Complementar História</p></br>
-  <textarea rows="12" cols="115" id="complementArea"></textarea><br><br>
-  <input type="submit" class="completeBtn" value="Enviar">
-</div>
+    <div id="addText">
+      <p>Complementar História</p></br>
+      <textarea rows="12" cols="115" id="complementArea"></textarea><br><br>
+      <input type="submit" class="completeBtn" value="Enviar">
+    </div>
 
-<div id="pageNumber">
-  <br><br><br><br>
-  <p>2</p>
-</div>
+    <div id="pageNumber">
+      <br><br><br><br>
+      <p>2</p>
+    </div>
 
-<!-- Javascript at the bottom -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- for testing -->
-<script type="text/javascript" src="js/main.js"></script>
+    <!-- Javascript at the bottom -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- for testing -->
+    <script type="text/javascript" src="js/main.js"></script>
 
-<script>
-editText = document.getElementById('editText'),
-showText = document.getElementById( 'read-nav-subnav-font'),
-popText = document.getElementById( 'word-link-pop' );
+    <script>
+    editText = document.getElementById('editText'),
+    showText = document.getElementById( 'read-nav-subnav-font'),
+    popText = document.getElementById( 'word-link-pop' );
 
-var fontSize = parseInt($("body").css("font-size"));
+    var fontSize = parseInt($("body").css("font-size"));
 
-$(editText).click(function(){
-  if ($(showText).hasClass("open")){
-    $(showText).removeClass("open");
-  } else {
-    $(showText).addClass("open");
-  }
-});
+    $(editText).click(function(){
+      if ($(showText).hasClass("open")){
+        $(showText).removeClass("open");
+      } else {
+        $(showText).addClass("open");
+      }
+    });
 
-$('#starRating').click(function(){
-  if($('.rate-text-pop').hasClass("open")){
-    $('.rate-text-pop').removeClass("open");
-    $('.rate-text-pop').css("display", "none");
-    $('#read-nav').animate({width:"27%"});
-    $('#rateText').removeClass('fa fa-star-o');
-    $('#rateText').addClass('fa fa-star');
-  } else {
-    $('.rate-text-pop').addClass("open");
-    $('.edit-text-pop').removeClass("open");
-    $('.edit-text-pop').css("display", "none");
-    $('.rate-text-pop').css("display", "inline");
-    $('#read-nav').animate({width:"38%"});
-    $('#rateText').removeClass('fa fa-star');
-    $('#rateText').addClass('fa fa-star-o');
-    $('#rateText2').removeClass('fa fa-star');
-    $('#rateText2').addClass('fa fa-star-o');
-    $('#rateText3').removeClass('fa fa-star');
-    $('#rateText3').addClass('fa fa-star-o');
-    $('#rateText4').removeClass('fa fa-star');
-    $('#rateText4').addClass('fa fa-star-o');
-    $('#rateText5').removeClass('fa fa-star');
-    $('#rateText5').addClass('fa fa-star-o');  }
-});
+    $('#starRating').click(function(){
+      if($('.rate-text-pop').hasClass("open")){
+        $('.rate-text-pop').removeClass("open");
+        $('.rate-text-pop').css("display", "none");
+        $('#read-nav').animate({width:"27%"});
+        $('#rateText').removeClass('fa fa-star-o');
+        $('#rateText').addClass('fa fa-star');
+      } else {
+        $('.rate-text-pop').addClass("open");
+        $('.edit-text-pop').removeClass("open");
+        $('.edit-text-pop').css("display", "none");
+        $('.rate-text-pop').css("display", "inline");
+        $('#read-nav').animate({width:"38%"});
+        $('#rateText').removeClass('fa fa-star');
+        $('#rateText').addClass('fa fa-star-o');
+        $('#rateText2').removeClass('fa fa-star');
+        $('#rateText2').addClass('fa fa-star-o');
+        $('#rateText3').removeClass('fa fa-star');
+        $('#rateText3').addClass('fa fa-star-o');
+        $('#rateText4').removeClass('fa fa-star');
+        $('#rateText4').addClass('fa fa-star-o');
+        $('#rateText5').removeClass('fa fa-star');
+        $('#rateText5').addClass('fa fa-star-o');  }
+      });
 
-$('#rateText2').click(function(){
-  $('#rateText').removeClass('fa fa-star-o');
-  $('#rateText').addClass('fa fa-star');
-  $('#rateText2').removeClass('fa fa-star-o');
-  $('#rateText2').addClass('fa fa-star');
-});
+      $('#rateText2').click(function(){
+        $('#rateText').removeClass('fa fa-star-o');
+        $('#rateText').addClass('fa fa-star');
+        $('#rateText2').removeClass('fa fa-star-o');
+        $('#rateText2').addClass('fa fa-star');
+      });
 
-$('#rateText3').click(function(){
-  $('#rateText').removeClass('fa fa-star-o');
-  $('#rateText').addClass('fa fa-star');
-  $('#rateText2').removeClass('fa fa-star-o');
-  $('#rateText2').addClass('fa fa-star');
-  $('#rateText3').removeClass('fa fa-star-o');
-  $('#rateText3').addClass('fa fa-star');
-});
+      $('#rateText3').click(function(){
+        $('#rateText').removeClass('fa fa-star-o');
+        $('#rateText').addClass('fa fa-star');
+        $('#rateText2').removeClass('fa fa-star-o');
+        $('#rateText2').addClass('fa fa-star');
+        $('#rateText3').removeClass('fa fa-star-o');
+        $('#rateText3').addClass('fa fa-star');
+      });
 
-$('#rateText4').click(function(){
-  $('#rateText').removeClass('fa fa-star-o');
-  $('#rateText').addClass('fa fa-star');
-  $('#rateText2').removeClass('fa fa-star-o');
-  $('#rateText2').addClass('fa fa-star');
-  $('#rateText3').removeClass('fa fa-star-o');
-  $('#rateText3').addClass('fa fa-star');
-  $('#rateText4').removeClass('fa fa-star-o');
-  $('#rateText4').addClass('fa fa-star');
-});
+      $('#rateText4').click(function(){
+        $('#rateText').removeClass('fa fa-star-o');
+        $('#rateText').addClass('fa fa-star');
+        $('#rateText2').removeClass('fa fa-star-o');
+        $('#rateText2').addClass('fa fa-star');
+        $('#rateText3').removeClass('fa fa-star-o');
+        $('#rateText3').addClass('fa fa-star');
+        $('#rateText4').removeClass('fa fa-star-o');
+        $('#rateText4').addClass('fa fa-star');
+      });
 
-$('#rateText5').click(function(){
-  $('#rateText').removeClass('fa fa-star-o');
-  $('#rateText').addClass('fa fa-star');
-  $('#rateText2').removeClass('fa fa-star-o');
-  $('#rateText2').addClass('fa fa-star');
-  $('#rateText3').removeClass('fa fa-star-o');
-  $('#rateText3').addClass('fa fa-star');
-  $('#rateText4').removeClass('fa fa-star-o');
-  $('#rateText4').addClass('fa fa-star');
-  $('#rateText5').removeClass('fa fa-star-o');
-  $('#rateText5').addClass('fa fa-star');
-  });
+      $('#rateText5').click(function(){
+        $('#rateText').removeClass('fa fa-star-o');
+        $('#rateText').addClass('fa fa-star');
+        $('#rateText2').removeClass('fa fa-star-o');
+        $('#rateText2').addClass('fa fa-star');
+        $('#rateText3').removeClass('fa fa-star-o');
+        $('#rateText3').addClass('fa fa-star');
+        $('#rateText4').removeClass('fa fa-star-o');
+        $('#rateText4').addClass('fa fa-star');
+        $('#rateText5').removeClass('fa fa-star-o');
+        $('#rateText5').addClass('fa fa-star');
+      });
 
-  $('#editText').click(function(){
-    if($('.edit-text-pop').hasClass("open")){
-      $('.edit-text-pop').removeClass("open");
-      $('.edit-text-pop').css("display", "none");
-      $('#read-nav').animate({width:"27%"});
-    } else {
-      $('.edit-text-pop').addClass("open");
-      $('.edit-text-pop').css("display", "inline");
-      $('#read-nav').animate({width:"32%"});
-      $('.rate-text-pop').removeClass("open");
-      $('.rate-text-pop').css("display", "none");
-    }
-  });
+      $('#editText').click(function(){
+        if($('.edit-text-pop').hasClass("open")){
+          $('.edit-text-pop').removeClass("open");
+          $('.edit-text-pop').css("display", "none");
+          $('#read-nav').animate({width:"27%"});
+        } else {
+          $('.edit-text-pop').addClass("open");
+          $('.edit-text-pop').css("display", "inline");
+          $('#read-nav').animate({width:"32%"});
+          $('.rate-text-pop').removeClass("open");
+          $('.rate-text-pop').css("display", "none");
+        }
+      });
 
-  $('#editTextPlus').click(function(){
-    fontSize += 1;
-    $('#read-text p').css('font-size', fontSize+"px");
-    return false;
-  });
+      $('#editTextPlus').click(function(){
+        fontSize += 1;
+        $('#read-text p').css('font-size', fontSize+"px");
+        return false;
+      });
 
-  $('#editTextMinus').click(function(){
-    fontSize -= 1;
-    $('#read-text p').css('font-size', fontSize+"px");
-    return false;
-  });
+      $('#editTextMinus').click(function(){
+        fontSize -= 1;
+        $('#read-text p').css('font-size', fontSize+"px");
+        return false;
+      });
 
-$('#word-link-pop-comment').click(function(){
-  if ($('#addComment').hasClass("open")){
-    $('#addComment').removeClass("open");
-    $('#read-nav').removeClass("open");
-  } else {
-    $('#addComment').addClass("open");
-    $('#addImage').removeClass("open");
-    $('#addMusic').removeClass("open");
-    $('#addFilm').removeClass("open");
-    $('#addText').removeClass("open");
-  }
-});
+      $('#word-link-pop-comment').click(function(){
+        if ($('#addComment').hasClass("open")){
+          $('#addComment').removeClass("open");
+          $('#read-nav').removeClass("open");
+        } else {
+          $('#addComment').addClass("open");
+          $('#addImage').removeClass("open");
+          $('#addMusic').removeClass("open");
+          $('#addFilm').removeClass("open");
+          $('#addText').removeClass("open");
+        }
+      });
 
-$('#commentBtn').click(function(){
-  $('#addComment').removeClass("open");
-  $('#commentsWritten p').append("<p>"+$("#commentArea").val()+"<p>"+"<p>@sergiomrebelo</p>");
-});
+      $('#commentBtn').click(function(){
+        $('#addComment').removeClass("open");
+        $('#commentsWritten p').append("<p>"+$("#commentArea").val()+"<p>"+"<p>@sergiomrebelo</p>");
+      });
 
-$("#imageBtn").click(function(){
-  $('#addImage').removeClass("open");
-  $('#read-text-image').addClass("open");
-  return false;
-});
+      $("#imageBtn").click(function(){
+        $('#addImage').removeClass("open");
+        $('#read-text-image').addClass("open");
+        return false;
+      });
 
-$('#filmBtn').click(function(){
-  $('#addFilm').removeClass("open");
-  $('#read-text-video').addClass("open");
-  return false;
-});
+      $('#filmBtn').click(function(){
+        $('#addFilm').removeClass("open");
+        $('#read-text-video').addClass("open");
+        return false;
+      });
 
-$('#read-text-image').click(function(){
-  $('#read-text-image').removeClass("open");
-});
+      $('#read-text-image').click(function(){
+        $('#read-text-image').removeClass("open");
+      });
 
-$('#read-text-video').click(function(){
-  $('#read-text-video').removeClass("open");
-});
+      $('#read-text-video').click(function(){
+        $('#read-text-video').removeClass("open");
+      });
 
-$('#commentsWritten').click(function(){
-  $('#commentsWritten p').remove();
-});
+      $('#commentsWritten').click(function(){
+        $('#commentsWritten p').remove();
+      });
 
-$('#word-link-pop-image').click(function(){
-  if ($('#addImage').hasClass("open")){
-    $('#addImage').removeClass("open");
-  } else {
-    $('#addImage').addClass("open");
-    $('#addComment').removeClass("open");
-    $('#addFilm').removeClass("open");
-    $('#addMusic').removeClass("open");
-    $('#addText').removeClass("open");
-  }
-});
+      $('#word-link-pop-image').click(function(){
+        if ($('#addImage').hasClass("open")){
+          $('#addImage').removeClass("open");
+        } else {
+          $('#addImage').addClass("open");
+          $('#addComment').removeClass("open");
+          $('#addFilm').removeClass("open");
+          $('#addMusic').removeClass("open");
+          $('#addText').removeClass("open");
+        }
+      });
 
-$('#word-link-pop-film').click(function(){
-  if ($('#addFilm').hasClass("open")){
-    $('#addFilm').removeClass("open");
-  } else {
-    $('#addFilm').addClass("open");
-    $('#addComment').removeClass("open");
-    $('#addImage').removeClass("open");
-    $('#addMusic').removeClass("open");
-    $('#addText').removeClass("open");
-  }
-});
+      $('#word-link-pop-film').click(function(){
+        if ($('#addFilm').hasClass("open")){
+          $('#addFilm').removeClass("open");
+        } else {
+          $('#addFilm').addClass("open");
+          $('#addComment').removeClass("open");
+          $('#addImage').removeClass("open");
+          $('#addMusic').removeClass("open");
+          $('#addText').removeClass("open");
+        }
+      });
 
-$('#word-link-pop-music').click(function(){
-  if ($('#addMusic').hasClass("open")){
-    $('#addMusic').removeClass("open");
-  } else {
-    $('#addMusic').addClass("open");
-    $('#addComment').removeClass("open");
-    $('#addImage').removeClass("open");
-    $('#addFilm').removeClass("open");
-    $('#addText').removeClass("open");
-  }
-});
+      $('#word-link-pop-music').click(function(){
+        if ($('#addMusic').hasClass("open")){
+          $('#addMusic').removeClass("open");
+        } else {
+          $('#addMusic').addClass("open");
+          $('#addComment').removeClass("open");
+          $('#addImage').removeClass("open");
+          $('#addFilm').removeClass("open");
+          $('#addText').removeClass("open");
+        }
+      });
 
-$('#word-link-pop-text').click(function(){
-  if ($('#addText').hasClass("open")){
-    $('#addText').removeClass("open");
-  } else {
-    $('#addText').addClass("open");
-    $('#addComment').removeClass("open");
-    $('#addImage').removeClass("open");
-    $('#addFilm').removeClass("open");
-    $('#addMusic').removeClass("open");
-  }
-});
+      $('#word-link-pop-text').click(function(){
+        if ($('#addText').hasClass("open")){
+          $('#addText').removeClass("open");
+        } else {
+          $('#addText').addClass("open");
+          $('#addComment').removeClass("open");
+          $('#addImage').removeClass("open");
+          $('#addFilm').removeClass("open");
+          $('#addMusic').removeClass("open");
+        }
+      });
 
-$('#word-link-pop-exit').click(function(){
-  $("#word-link-pop").removeClass("open");
-});
+      $('#word-link-pop-exit').click(function(){
+        $("#word-link-pop").removeClass("open");
+      });
 
-</script>
-</body>
-</html>
+      </script>
+    </body>
+    </html>

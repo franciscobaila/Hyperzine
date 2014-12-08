@@ -1,9 +1,17 @@
 #read-nav{
-	width: 27%;
-	height:35px;
+	width: 7%;
+	height: 340px;
 	background-color: #ABB7B7;
 	display: block;
 	z-index:1000;
+	text-align: center;
+	position: fixed;
+	color: white;
+	font-size: 14px;
+	font-family: 'Helvetica';
+	font-weight: bold;
+	margin-top: 150px;
+	padding-top: 20px;
 }
 
 .read-nav-a{
@@ -20,8 +28,7 @@
 
 #read-title{
 	color: #ABB7B7;
-	margin-left: 5%;
-	margin-top: 2%;
+	margin-left: 20%;
 	padding-top: 10px;
 }
 
@@ -36,7 +43,7 @@
 }
 
 #read-text{
-	width: 80%;
+	width: 75%;
 	margin: 0 auto;
 	padding-top: 40px;
 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
