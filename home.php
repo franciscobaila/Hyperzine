@@ -127,35 +127,35 @@
       </div>
 
       <div id="feed">
-        <div id="feed-title">Feed:</div>
+        <div id="feed-title">RECENT POSTS</div>
         <!-- news example ----------- -->
         <div class="news">
-          sérgio-critic add a critic to "Chicago".
+          <b>Sérgio</b> add a critic to "Chicago".
         </div>
         <!-- news example ----------- -->
 				<!-- news example ----------- -->
 				<div class="news">
-					manuel add a song to "Zorro".
+					Manuel add a song to "Zorro".
 				</div>
 				<!-- news example ----------- -->
 				<!-- news example ----------- -->
 				<div class="news">
-					jessica-critic add a critic to "Harry Potter".
+					Jéssica add a critic to "Harry Potter".
 				</div>
 				<!-- news example ----------- -->
 				<!-- news example ----------- -->
 				<div class="news">
-					joao add an image to "Naruto".
+					João add an image to "Naruto".
 				</div>
 				<!-- news example ----------- -->
 				<!-- news example ----------- -->
 				<div class="news">
-					manuel add a video to "Zorro".
+					Manuel add a video to "Zorro".
 				</div>
 				<!-- news example ----------- -->
 				<!-- news example ----------- -->
 				<div class="news">
-					josé-critic add a critic to "Zorro".
+					<b>José</b> add a critic to "Zorro".
 				</div>
 				<!-- news example ----------- -->
       </div>
