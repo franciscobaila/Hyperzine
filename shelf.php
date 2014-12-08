@@ -56,20 +56,20 @@ include ('includes/header.php');
       <div id="filter">
         <!-- filtro ordenar ----------- -->
         <div id="order-by" class="filters">
-          <div class="filter-title">Order By:</div>
+          <div class="filter-title">ORDER BY</div>
           <form action="">
             <p><input id="check1" type="checkbox" name="categoria" value="check1"><label for="check1">Name</label></p>
             <p><input id="check2" type="checkbox" name="categoria" value="check1"><label for="check2">Creation Date</label></p>
-            <p><input id="check3" type="checkbox" name="categoria" value="check2"><label for="check3">Cslassification</label></p>
+            <p><input id="check3" type="checkbox" name="categoria" value="check2"><label for="check3">Classification</label></p>
           </form>
         </div>
         <!-- filtro ordenar ----------- -->
         <!-- filtro leitura ----------- -->
         <div id="reading" class="filters filters3">
-          <div class="filter-title">Reading:</div>
+          <div class="filter-title">BOOKS</div>
           <ul id="filters2">
             <li>
-            <p><input id="check3.1" type="checkbox" name="categoria" value="read" checked><label for="check3.1">Read</label></p>
+            <p><input id="check3.1" type="checkbox" name="categoria" value="read" checked><label for="check3.1">To Read</label></p>
             <p><input id="check3.2" type="checkbox" name="categoria" value="open" checked><label for="check3.2">Reading</label></p>
             </li>
           </ul>
@@ -77,14 +77,15 @@ include ('includes/header.php');
         <!-- filtro leitura ----------- -->
         <!-- filtro categorias ----------- -->
         <div id="categories" class="filters filters2">
-          <div class="filter-title" class="filters">Categories:</div>
+          <div class="filter-title" class="filters">CATEGORIES</div>
           <ul id="filters3">
             <li>
               <p><input id="check2.1" type="checkbox" name="categoria" value="fiction" checked><label for="check2.1">Fiction</label></p>
               <p><input id="check2.2" type="checkbox" name="categoria" value="love" checked><label for="check2.2">Love Story</label></p>
               <p><input id="check2.3" type="checkbox" name="categoria" value="drama" checked><label for="check2.3">Drama</label></p>
               <p><input id="check2.4" type="checkbox" name="categoria" value="fan" checked><label for="check2.4">Fan Fiction</label></p>
-              <p><input id="check2.5" type="checkbox" name="categoria" value="cenas" checked><label for="check2.5">Cenas</label></p>
+              <p><input id="check2.5" type="checkbox" name="categoria" value="cenas" checked><label for="check2.5">Others</label></p>
+              <p><input id="check2.6" type="checkbox" name="categoria" value="cenas" checked><label for="check2.6">Design</label></p>
           </li>
         </ul>
         </div>
