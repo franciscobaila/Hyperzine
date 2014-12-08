@@ -25,7 +25,7 @@
 	<nav id="nav-h"> 
 		<!-- prob - alinhamento em cima -->
 		<!-- logo username -->
-		<div class="element-header big-text">HYPERZINE </div> 
+		<a href="index.php"><div class="element-header big-text">HYPERZINE </div>
 		<!-- new user -->
 		<div class=" big-text link"> <a style="text-decoration:none;" href="signup.php">@sign up</a> </div>
 	</nav>
