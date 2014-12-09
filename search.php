@@ -8,7 +8,7 @@ include ('includes/header.php');?>
               <!-- book example ----------- -->
         <?php
         $data = mysql_escape_string($_POST['search']);
-        $search = "select * from books where category like '%".$data."%' or  book_name  like '%".$data."%'";
+        $search = "select * from books where category like '%".$data."%' or author like '%".$data."%' or  book_name  like '%".$data."%'";
         $result = mysql_query($search);
 
         if ($result) {
