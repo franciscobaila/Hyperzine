@@ -27,6 +27,10 @@
 
 <body>
 
+  <div id="navBtn">
+    <img class="read-nav-a" id="navBtnImg" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-menu-icon.png&r=255&g=255&b=255"/><br>
+  </div>
+
   <nav id="read-nav">
     <img class="read-nav-a" href="preview.php" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-home-4-icon.png&r=255&g=255&b=255"/><br>
     <span class="read-nav-a-title">Início</span><br><br>
@@ -45,9 +49,6 @@
         <li><button class="word-link-pop read-nav-a" id="word-link-pop-music"><span class="fa fa-music"></span></button></li>
         <li><button class="word-link-pop read-nav-a" id="word-link-pop-text"><span class="fa fa-file-text-o"></span></button></li>-->
   </nav>
-
-      <!-- Título do Livro -->
-      <div id="read-title" href="#"><p id="read-title-title">Chicago</p><p id="read-title-author">por José Mendes</p><br><p id="read-title-title">Capítulo 1</p></div>
 
       <!-- Texto do Livro -->
       <div id="read-text">
@@ -123,11 +124,28 @@
     <script type="text/javascript" src="js/main.js"></script>
 
     <script>
+    navBtn = document.getElementById('navBtn'),
+    readNav = document.getElementById('read-nav'),
     editText = document.getElementById('editText'),
-    showText = document.getElementById( 'read-nav-subnav-font'),
-    popText = document.getElementById( 'word-link-pop' );
+    showText = document.getElementById('read-nav-subnav-font'),
+    popText = document.getElementById('word-link-pop' );
 
-    var fontSize = parseInt($("body").css("font-size"));
+
+    $(navBtn).click(function(){
+      if ($(readNav).hasClass("open")){
+        $(readNav).removeClass("open");
+        $(navBtn).animate({width: "50px"});
+        $(navBtn).animate({padding-left: "0px"});
+      } else {
+        $(readNav).addClass("open");
+        $(navBtn).animate({width: "100px"});
+        $(navBtn).animate({padding-left: "25px"});
+      }
+    });
+
+
+
+    /*var fontSize = parseInt($("body").css("font-size"));
 
     $(editText).click(function(){
       if ($(showText).hasClass("open")){
@@ -320,7 +338,7 @@
 
       $('#word-link-pop-exit').click(function(){
         $("#word-link-pop").removeClass("open");
-      });
+      });*/
 
       </script>
     </body>
