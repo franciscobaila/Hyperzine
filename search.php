@@ -19,16 +19,16 @@ include ('includes/header.php');?>
           //$image = $row["book_image"];
           //$category = $row ["category"];
 
-
+          echo "<div id='book-1' class='book cenas'>";
 
           echo "<img class='img-book' src='http://localhost:8888/", $row["book_image"], "'/>";
-
+          echo "</div>";
 
           //echo "book name:".$bookName." autor:".$autor." id ".$id." image:".$image." categoria:".$category."<br>";
           //printf ("Name: %s  Image: %s", $row[1], $row[4] ,'<br />');
           }
         } else {
-          echo "nenhum resultado encontrado ";
+          echo "Nenhum resultado encontrado";
         }
         ?>
 
