@@ -12,7 +12,8 @@ var categorys = [
 
 var autor ="";
 var titulo = "";
-var categoria = "";
+var category = "hypertext fiction";
+var categoria ="";
 
 var pages = new Array();
 var linksPages = new Array();
@@ -132,8 +133,8 @@ function createBookProcess () {
 		titulo = document.forms["book-info"]["authorName"].value;
 		categoria = document.forms["book-info"]["category"].value;
 		titulo =  document.forms["book-info"]["bookName"].value;
-		$("#loading").show ();
-		$("#newBookPT1").hide();
+		//$("#loading").show ();
+		//	$("#newBookPT1").hide();
 		startBookInterace ();	
 	}
 	else {
@@ -144,9 +145,8 @@ function createBookProcess () {
 }
 
 function startBookInterace () {
-	$("#loading").hide();
-	$("#newBookPT2").show();
-
+	$("#loading").fadeOut( "slow" );
+	$("#newBookPT2").fadeIn( "slow" );
 }
 
 function validateSearch () {
@@ -154,11 +154,14 @@ function validateSearch () {
 }
 
 //criar XML
-function test(){    
+function test(autor2, titulo2, category2){    
    xw.writeStartDocument(true);
-   xw.writeElementString('book','diavagações 3');
-   xw.writeAttributeString('autor','antonio olaio');
-   xw.writeAttributeString('categorias','hypertext');
+   xw.writeElementString('book');
+   xw.writeAttributeString('autor',autor2);
+   xw.writeAttributeString('categorias',category2);
+   xw.writeAttributeString('title',titulo2);
+   categoria = category2;
+   category = category2;
   };
 
 function endXML () {
@@ -183,3 +186,30 @@ function getTextSelection(s,number){
        // alert (selectedText);
         return selectedText;
 }   
+
+
+//funções para editar uma text area
+function divClicked() {
+	$(this).hide();
+	
+	var _text = $(this).html();
+	if (_text != "click to compose the page") {
+		$('#c-textbox').val(_text);
+	}
+	$('#c-textbox').show();
+	$('#c-textbox').focus();
+  	$('#c-textbox').blur(editableTextBlurred);
+}
+
+function editableTextBlurred() {
+	$('#c-textbox').hide();
+	if ($('#c-textbox').val() != "") {
+		$('#c-div').html($('#c-textbox').val());
+	}
+	$('#c-div').show();
+}
+
+
+function showPage () {
+	
+}
