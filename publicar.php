@@ -1,36 +1,59 @@
 <?php include ('includes/header.php'); ?>
  <script src="functions/jointJs/joint.js"></script>
  
+ 
  <section id="container">
  <section id="loading"> <span class="center-form big-text">
  <center><img width="40px" src="http://sol.pt/images/loading.gif"/><br>
   loading </span></section></center>
  <!--  parte 1-->
  <section id="newBookPT1">
-	 <form name="book-info" class="center-form" action="javascript:void(0);" onsubmit="createBookProcess ()" style="top:0px" method="post">
-	 	<!-- book name -->	
-	 	<input type="text" class="input  big-text big-input" min="6" max="20" placeholder="Book's Name" name="bookName" required /><br>
-	 	<!-- autor -->
-	 	<input type="text" class="input  big-text big-input" placeholder="Author Name" name="authorName" id="authorName" required /><br>
-	 	<!-- categoria -->
-	 	<input type="text" id="input-click" class="input  big-text big-input" placeholder="Category" name="category" readonly/><br>
-	 	<!-- submit -->
-	 	<input type="submit" id="start2"class="input button big-text big-input" value="Let's Go" /><br>
+ 	
+ 	<section id="newBook1-2" class="center-hor center-ver">
+ 	<!-- lol -->
+ 	<br><br><br><br><br><br>
+ 	
+ 	<h1> Finnaly, you can make a book!</h1>
+ 	<div class="top-space normal-size"> for this you need to write the data <br>of the group, then have to create the book using the displayed interface.Feels prepared?</div>
+ </div>
+ <button id="startBook" class="button normal-size">Start Now!</button>
+ 	</section>
+ 	<!-- javascript:void(0); para não sair da pagina com o form -->
+	<form name="book-info" id="insertinfo"class="center-hor center-ver" action="javascript:void(0);" style="top:0px" method="post">
+		<br>
+		<br>
+		<br>
+		<label class="normal-size "> Book Info:</label><br>
+	 	<input type="text" class="input h1-size margin-b"  placeholder="Book's Name" id="bookName" name="bookName" required />
+	 	<br>
+	 	<br>
+	 	<input type="text" class="input h1-size  margin-b"  placeholder="Author's Name" id="authorName" name="authorName" required /><br><br>
+	 	<input type="text" id="input-click" class="input h1-size margin-b" placeholder="Category ↓" id="cat-name"name="category" readonly/><br><br>
+	 	<input type="file" id="input-file" class="normal-size" name="cover-img" ><br><br><bt>
+	 	<input type="submit" id="start2"class="input button normal-size" value="Let's Go" /><br>
 	 </form>
  </section>
  <section id="categorySel" class="center-form"></section>
  <!-- parte 2 -->
+ <section id="newPage-interface" >
+ 	<!-- Novo livro -->
+ 	<img class="closeP" id="closePage" width="30px" src="./icons/close.png"/>
+	 <div id="newPageName" class="h1-size marginTop"contenteditable="true">Page 1</h1></div><br><br>
+	 <div id="alterar">
+	 	
+		<img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-pencil-10-icon.png&r=189&g=195&b=199"/><img class="lateral-bar-element" id="create-link" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-arrow-19-icon.png&r=189&g=195&b=199"/><img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-picture-add-icon.png&r=189&g=195&b=199"/><img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-video-add-icon.png&r=189&g=195&b=199"/><br><br>
+		 
+	 </div>
+	 
+	 <div  id="c-div" class="counteudo">click to compose the page</div>
+	 <textarea id="c-textbox"class="counteudo normal-size" placeholder="compose the page"></textarea>
+	 <button id="savePage" class="button normal-size">Save</button>
+ </section>
  <section id="newBookPT2">
 	 <nav id="lateral-bar">
-	 	
-		 <img class="lateral-bar-element"  id="new-page" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=135&g=135&b=135"/><br><br>
-		<img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-pencil-10-icon.png&r=189&g=195&b=199"/><br><br>
-		<img class="lateral-bar-element" id="create-link" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-arrow-19-icon.png&r=189&g=195&b=199"/><br><br>
-		
-		<img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-picture-add-icon.png&r=189&g=195&b=199"/><br><br>
-		
-		<img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-video-add-icon.png&r=189&g=195&b=199"/><br><br>
+	 		 <img class="lateral-bar-element"  id="new-page" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=135&g=135&b=135"/><br><br>
 		<img  class="lateral-bar-element" id="finish-process" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-check-mark-icon.png&r=189&g=195&b=199"/>
+		
 	 </nav>
 	 <section id="diagram" class="big-text"> <span id="titlename" >Book Name </span> by <span id="autorname">Author name	</span> </section>
 	 <section id="new-page-interface">
@@ -44,13 +67,15 @@
 		 <div id="write-text"> <textarea id="pageInfo2"></textarea></div>
 		 <div id="change" class="button">Change</div>
 	 </section>
-
+	 
+	 
 	 
 	 
  </section>
  
  </section>
 <script>
+
 var graph = new joint.dia.Graph;
  	var paper = new joint.dia.Paper({
 			el: $('#diagram'),
@@ -72,7 +97,7 @@ var graph = new joint.dia.Graph;
 		        console.log ("text = "+xw.root.c[i+1].c[0]);
 		        $('#pageInfo2').text(xw.root.c[i+1].c[0]);
 		        inUse =i;
-		        $('#change-page-interface').show();
+		        $('#change-page-interface').fadeIn( "slow" );
 	        }
         }
     }
@@ -81,29 +106,45 @@ var graph = new joint.dia.Graph;
  $(function() {
  	
     setTimeout(function(){
-    	$('#newBookPT1').show();
-    	$('#loading').hide();
+   	 //$('#loading').fadeOut( "slow" );
+   	 	$( "#loading" ).fadeOut( "slow", function() {
+			// Animation complete.
+			$('#newBookPT1').fadeIn( "slow" );
+		});
     	
-    }, 5000);
+    	
+    }, 2000);
 	
  	//criação do diagrama
  	$('#start2').click(function(){
- 		$('#loading').show();
- 		autor = document.forms["book-info"]["bookName"].value;
- 		titulo = document.forms["book-info"]["authorName"].value;
+ 		$( "#newBookPT1" ).fadeOut( "slow", function() {
+			// Animation complete.
+			//$('#loading').fadeIn( "slow" );
+			$( "#newBookPT2" ).fadeIn( "slow");
+		});
+  		titulo = $('#bookName').val();
+  		//document.forms["book-info"]["bookName"].value;
+ 		autor = $('#authorName').val();
+ 	
+	 	category = $('#cat-name').val();
 	 	
-	 	$('#titlename').html (autor);
-	 	$('#autorname').html (titulo);
-	 	$('#loading').hide();
-	 	$('#newBookPT2').show();
- 	});
-	test();
+	 	//alert ("aidjd"+category);
+	 	$('#titlename').text(titulo);
+	 	$('#autorname').text(autor); 
+	 	//aqui é que crio o xml
+	 	test(autor, titulo, category); 
+	 	$('#loading').fadeOut ( "slow" );
+	 	//	
+	});
+	
+	
+	//test();
  	 for (var i=0; i<categorys.length; i++) {
 	 	$( "#categorySel" ).append("<span class='selCategory center-form link big-text'>"+categorys [i]+"</span><br> ");
 	 	//adicionar uma função a cada uma
 	 	
  	}
- 	document.forms["book-info"]["category"].value = categorys [Math.round(categorys.length/2)];
+ 	//document.forms["book-info"]["category"].value = categorys [Math.round(categorys.length/2)];
  	$ (".selCategory").click (function() {
 	 	var val = $(this).text();
 	 	document.forms["book-info"]["category"].value = val;
@@ -119,45 +160,14 @@ var graph = new joint.dia.Graph;
     });
     
 	$('#new-page').click (function () {
-		$('textarea#pageInfo').val('');
+		/*$('textarea#pageInfo').val('');
 		$('#numero').text (currentPage+1);
-		$('#new-page-interface').show();
-		
+		$('#new-page-interface').show();*/
+		$( "#newPage-interface" ).fadeIn( "slow");
 		
 		
 	});
 	
-	$('#baixo').click( function () {
-		$('#new-page-interface').hide();
-		//alert ("ad new page");
-		
-		console.log ("pagina criada="+(currentPage+1));
-		
-		//criação da caixa
-		var s = "page "+(currentPage+1);
-		var xValue = Math.round(Math.random()*600);
-		var yValue = Math.round(Math.random()*300);
-		var rect = new joint.shapes.basic.Rect({
-			position: { x: xValue, y: yValue },
-			size: { width: 100, height: 30 },
-			attrs: { rect: { fill: 'white' }, text: { text: s, fill: 'black' } }
-		});
-
-		pages.push([rect]);
-		graph.addCells([rect]);
-		text = $('textarea#pageInfo').val();
-		xw.writeElementString('page id='+currentPage+'',text);
-			xw.writeAttributeString('page',currentPage);
-			$('textarea#pageInfo').val("");
-			
-		 
-	
-		currentPage +=1;
-		console.log (xw.flush());
-		//passar para o XML o escrito
-		
-		
-	});
 	
 	$('#create-link').click (function() {
 	
@@ -190,24 +200,126 @@ var graph = new joint.dia.Graph;
 	});
 
 	$('#finish-process').click (function () {
-		endXML ();
-		$('#newBookPT2').hide();
-		$('#loading').show();
+		$( "#newBookPT2" ).fadeOut( "slow", function() {
+				// Animation complete.
+				$("#loading").fadeIn( "slow" );
+				xw.writeEndDocument();
+		
+				$.ajax({
+					type: "POST",
+					url: "saveBook.php",
+					data: { name: titulo, bookXmlString: xw.flush(), author: autor, category: category}
+				}).done(function( msg ) {
+		  			$("#loading").text("The Book is added to Library");
+		  			setTimeout(function(){
+			  			window.location.assign("library.php");
+			  		}, 1500)
+			 });  
+
+		});
+				//$('#newBookPT2').hide();
+		//$('#loading').show();
+		/*$.ajax({
+			type: 'POST',
+			url: "./demo_test.xml",//url of receiver file on server
+			data: xw, //your data
+			success: function (){
+				alert ("result");
+			}, //callback when ajax request finishes
+			dataType: text //text/json...
+		});*/
 		<?php 
 			//inserir na base de dados
 		 ?>
 		// window.location.assign("library.php");
     	
-		$('#loading').html('<span class="center-form big-text">the book is add to library!</span>');
+		/*$('#loading').html('<span class="center-form big-text">the book is add to library!</span>');
 		 setTimeout(function(){
     	
 	    	window.location.assign("library.php");
-    	}, 3000);
+    	}, 3000);*/
 	})
 
+	//dia de hoje
+	$('#startBook').click(function(){
+		//apagar a div 1 e meter a div 2 
+		$( "#newBook1-2" ).fadeOut( "slow", function() {
+			// Animation complete.
+			$("#insertinfo").fadeIn( "slow" );
+			});
+	});
 
+	//text area editavel
+	$( ".counteudo" ).click(divClicked);
+	
+	$("#closePage").click(function(){
+		$( "#newPage-interface" ).fadeOut( "slow", function() {
+			
+		});
+	});
+	
+	$("#savePage").click(function(){
+		console.log ("pagina criada="+(currentPage+1));
+		var s = $('#newPageName').text();
+		var xValue = Math.round(Math.random()*600);
+		var yValue = Math.round(Math.random()*300);
+		var rect = new joint.shapes.basic.Rect({
+			position: { x: xValue, y: yValue },
+			size: { width: 100, height: 30 },
+			attrs: { rect: { fill: 'white' }, text: { text: s, fill: 'black' } }
+		});
+		pages.push([rect]);
+		graph.addCells([rect]);
+		var text = $('#c-div').html();
+	//alert (text);
+		var xmlText="<title>"+s+"</title>"+"<pageCode>"+text+"</pageCode>";
+		var page = xw.writeElementString('page'+(currentPage+1), xmlText);
+			//page.writeAttributeString('page',currentPage);
+		
 
+		//text = $('textarea#pageInfo').val();
+		$( "#newPage-interface" ).fadeOut( "slow", function() {
+			currentPage++;
+			console.log (xw.flush());
+			//alterar no criador
+			$('#newPageName').text("page"+(currentPage+1));
+		});
+	});
+	
+	/*
+		$('#baixo').click( function () {
+		$('#new-page-interface').hide();
+		//alert ("ad new page");
+		
+		console.log ("pagina criada="+(currentPage+1));
+		
+		//criação da caixa
+		var s = "page "+(currentPage+1);
+		var xValue = Math.round(Math.random()*600);
+		var yValue = Math.round(Math.random()*300);
+		var rect = new joint.shapes.basic.Rect({
+			position: { x: xValue, y: yValue },
+			size: { width: 100, height: 30 },
+			attrs: { rect: { fill: 'white' }, text: { text: s, fill: 'black' } }
+		});
 
+		pages.push([rect]);
+		graph.addCells([rect]);
+		text = $('textarea#pageInfo').val();
+		xw.writeElementString('page id='+currentPage+'',text);
+			xw.writeAttributeString('page',currentPage);
+			$('textarea#pageInfo').val("");
+			
+		 
+	
+		currentPage +=1;
+		console.log (xw.flush());
+		//passar para o XML o escrito
+		
+		
+	});
+	
+	*/
  </script>
 
  

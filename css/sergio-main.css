@@ -1,7 +1,21 @@
+/*FONTS*/
+@font-face {
+  font-family: 'MyMonoFont';
+  src: url('fonts/AKKURAT-Mono.woff') format('woff2'), /* Super Modern Browsers */
+ 
+}
+
+/*FONTS*/
+@font-face {
+  font-family: 'MyBoldFont';
+  src: url('fonts/AkkuratPro-Bold.woff') format('woff2'), /* Super Modern Browsers */
+ 
+}
+
 html {
 	 vertical-align: baseline;
 	 -webkit-font-smoothing: antialiased;
-	 font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	 font-family: 'MyMonoFont', 'AKKURAT-Mono',courier , Helvetica, Arial, sans-serif;
 	 font-weight: normal;
 	 background:rgb(253, 253, 253);
 	 overflow-y: scroll;
@@ -9,6 +23,9 @@ html {
 	 line-height: 16.2pt;
 	 font-size: 12pt;
 }
+
+
+
 
 /*Gerais*/
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -287,8 +304,121 @@ a:hover {
 			font-size: 12pt;
 		}
 		
+		/*publish a book — parte 2*/
+		.center-hor {
+			width: 500px;
+			position: relative;
+			left: calc(50% - 250px);
+			
+		}
+		.center-ver {
+			position: relative;
+			height: auto;
+		}
+		.top-space {
+			margin-top: 10px;
+		}
 		
+		#insertinfo {
+			display: none;
+		}
+		#newPage-interface {
+			display: none;
+			position: fixed;
+			z-index: 10;
+			top:0px;
+			left: 0px;
+			background: rgb(255,255,255);
+			width: 100%;
+			height: 100%;
+			overflow-y: hidden;
+			overflow-x: hidden;
+		}
 		
+		#newPage-interface > div {
+			margin-left: calc(100% / 12);
+			margin-right: calc(100% / 12);
+		}
+		
+		#newPageName {
+			width: 30%;
+			border-bottom: 2pt solid black;
+			text-transform: capitalize;
+		}
+		
+		.counteudo {
+			margin-left: calc(100% / 12);
+			
+		}
+		
+		.counteudo{
+			cursor: pointer !important;
+		}
+		 
+		#c-textbox {
+			display: none;
+		}
+		#c-textbox:focus {
+			outline: none !important;
+			border:2px solid #7f8c8d;
+		}
+		
+		#c-textbox {
+			width: 83%;
+			height: 50%;
+			
+		}
+		
+		#savePage {
+			margin-left: calc(100% / 12);
+		}
+
 }
 
 
+/*font sizes*/
+h1 {
+	font-size: 42pt;
+	font-family: 'AkkuratPro-Bold';
+	line-height: 54.6pt;
+}
+
+.normal-size {
+	font-family: 'Akkurat-Mono';
+	font-size: 16pt;
+	line-height: 20.8pt;
+	
+}
+
+.h1-size {
+	font-size: 24pt;
+	font-family: 'AkkuratPro-Bold';
+	line-height: 54.6pt;
+}
+
+.margin-b {
+	border-bottom: 1pt solid black;
+	
+}
+
+.h1-size::-webkit-input-placeholder {
+	font-size: 24pt;
+	font-family: 'AkkuratPro-Bold';
+	line-height: 54.6pt;
+	color:#7f8c8d;
+}
+
+.marginTop {
+	margin-top: 50px;
+}
+
+.closeP {
+	float: right;
+	margin-right: calc(100% / 12);
+	margin-top:50px;
+	cursor: pointer;
+}
+
+.closeP:hover {
+	width: 35px;
+}

@@ -19,6 +19,9 @@ if(! $conn )
 	echo ".";
 }
 
+$query = "select * from books";
+$result = mysql_query($query);
+
 //echo 'Conexão bem sucedida';
 //$link = mysql_connect('127.0.0.1:8889', 'root', 'root');
 //if (!$link) {
