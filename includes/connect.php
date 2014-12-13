@@ -1,5 +1,5 @@
 
-<?php 
+<?php
 
 
 // nós conectamos com localhost na porta 3307
@@ -16,7 +16,6 @@ if(! $conn )
 {
   die('Could not connect: ' . mysql_error());
 } else  {
-	echo ".";
 }
 
 $query = "select * from books";

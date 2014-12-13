@@ -127,10 +127,10 @@
       </div>
 
       <div id="feed">
-        <div id="feed-title">RECENT POSTS</div>
+        <div id="feed-title">RECENT ACTIVITY</div>
         <!-- news example ----------- -->
         <div class="news">
-          <b>Sérgio</b> add a critic to "Chicago".
+          Sérgio add a critic to "Chicago".
         </div>
         <!-- news example ----------- -->
 				<!-- news example ----------- -->
@@ -155,7 +155,7 @@
 				<!-- news example ----------- -->
 				<!-- news example ----------- -->
 				<div class="news">
-					<b>José</b> add a critic to "Zorro".
+					José add a critic to "Zorro".
 				</div>
 				<!-- news example ----------- -->
       </div>

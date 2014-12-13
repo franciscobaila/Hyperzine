@@ -98,7 +98,6 @@ include ('includes/header.php');
               <p><input id="check2.3" type="checkbox" name="categoria" value="drama" checked><label for="check2.3">Drama</label></p>
               <p><input id="check2.4" type="checkbox" name="categoria" value="fan" checked><label for="check2.4">Fan Fiction</label></p>
               <p><input id="check2.5" type="checkbox" name="categoria" value="cenas" checked><label for="check2.5">Others</label></p>
-              <p><input id="check2.5" type="checkbox" name="categoria" value="cenas" checked><label for="check2.5">Design</label></p>
             </li>
           </ul>
         </div>
