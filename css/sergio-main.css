@@ -369,8 +369,12 @@ a:hover {
 			
 		}
 		
-		#savePage {
+		#savePage, #ChangePage {
 			margin-left: calc(100% / 12);
+		}
+		
+		#ChangePage {
+			display: none;
 		}
 
 }

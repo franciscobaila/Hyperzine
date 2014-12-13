@@ -48,6 +48,7 @@
 	 <div  id="c-div" class="counteudo">click to compose the page</div>
 	 <textarea id="c-textbox"class="counteudo normal-size" placeholder="compose the page"></textarea>
 	 <button id="savePage" class="button normal-size">Save</button>
+	 <button id="ChangePage" class="button normal-size">Save</button>
  </section>
  <section id="newBookPT2">
 	 <nav id="lateral-bar">
@@ -94,15 +95,35 @@ var graph = new joint.dia.Graph;
 	        	$('#numero').text (i+1);
 		        
 		        //meter o texto que está no xml
-		        console.log ("text = "+xw.root.c[i+1].c[0]);
-		        $('#pageInfo2').text(xw.root.c[i+1].c[0]);
+		       // console.log ("text = "+xw.root.c[i+1].c[0]);
+		        //parte Nova
+		        $('#savePage').hide();
 		        inUse =i;
-		        $('#change-page-interface').fadeIn( "slow" );
+		    
+		        //$("#c-div").html(xw.root.c[i+1].c[0]);
+		        var str = xw.root.c[i+1].c[0];
+		        
+		       	$( "#newPage-interface" ).fadeIn( "slow");
+		      // str.replace("Microsoft", "W3Schools");
+		        //$('#pageInfo2').text(xw.root.c[i+1].c[0]);
+		        //get title 
+		         var titleEnd = str.search("</title>");
+		         var strTitle = str.substring(7, titleEnd);
+		         $('#newPageName').text (strTitle);
+		         //getPageText
+		         var pageStart = str.search("<pageCode>")
+		         var strText = str.substring(pageStart+10, str.length-10);
+		         $('#c-div').text (strText);
+		         
+		 
+		        //mostrar segundo botão de change
+		        $('#ChangePage').show();
+		        
 	        }
         }
     }
 );
-	
+
  $(function() {
  	
     setTimeout(function(){
@@ -114,7 +135,14 @@ var graph = new joint.dia.Graph;
     	
     	
     }, 2000);
-	
+	$('#ChangePage').click(function(){
+		xw.root.c[inUse+1].c[0]="<title>"+$('#newPageName').text()+"</title>"+"<pageCode>"+$('#c-div').html()+"</pageCode>";
+		alert (xw.root.c[inUse+1].c[0]);
+		$('#ChangePage').hide();
+		$('#savePage').show();
+		$( "#newPage-interface" ).fadeOut( "slow");
+		cleanFields ();
+	});
  	//criação do diagrama
  	$('#start2').click(function(){
  		$( "#newBookPT1" ).fadeOut( "slow", function() {
@@ -134,7 +162,7 @@ var graph = new joint.dia.Graph;
 	 	//aqui é que crio o xml
 	 	test(autor, titulo, category); 
 	 	$('#loading').fadeOut ( "slow" );
-	 	//	
+	 	
 	});
 	
 	
@@ -160,12 +188,7 @@ var graph = new joint.dia.Graph;
     });
     
 	$('#new-page').click (function () {
-		/*$('textarea#pageInfo').val('');
-		$('#numero').text (currentPage+1);
-		$('#new-page-interface').show();*/
 		$( "#newPage-interface" ).fadeIn( "slow");
-		
-		
 	});
 	
 	
@@ -254,7 +277,7 @@ var graph = new joint.dia.Graph;
 	
 	$("#closePage").click(function(){
 		$( "#newPage-interface" ).fadeOut( "slow", function() {
-			
+		cleanFields ();	
 		});
 	});
 	
@@ -271,6 +294,9 @@ var graph = new joint.dia.Graph;
 		pages.push([rect]);
 		graph.addCells([rect]);
 		var text = $('#c-div').html();
+		if (text == "click to compose the page") {
+			text ="";
+		}
 	//alert (text);
 		var xmlText="<title>"+s+"</title>"+"<pageCode>"+text+"</pageCode>";
 		var page = xw.writeElementString('page'+(currentPage+1), xmlText);
@@ -281,74 +307,19 @@ var graph = new joint.dia.Graph;
 		$( "#newPage-interface" ).fadeOut( "slow", function() {
 			currentPage++;
 			console.log (xw.flush());
+			cleanFields ();
 			//alterar no criador
 			$('#newPageName').text("page"+(currentPage+1));
 		});
 	});
 	
-	/*
-		$('#baixo').click( function () {
-		$('#new-page-interface').hide();
-		//alert ("ad new page");
-		
-		console.log ("pagina criada="+(currentPage+1));
-		
-		//criação da caixa
-		var s = "page "+(currentPage+1);
-		var xValue = Math.round(Math.random()*600);
-		var yValue = Math.round(Math.random()*300);
-		var rect = new joint.shapes.basic.Rect({
-			position: { x: xValue, y: yValue },
-			size: { width: 100, height: 30 },
-			attrs: { rect: { fill: 'white' }, text: { text: s, fill: 'black' } }
-		});
+function cleanFields () {
+	$('#ChangePage').hide();
+	$('#savePage').show();
+	$('#c-div').text("click to compose the page");
+}
 
-		pages.push([rect]);
-		graph.addCells([rect]);
-		text = $('textarea#pageInfo').val();
-		xw.writeElementString('page id='+currentPage+'',text);
-			xw.writeAttributeString('page',currentPage);
-			$('textarea#pageInfo').val("");
-			
-		 
-	
-		currentPage +=1;
-		console.log (xw.flush());
-		//passar para o XML o escrito
-		
-		
-	});
-	
-	*/
  </script>
 
  
- <?php 
- 	//crio um xml
- 	$xml = new SimpleXMLElement('<xml/>');
- 	$dom = new DOMDocument("1.0", "ISO-8859-1");
- 	//retirar espaços em branco
- 	$dom->preserveWhiteSpace = false;
- 	//gerar o codigo 
- 	$dom->formatOutput = true;
- 	//criando o root (nó inicial);
- 	//arranjar maneira de ir a base de dados buscar o id e o nome
- 	$root = $dom->createElement("book name='yolo'");
-	# Para salvar o arquivo, descomente a linha
-	$dom->save("book/book".date("D M j G:i:s T Y").".xml");
-	
-	
-
-
-
- ?>
  
- <?php
-	 /*
-		 1 — meter a ficha do livro na base de dados com a tag de incompleto
-		 2 — criar um ficheiro para a adicionar um xml com o livro
-		 3— abrir a interface de criação 
-		 
-		 
-	 */
- ?>
