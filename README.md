@@ -17,3 +17,6 @@ shelf - done;<br>
 	3. Abrir paginas já inseridas — done
 	4. Hyperlinks e media
 	5. Guardar processo do livro
+	
+	parte que estão a ser feitas:
+	

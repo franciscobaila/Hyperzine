@@ -6,6 +6,29 @@
  <section id="loading"> <span class="center-form big-text">
  <center><img width="40px" src="http://sol.pt/images/loading.gif"/><br>
   loading </span></section></center>
+  <!-- POP UP concect page -->
+  <section id="pop-conect">
+	  <div id="closePP"><img class="closeP" id="closePage" width="30px" src="./icons/close.png"/></div>
+	 <!-- <div id="page-list">
+		 <li id=""> </li>
+	  </div>  dropdown menu do http://codepen.io/Tombek/pen/JAvHC -->
+	  <dl class="dropdown">
+		  <dt><a><span id="test-altera">Dropdown n°2</span></a></dt>
+		  <dd>
+			<ul id="page-list">
+				<li><a class="default">Dropdown n°2</a></li>
+				<li><a>Option n°1</a></li>
+				<li><a>Option n°2</a></li>
+				<li><a>Option n°3</a></li>
+				<li><a>Option n°4</a></li>
+				<li><a>Option n°5</a></li>
+				<li><a>Option n°6</a></li>
+			</ul>
+		</dd>
+	</dl>
+	  <!-- <button id="ChangePage" class="button normal-size">Link</button>-->
+</select>
+  </section>
  <!--  parte 1-->
  <section id="newBookPT1">
  	
@@ -193,8 +216,16 @@ var graph = new joint.dia.Graph;
 	
 	
 	$('#create-link').click (function() {
-	
-		var pageFuture = parseInt(prompt("Escolha a pagina a ligar\n 0 —"+currentPage,"2"))-1;
+		//mudar a div que interessa
+		$("#page-list").html("<li>yolo</li>");
+		for (var i=0; i<pages.length; i++) {
+			console.log (pages[i][0]._previousAttributes.attrs.text.text);
+			//meter isto em lista
+		}
+		$('#test-altera').html ("teste");
+		$('#pop-conect').fadeIn("fast");
+		
+		var pageFuture= 1;
 		if (pageFuture > currentPage) {
 			pageFuture = currentPage;
 		}
@@ -206,12 +237,6 @@ var graph = new joint.dia.Graph;
 		linksPages.push([link]);
 		graph.addCells([link])
 		
-		//parte dinamica
-		/*var link = new joint.dia.Link({
-			source: { id: pages[0][0].id},
-			target: { id: pages[1][0].id }
-	});
-		graph.addCells([link]);*/
 	});
 	
 	$('#change').click (function() {
@@ -318,6 +343,10 @@ function cleanFields () {
 	$('#savePage').show();
 	$('#c-div').text("click to compose the page");
 }
+
+$('#closePP').click(function(){
+	$('#pop-conect').fadeOut("fast");
+});
 
  </script>
 
