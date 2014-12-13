@@ -35,10 +35,10 @@
 
 	<div class="element-header element-header-2">
 		<div id="dont">
-			ALREADY HAVE AN ACOUNT?
+			DON'T HAVE AN ACOUNT?
 		</div>
-		<div id="log-in" class="inside-element">
-			LOG IN
+		<div id="sign-up" class="inside-element">
+			SIGN UP
 		</div>
 	</div>
 </div>

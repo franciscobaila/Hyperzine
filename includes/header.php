@@ -27,7 +27,7 @@
 
 <div id="header">
 		<!-- logo username -->
-		<div class="element-header" id="logo">
+		<div class="element-header">
 			<div class="inside-element" id="logo">HYPERZINE</div>
 		</div>
 
