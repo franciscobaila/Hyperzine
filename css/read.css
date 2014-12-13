@@ -1,8 +1,11 @@
 #navBtn{
+	margin-left: -0px;
 	width: 50px;
 	height: 50px;
-	background-color: #ABB7B7;
-}
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	}
 
 #navBtnImg{
 	padding-top:8px;
@@ -11,31 +14,26 @@
 #read-nav{
 	left:-7%;
 	width: 100px;
-	height: 340px;
-	background-color: #ABB7B7;
+	height: 100%;
+	background-color: black;
 	display: block;
 	z-index:1000;
 	text-align: center;
 	position: fixed;
 	color: white;
 	font-size: 14px;
-	font-family: 'Helvetica';
 	font-weight: bold;
 	padding-top: 20px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .read-nav-a{
 	margin-left: 10px;
 	margin-right: 10px;
 }
-
-.read-nav-a span{
-	font-size: 150%;
-	color: white;
-	padding-top: 8px;
-	display:block;
-}
-
+/*
 #read-title{
 	color: #ABB7B7;
 	margin-left: 20%;
@@ -50,55 +48,38 @@
 #read-title-author{
 	font-size: 90%;
 	line-height:120%;
-}
+}*/
 
 #read-text{
 	width: 75%;
+	height: 650px;
 	margin: 0 auto;
-	padding-top: 40px;
 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
 	-moz-column-count: 2; /* Firefox */
 	column-count: 2;
 }
 
+#read-text p{
+	margin-bottom:20px;
+}
+
 .word-link{
 	color:black;
-	text-decoration: none;
-	font-family: Bold;
-}
-
-
-#addComment, #addImage, #addFilm, #addMusic, #addText{
-	visibility: hidden;
-	padding-left:1%;
-	padding-top: 1%;
-	width: 50%;
-	height: 250px;
-	background-color: #ABB7B7;
-	position: absolute;
-	top: 25%;
-	left: 25%;
-}
-
-#addComment p , #addImage p, #addFilm p, #addMusic p, #addText p{
-	font-family: Bold;
-	line-height: 20px;
-}
-
-#addComment input[type="submit"], #addImage input[type="submit"],
-#addFilm input[type="submit"], #addMusic  input[type="submit"],
-#addText input[type="submit"]{
-	background-color: white;
-	padding: 5px;
-	font-family: Bold;
-}
-
-#commentArea, #complementArea{
-	background-color: white;
+	text-decoration: underline;
 }
 
 #read-nav.open{
 	left: 0px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#navBtn.open{
+	margin-left: 100px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 #pageNumber p {
@@ -108,27 +89,22 @@
 	margin-right: 4%;
 }
 
-#commentsWritten{
-	position:absolute;
-	top: 185px;
-	padding-left: 15px;
-	width:120px;
+#popInst.open{
+	display: inline-block;
+	padding: 20px;
+	width: 400px;
+	height: 380px;
+	color: white;
+	background-color: black;
+	position: fixed;
+	top: 25%;
+	left: 35%;
 }
 
-#read-text-image, #read-text-video{
-display:none;
-text-align:center;
-padding: 10px;
+#popInstExit{
+	padding-top: -5px;
 }
 
-#read-text-image.open, #read-text-video.open{
-display:block;
-}
-
-.rate-text-pop {
-display:none;
-}
-
-.edit-text-pop{
-	display:none;
+#popInst{
+	display: none;
 }
