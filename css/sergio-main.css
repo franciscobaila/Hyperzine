@@ -17,6 +17,11 @@
   font-family: Roboto;
   src: url('../fonts/Roboto-Black.ttf');
 }
+@font-face
+{
+  font-family: Roboto-r;
+  src: url('../fonts/Roboto-Regular.ttf');
+}
 
 html {
 	 -webkit-font-smoothing: antialiased;
@@ -26,6 +31,12 @@ html {
 	 overflow-x: hidden;
 	 line-height: 16.2pt;
 	 font-size: 12pt;
+}
+body{
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -124,7 +135,6 @@ a:hover {
 		width: 100%;
 		height: 140px;
 		margin:auto;
-    margin-bottom: -16px;
     border-bottom: 1px solid rgb(238, 238, 238);
     font-family: Roboto;
     color: rgb(190,190,190);
@@ -138,8 +148,14 @@ a:hover {
     line-height:170%;
     cursor: default !important;
 	}
+  .element-header-2{
+    width:25% !important;
+  }
   .inside-element{
     cursor: pointer !important;
+  }
+  #dont{
+    font-family:Roboto-r !important;
   }
 
 	.search {

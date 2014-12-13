@@ -1,4 +1,4 @@
-<?php include ('includes/intialheader.php'); ?>
+<?php include ('includes/intialheader2.php'); ?>
   <div id="container">
 	<section class="center-form">
 		<!-- prob mudar para o pagina certa -->
@@ -10,3 +10,7 @@
 		</form>
 	</section>
 </div>
+
+<?php
+include ('includes/footer.php');
+?>

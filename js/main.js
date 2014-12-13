@@ -78,6 +78,12 @@ app.events = function() {
   $("#log-header").click(function() {
     window.location.href = "index.php";
   });
+  $("#sign-up").click(function() {
+    window.location.href = "signup.php";
+  });
+  $("#log-in").click(function() {
+    window.location.href = "index.php";
+  });
 }
 
 app.review = function() {

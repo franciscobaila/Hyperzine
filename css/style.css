@@ -203,6 +203,7 @@ body{
   height:100%;
   width:100%;
   overflow:hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -535,19 +536,6 @@ textarea.review-textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 label {
   text-decoration: none;
   [;-webkit-text-stroke-width: 0.8px;];
@@ -579,4 +567,35 @@ label:before {
 }
 input[type=checkbox]:checked + label:before {
   background-color: rgb(193, 193, 193);
+}
+
+
+
+
+
+
+
+/*--------------------ANIMATIONS */
+@-webkit-keyframes corOp3 {
+  0%   { color: rgb(190,190,190); }
+  100% { color: rgb(0,0,0); }
+}
+@-moz-keyframes cor {
+  0%   { color: rgb(190,190,190); }
+  100% { color: rgb(0,0,0); }
+}
+@-o-keyframes cor {
+  0%   { color: rgb(190,190,190); }
+  100% { color: rgb(0,0,0); }
+}
+@keyframes cor {
+  0%   { color: rgb(190,190,190); }
+  100% { color: rgb(0,0,0); }
+}
+.inside-element:hover{
+  -webkit-animation: cor 1s;
+  -moz-animation: cor 1s;
+  -o-animation: cor 1s;
+  animation: cor 1s;
+  color: rgb(0,0,0);
 }
