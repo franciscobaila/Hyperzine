@@ -90,8 +90,8 @@
 	margin-right: 4%;
 }
 
-#popInst.open{
-	display: inline-block;
+#popInst.open, .addPops.open{
+	display: inline;
 	padding: 20px;
 	width: 400px;
 	height: 380px;
@@ -102,10 +102,15 @@
 	left: 35%;
 }
 
-#popInstExit{
+#exitBtn{
 	padding-top: -5px;
 }
 
-#popInst{
+#popInst, .addPops{
 	display: none;
+}
+
+.editTextPlus, .editTextMinus{
+	background-color:red;
+	padding: 5px;
 }
