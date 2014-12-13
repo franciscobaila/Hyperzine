@@ -6,8 +6,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Bibliotecas -->
 <script src="functions/XMLWriter-1.0.0.js"></script>
-<!-- folhas de JS -->
-<script src="functions/functions.js"></script>
 
 <title>div editable</title>
 </head>
@@ -19,7 +17,6 @@
 <script>
 
 $( "#myDiv" ).click(divClicked);
-
 
 //função para o click e não click
 function divClicked() {
@@ -35,7 +32,7 @@ function editableTextBlurred() {
     var html = $(this).val();
     // create a dynamic div
     var viewableText = $("<div id='myDiv'> ");
-    // set it's html 
+    // set it's html
     viewableText.html(html);
     // replace out the textarea
     $(this).replaceWith(viewableText);
