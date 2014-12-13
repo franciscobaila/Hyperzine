@@ -69,6 +69,15 @@ app.events = function() {
   $("#shelf-header").click(function() {
     window.location.href = "shelf.php";
   });
+  $("#publish-header").click(function() {
+    window.location.href = "publicar.php";
+  });
+  $("#logo").click(function() {
+    window.location.href = "home.php";
+  });
+  $("#log-header").click(function() {
+    window.location.href = "index.php";
+  });
 }
 
 app.review = function() {

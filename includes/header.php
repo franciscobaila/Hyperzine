@@ -23,39 +23,47 @@
 	 <link rel="stylesheet" href="functions/jointJs/joint.css" />
 </head>
 <body>
-<section id="h-user" class="header">
-	<nav id="nav-h">
+
+
+<div id="header">
 		<!-- logo username -->
-		<a href="home.php"><div class="element-header big-text">HYPERZINE <span class="swatch-grey"> @sergiomrebelo</span></div></a>
+		<div class="element-header" id="logo">
+			<div class="inside-element" id="logo">HYPERZINE</div>
+		</div>
+
+		<div id="usar-name" class="element-header">HI,<br><b>SERGIOREBELO</b></div>
 
 		<!-- search -->
 		<div class="element-header">
 			<form action="search.php" method="post">
 			<!-- probelmas – validação -->
-			<a href="search.php"><img width="30px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-magnifier-icon.png&r=189&g=195&b=199"/> </a>
-			<input class="search input"  name="search" placeholder="Search" type="search"/>
+			<input class="search"  name="search" placeholder="Search" type="search"/>
+			<a href="search.php"><img width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-magnifier-icon.png&r=189&g=195&b=199"/></a>
 			</form>
 		</div>
-		<section id="leftovers">
-			<div class="element-header">
-				<! -- preferences -->
-				<img width="30px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-gear-3-icon.png&r=189&g=195&b=199"/>
 
-			</div>
-			<div class="element-header" id="shelf-header" title="shelf">
-				<!-- catalog -->
-				<img width="35px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-17-icon.png&r=189&g=195&b=199">
-			</div>
-			<div class="element-header" id="library-header" title="library">
-				<!-- library -->
-				<img width="30px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-help-8-icon.png&r=189&g=195&b=199"/>
-			</div>
 			<div class="element-header">
-					<!-- publish book -->
-					<a href="publicar.php"><img width="30px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=189&g=195&b=199"/></a>
-
+				<div id="publish-header" class="inside-element">
+					PUBLISH BOOK
+				</div>
+				<div id="shelf-header" class="inside-element">
+					SHELF
+				</div>
+				<div id="library-header" class="inside-element">
+					LIBRARY
+				</div>
 			</div>
-		</section>
-	</nav>
-</section>
+
+			<div class="element-header">
+				<div class="inside-element">
+					SETTINGS
+				</div>
+				<div class="inside-element">
+					EN/PT
+				</div>
+				<div id="log-header" class="inside-element">
+					LOG-OUT
+				</div>
+			</div>
+</div>
 <br>
