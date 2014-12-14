@@ -87,37 +87,37 @@
 <div class="addPops" id="editText">
   <img class="exitBtn" style="float:right;" width="10px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-x-mark-icon.png&r=255&g=255&b=255"/>
   <h1 style="font-family: Bold;">Formatar Texto</h1>
-    <img id="editTextPlus" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;"  src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-2-icon.png&r=255&g=255&b=255"/>
-    <img id="editTextMinus" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;"  src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-minus-2-icon.png&r=255&g=255&b=255"/>
-    <img id="editTextContrast" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;"  src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-brightness-9-icon.png&r=255&g=255&b=255"/>
-</div>
-
-
-<div class="addPops" id="addImage">
-<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
-<h1 style="font-family:Bold;">Adicionar Imagem</h1></br>
-Selecionar Ficheiro: <input type="file" name="imgFile" accept="image/*" id="imageArea"><br><br>
-<input type="submit" name="submit" id="imageBtn" value="Adicionar" style="background-color:white; padding:10px; font-family: Bold;">
-</form>
-
-<?php
-if(isset($_POST['submit'])){
-$filename =  $_FILES["imgFile"]["name"];
-if ((($_FILES["imgFile"]["type"] == "image/gif") || ($_FILES["imgFile"]["type"] == "image/jpeg") || ($_FILES["imgFile"]["type"] == "image/png")  || ($_FILES["imgFile"]["type"] == "image/pjpeg")) && ($_FILES["imgFile"]["size"] < 200000)){
-if(file_exists($_FILES["imgFile"]["name"])){
-echo "File name exists.";
-} else {
-move_uploaded_file($_FILES["imgFile"]["tmp_name"],"uploads/$filename");
-echo "Upload Successful . <a href='uploads/$filename'>Click here</a> to view the uploaded image";
-}
-} else {
-echo "invalid file.";
-}
-}
-?>
+  <img id="editTextPlus" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;"  src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-2-icon.png&r=255&g=255&b=255"/>
+  <img id="editTextMinus" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;"  src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-minus-2-icon.png&r=255&g=255&b=255"/>
+  <img id="editTextContrast" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;"  src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-brightness-9-icon.png&r=255&g=255&b=255"/>
 </div>
 
 <!--
+<div class="addPops" id="addImage">
+  <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
+    <h1 style="font-family:Bold;">Adicionar Imagem</h1></br>
+    Selecionar Ficheiro: <input type="file" name="imgFile" accept="image/*" id="imageArea"><br><br>
+    <input type="submit" name="submit" id="imageBtn" value="Adicionar" style="background-color:white; padding:10px; font-family: Bold;">
+  </form>
+
+  <?php
+  if(isset($_POST['submit'])){
+    $filename =  $_FILES["imgFile"]["name"];
+    if ((($_FILES["imgFile"]["type"] == "image/gif") || ($_FILES["imgFile"]["type"] == "image/jpeg") || ($_FILES["imgFile"]["type"] == "image/png")  || ($_FILES["imgFile"]["type"] == "image/pjpeg")) && ($_FILES["imgFile"]["size"] < 200000)){
+      if(file_exists($_FILES["imgFile"]["name"])){
+        echo "File name exists.";
+      } else {
+        move_uploaded_file($_FILES["imgFile"]["tmp_name"],"uploads/$filename");
+        echo "Upload Successful . <a href='uploads/$filename'>Click here</a> to view the uploaded image";
+      }
+    } else {
+      echo "invalid file.";
+    }
+  }
+  ?>
+</div>
+
+
 <div id="addFilm">
 <form action="">
 <p>Adicionar Video</p></br>
@@ -156,6 +156,7 @@ editText = document.getElementById('editText'),
 showText = document.getElementById('read-nav-subnav-font'),
 popText = document.getElementById('word-link-pop' );
 helpIcon = document.getElementById('helpIcon');
+readTextEdit = document.getElementById('read-text-editable');
 
 var fontSize = parseInt($("body").css("font-size"));
 
@@ -180,6 +181,8 @@ $(helpIcon).click(function(){
   $(popInst).addClass("open");
 });
 
+
+/*
 $( "#read-text-editable" ).click(divClicked);
 //função para o click e não click
 function divClicked() {
@@ -200,6 +203,9 @@ function editableTextBlurred() {
   // replace out the textarea
   $(this).replaceWith(viewableText);
 }
+*/
+
+
 
 $('#addCommentBtn').click(function(){
   if ($('#addComment').hasClass("open")){
@@ -218,11 +224,15 @@ $('#addMediaBtn').click(function(){
 });
 
 $('#addImageBtn').click(function(){
-  if ($('#addImage').hasClass("open")){
+
+  /*if ($('#addImage').hasClass("open")){
     $('#addImage').removeClass("open");
   } else {
     $('#addImage').addClass("open");
-  }
+  }*/
+  $('#read-nav p').css("color", "red");
+/*  readTextEdit.value += '<img src="img/porco.png" />';*/
+
 });
 
 $('#editTextBtn').click(function(){
