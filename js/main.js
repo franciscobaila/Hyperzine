@@ -84,6 +84,9 @@ app.events = function() {
   $("#log-in").click(function() {
     window.location.href = "login.php";
   });
+  $("#review-header").click(function() {
+    window.location.href = "create-review.php";
+  });
 }
 
 app.review = function() {

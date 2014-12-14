@@ -62,18 +62,6 @@ body{
     color: #7f8c8d;
     font-family: inherit!important;
 }
-
-.link:hover {
-	color: #7f8c8d !important;
-	cursor: pointer;
-	font-family: inherit!important;
-}
-
-.link {
-	color:black  !important;
-	cursor: pointer;
-	font-family: inherit!important;
-}
 /*
 .button {
 	font-size: 12pt;
