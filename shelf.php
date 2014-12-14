@@ -65,30 +65,22 @@ include ('includes/header.php');
         </div>
         <!-- filtro ordenar ----------- -->
         <!-- filtro leitura ----------- -->
-        <div id="reading" class="filters filters3">
-          <div class="filter-title">BOOKS</div>
+        <div id="reading" class="filters filters2">
+          <div class="filter-title">CATEGORIES</div>
           <ul id="filters2">
             <li>
-            <p><input id="check3.1" type="checkbox" name="categoria" value="read" checked><label for="check3.1">To Read</label></p>
-            <p><input id="check3.2" type="checkbox" name="categoria" value="open" checked><label for="check3.2">Reading</label></p>
+            <p><input id="check3.1" type="checkbox" name="categoria" value="read"><label for="check3.1">To Read</label></p>
+            <p><input id="check3.2" type="checkbox" name="categoria" value="open"><label for="check3.2">Reading</label></p>
+            <br>
+            <p><input id="check2.1" type="checkbox" name="categoria" value="fiction"><label for="check2.1">Fiction</label></p>
+            <p><input id="check2.2" type="checkbox" name="categoria" value="love"><label for="check2.2">Love Story</label></p>
+            <p><input id="check2.3" type="checkbox" name="categoria" value="drama"><label for="check2.3">Drama</label></p>
+            <p><input id="check2.4" type="checkbox" name="categoria" value="fan"><label for="check2.4">Fan Fiction</label></p>
+            <p><input id="check2.5" type="checkbox" name="categoria" value="cenas"><label for="check2.5">Others</label></p>
             </li>
           </ul>
         </div>
         <!-- filtro leitura ----------- -->
-        <!-- filtro categorias ----------- -->
-        <div id="categories" class="filters filters2">
-          <div class="filter-title" class="filters">CATEGORIES</div>
-          <ul id="filters3">
-            <li>
-              <p><input id="check2.1" type="checkbox" name="categoria" value="fiction" checked><label for="check2.1">Fiction</label></p>
-              <p><input id="check2.2" type="checkbox" name="categoria" value="love" checked><label for="check2.2">Love Story</label></p>
-              <p><input id="check2.3" type="checkbox" name="categoria" value="drama" checked><label for="check2.3">Drama</label></p>
-              <p><input id="check2.4" type="checkbox" name="categoria" value="fan" checked><label for="check2.4">Fan Fiction</label></p>
-              <p><input id="check2.5" type="checkbox" name="categoria" value="cenas" checked><label for="check2.5">Others</label></p>
-          </li>
-        </ul>
-        </div>
-        <!-- filtro categorias ----------- -->
       </div>
   </div>
 

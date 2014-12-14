@@ -44,19 +44,24 @@ app.events = function() {
     $("#filters :checkbox:checked").each(function() {
       $("." + $(this).val()).show();
     });
+    var boxes = $('input[name=categoria]:checked');
+    var checked = $(boxes).length;
+    if (checked == 0){
+      $(".book").show();
+    }
   });
+
   /* SHELF PAGE ---------------------*/
   $("#filters2 :checkbox").click(function() {
     $(".book").hide();
     $("#filters2 :checkbox:checked").each(function() {
       $("." + $(this).val()).show();
     });
-  });
-  $("#filters3 :checkbox").click(function() {
-    $(".book").hide();
-    $("#filters3 :checkbox:checked").each(function() {
-      $("." + $(this).val()).show();
-    });
+    var boxes = $('input[name=categoria]:checked');
+    var checked = $(boxes).length;
+    if (checked == 0){
+      $(".book").show();
+    }
   });
   /* HEADER ---------------------*/
   $("#library-header").click(function() {

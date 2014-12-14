@@ -48,12 +48,11 @@ include ('includes/header.php');
           <div class="filter-title">CATEGORIES</div>
           <ul id="filters">
             <li>
-              <p><input id="check2.1" type="checkbox" name="categoria" value="fiction" checked><label for="check2.1">Fiction</label></p>
-              <p><input id="check2.2" type="checkbox" name="categoria" value="love" checked><label for="check2.2">Love Story</label></p>
-              <p><input id="check2.3" type="checkbox" name="categoria" value="drama" checked><label for="check2.3">Drama</label></p>
-              <p><input id="check2.4" type="checkbox" name="categoria" value="fan" checked><label for="check2.4">Fan Fiction</label></p>
-              <p><input id="check2.5" type="checkbox" name="categoria" value="cenas" checked><label for="check2.5">Others</label></p>
-
+              <p><input id="check2.1" type="checkbox" name="categoria" value="fiction"><label for="check2.1">Fiction</label></p>
+              <p><input id="check2.2" type="checkbox" name="categoria" value="love"><label for="check2.2">Love Story</label></p>
+              <p><input id="check2.3" type="checkbox" name="categoria" value="drama"><label for="check2.3">Drama</label></p>
+              <p><input id="check2.4" type="checkbox" name="categoria" value="fan"><label for="check2.4">Fan Fiction</label></p>
+              <p><input id="check2.5" type="checkbox" name="categoria" value="cenas"><label for="check2.5">Others</label></p>
             </li>
           </ul>
         </div>
