@@ -161,6 +161,13 @@
       </div>
   </div>
 
+	<script>
+	$(document).ready(function() {
+		$('#logo').css({
+			"color": "black"
+		});
+	})
+	</script>
 
 	<?php
 	include ('includes/footer.php');
