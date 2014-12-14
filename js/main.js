@@ -79,10 +79,10 @@ app.events = function() {
     window.location.href = "index.php";
   });
   $("#sign-up").click(function() {
-    window.location.href = "signup.php";
+    window.location.href = "index.php";
   });
   $("#log-in").click(function() {
-    window.location.href = "index.php";
+    window.location.href = "login.php";
   });
 }
 

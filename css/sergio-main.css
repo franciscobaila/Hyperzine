@@ -74,7 +74,7 @@ body{
 	cursor: pointer;
 	font-family: inherit!important;
 }
-
+/*
 .button {
 	font-size: 12pt;
 	position: relative;
@@ -97,8 +97,9 @@ body{
   box-shadow: none;
   border-bottom: none;
    border-right: none;
-
 }
+*/
+
 /*swatch*/
 .swatch-grey {
 	color: #7f8c8d;
@@ -166,7 +167,7 @@ a:hover {
     font-family: Regular;
     line-height:170%;
     color: black !important;
-}
+  }
 .search::-webkit-input-placeholder { /* WebKit browsers */
   color: rgb(190,190,190);
   font-family: Roboto !important;
@@ -190,28 +191,68 @@ a:hover {
   font-family: Roboto !important;
 }
 
-	.center-form {
-		width: calc(50% - 250px);
-		margin: auto;
-		position: relative;
-		top: 100px;
+.form-text::-webkit-input-placeholder { /* WebKit browsers */
+  color: rgb(190,190,190);
+  font-family: Roboto !important;
+  font-size: 24px;
+}
+.form-text:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: rgb(190,190,190);
+  opacity: 1;
+  font-size: 24px;
+  font-family: Roboto !important;
+}
+.form-text::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: rgb(190,190,190);
+  opacity: 1;
+  font-size: 24px;
+  font-family: Roboto !important;
+}
+.form-text:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: rgb(190,190,190);
+  font-size: 24px;
+  font-family: Roboto !important;
+}
 
+  .form-text{
+    font-size:24px !important;
+    border-bottom: 1px solid grey;
+    font-family: Regular;
+    line-height:170%;
+    color: black !important;
+    height: 40px;
+  }
+  .form-password, .form-submit, .form-mail{
+    margin-top:40px;
+  }
+  .form-submit{
+    background:black;
+    color: white;
+    font-size: 24px;
+    font-family: Roboto !important;
+    padding:10px !important;
+    cursor:pointer;
+  }
+	.signup-form {
+		width: 30%;
+    margin-left:15%;
+    margin-top:50px;
+    float:left;
 	}
+  .about-text {
+    float:left;
+    width: 30%;
+    margin-left:10%;
+    margin-top:50px;
+    font-family: Regular;
+    font-size: 18px;
+    line-height:140%;
+  }
 
-	.login {
-		color:black;
-		height: 60px;
-		margin: auto;
-		font-size: 24pt;
-		font-weight: bold;
-		border-bottom: 2pt solid #7f8c8d;
-		width: 500px;
-		margin-top: 30px;
-	}
-	/*probl */
-	.login::-webkit-input-placeholder {
-		font-size: 24pt;
-	}
+
+
+
+
 
 	.big-text::-webkit-input-placeholder{
 		font-size: 24pt;
@@ -219,7 +260,6 @@ a:hover {
 
 	.big-input {
 		margin-top:50pt;
-
 	}
 
 	#input-click:hover {
