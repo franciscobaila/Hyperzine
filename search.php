@@ -3,7 +3,7 @@ include ('includes/header.php');?>
 
  <div id="container">
 
-    <div id="search-message">SEARCH RESULTS</div>
+    <div id="search-message">SEARCH RESULTS:</div>
          <div id="books-container">
               <!-- book example ----------- -->
         <?php

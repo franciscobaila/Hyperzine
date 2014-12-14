@@ -10,25 +10,21 @@ app.init = function() {
 app.events = function() {
   /* PREVIEW PAGE ---------------------*/
   $("#view-comments").click(function() {
-    $("#container").fadeOut(10);
-    $("#comments").fadeIn(600);
+    $("#comments").fadeIn(300);
+    $("#reviews").fadeOut(300);
   });
   $("#close-comments").click(function() {
-    $("#comments").fadeOut(10);
-    $("#container").fadeIn(600);
+    $("#comments").fadeOut(300);
   });
-  $("#close-preview").click(function() {
-    window.location.href = "home.php";
-  });
-  /* ADD REVIEW PAGE ---------------------*/
+
   $("#view-reviews").click(function() {
-    $("#container").fadeOut(10);
-    $("#reviews").fadeIn(600);
+    $("#reviews").fadeIn(300);
+    $("#comments").fadeOut(300);
   });
   $("#close-reviews").click(function() {
-    $("#reviews").fadeOut(10);
-    $("#container").fadeIn(600);
+    $("#reviews").fadeOut(300);
   });
+
   $(".img-book").click(function() {
     window.location.href = "read.php";
   });
@@ -90,11 +86,10 @@ app.events = function() {
 }
 
 app.review = function() {
-  $("#container").fadeOut(10);
   $("#message").fadeIn(600);
   setTimeout(function() {
     window.location.href = "preview.php";
-  }, 500);
+  }, 700);
 }
 
 $(document).ready(function() {

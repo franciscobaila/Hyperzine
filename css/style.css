@@ -250,7 +250,6 @@ b{
 .book{
   width: 150px;
   height:200px;
-  background:grey;
   float: left;
   margin-right: 10px;
   cursor:pointer;
@@ -377,9 +376,9 @@ b{
 }
 /* PREVIEW---------------------*/
 #book-preview{
-  width: 300px;
-  height:400px;
-  margin-top:30px;
+  width: 250px;
+  height:350px;
+  margin-top:40px;
   float: left;
   margin-right: 10px;
   cursor:pointer;
@@ -387,9 +386,9 @@ b{
   margin-left: 5%;
 }
 #interaction{
-  width: 300px;
-  height:400px;
-  margin-top:30px;
+  width: 250px;
+  height:350px;
+  margin-top:40px;
   float: left;
   margin-right: 10px;
   cursor:pointer;
@@ -414,18 +413,21 @@ b{
   width: 95%;
   margin: auto;
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   color: black;
   font-family: Regular;
   line-height: 120%;
 }
 #links{
-  margin-left: 20px;
   float:left;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-right: 10%;
 }
 #read{
-  margin-top:300px;
+  margin-top:200px;
+}
+#view-reviews{
+  margin-top:30px;
 }
 .link{
   cursor: pointer;
@@ -435,12 +437,6 @@ b{
   padding: 10px;
   background: black;
   color:white;
-}
-.preview-links{
-  display:none;
-  margin:auto;
-  width:75%;
-  margin-top:30px;
 }
 .comment-author{
   margin-bottom:10px;
@@ -457,41 +453,78 @@ b{
   margin-bottom: 40px;
 }
 .close{
-  cursor:pointer;
-  float:right;
-  font-family:Bold;
-  font-size:16px;
+  margin-top:40px;
+  cursor: pointer;
+  font-family: Bold;
+  font-size: 20px;
+  font-family: Roboto;
+  padding: 10px;
+  background: black;
+  color:white;
+  float:left;
+}
+.close2{
+  float:right !important;
+  margin-top: 0px !important;
+}
+.preview-links{
+  display:none;
+  margin:auto;
+  width:60%;
+  margin-top:40px;
+}
+.preview-links{
+  padding: 20px;
+  border: 3px solid black;
+  z-index:9999999 !important;
+  margin-top:240px;
+  margin-bottom: 100px;
 }
 /* CREATE-REVIEW---------------------*/
 .review-textarea{
   font-family: Regular;
-  font-size: 16px;
+  font-size: 18px;
   padding: 10px;
-  width: 500px;
+  width: 30%;
   height: 300px;
   resize: none;
-  border: 1px dashed black;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border: 3px dashed black;
   float: left;
-  margin-right: 30px;
+  margin-top: 40px;
+  margin-left: 5%;
+  margin-right: 20px;
 }
 #classification-form{
   float:left;
+  margin-top: 40px;
 }
 #input-review{
-  border: 1px dashed black;
-  height: 30px;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border: 3px dashed black;
+  height: 50px;
   padding: 5px;
-  width: 70px;
+  width: 100px;
 }
 #input-review-submit{
-  background:rgba(230,230,230, 0.8);
-  color: black;
-  padding:10px;
   text-align:center;
-  font-family:Bold;
-  font-size:20px;
-  cursor:pointer;
-  margin-left: 10px;
+  margin-top: 210px;
+  cursor: pointer;
+  font-family: Bold;
+  font-size: 20px;
+  font-family: Roboto;
+  padding: 10px;
+  background: black;
+  color:white;
+}
+#message{
+  display:none;
+  font-family: Bold;
+  font-size: 24px;
 }
 /* HEADER---------------------*/
 .element-header{
@@ -499,8 +532,11 @@ b{
 }
 /* HEADER---------------------*/
 #search-message{
-  font-family:Bold;
-  font-size:24px;
+  color: rgb(170,170,170);
+  margin-top: 40px;
+  margin-left: 5%;
+  font-family:Roboto;
+  font-size:18px;
   margin-bottom:30px;
 }
 
@@ -511,35 +547,25 @@ b{
 
 
 /*--------------------HACKS */
-
-
 textarea.review-textarea::-webkit-input-placeholder { /* WebKit browsers */
-  color:grey;
-  opacity: 0.8;
-  font-family: Regular;
-  font-size: 16px;
-  padding-top: -20px;
+  font-family: Roboto !important;
+  font-size: 18px;
+  color: rgb(190,190,190);
 }
 textarea.review-textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color:grey;
-  opacity: 0.8;
-  font-family: Regular;
-  font-size: 16px;
-  padding-top: -20px;
+  font-family: Roboto !important;
+  font-size: 18px;
+  color: rgb(190,190,190);
 }
 textarea.review-textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color:grey;
-  opacity: 0.8;
-  font-family: Regular;
-  font-size: 16px;
-  padding-top: -20px;
+  font-family: Roboto !important;
+  font-size: 18px;
+  color: rgb(190,190,190);
 }
 textarea.review-textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
-  color:grey;
-  opacity: 0.8;
-  font-family: Regular;
-  font-size: 16px;
-  padding-top: -20px;
+  font-family: Roboto !important;
+  font-size: 18px;
+  color: rgb(190,190,190);
 }
 
 
@@ -625,6 +651,27 @@ input[type=checkbox]:checked + label:before {
   100% { background: rgb(190,190,190); }
 }
 .form-submit:hover{
+  -webkit-animation: cor2 1s;
+  -moz-animation: cor2 1s;
+  -o-animation: cor2 1s;
+  animation: cor2 1s;
+  background: rgb(190,190,190);
+}
+.link:hover{
+  -webkit-animation: cor2 1s;
+  -moz-animation: cor2 1s;
+  -o-animation: cor2 1s;
+  animation: cor2 1s;
+  background: rgb(190,190,190);
+}
+.close:hover{
+  -webkit-animation: cor2 1s;
+  -moz-animation: cor2 1s;
+  -o-animation: cor2 1s;
+  animation: cor2 1s;
+  background: rgb(190,190,190);
+}
+#input-review-submit:hover{
   -webkit-animation: cor2 1s;
   -moz-animation: cor2 1s;
   -o-animation: cor2 1s;

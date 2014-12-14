@@ -3,27 +3,19 @@
   ?>
 
   <div id="container">
-    <div class="close" id="close-preview">fechar</div>
     <div id="book-preview">
       <div class="pictogram">
         <img class="img-insider" src="img/open.png" />
       </div>
       <img class="img-book" src="img/book.jpg" />
     </div>
+
     <div id="interaction">
       <div id="interaction-author">João added:</div>
       <div id="interaction-text">
         At the battle on the unfinished Great Naruto Bridge, Naruto unlocks the power of Shoton, Crystal Release, causing an entirely different set of events to unfold. Naruto has a new bloodline, and Haku is left alive, with all the power and wealth of Gato at her disposal, all to fulfill her master's dream.      </div>
       <div id="interaction-author">Written by: José Mendes</div>
       <div id="interaction-author">Category: Fiction</div>
-      <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_PT/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
     </div>
 
     <div id="links">
@@ -41,7 +33,7 @@
 
   <!-- VIEW COMMENTS ----------- -->
   <div class="preview-links" id="comments">
-    <div class="close" id="close-comments">fechar</div>
+    <div class="close close2" id="close-comments">close</div>
     <!-- comment example ----------- -->
     <div class="comment">
       <div class="comment-author">
@@ -106,7 +98,7 @@
 
   <!-- VIEW REVIEWS ----------- -->
   <div class="preview-links" id="reviews">
-    <div class="close" id="close-reviews">fechar</div>
+    <div class="close close2" id="close-reviews">close</div>
     <!-- review example ----------- -->
     <div class="comment">
       <div class="comment-author">

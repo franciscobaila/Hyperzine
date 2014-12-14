@@ -4,51 +4,75 @@ include ('includes/header.php');
   <div id="container">
       <div id="books-container">
         <!-- book example ----------- -->
-        <div id="book-1" class="book fan read">
+        <div id="book-1" class="book cenas">
           <div class="pictogram">
-            <img class="img-insider" src="img/read.png" />
+            <img class="img-insider" src="img/open.png" />
           </div>
           <img class="img-book" src="img/book.jpg" />
         </div>
         <!-- book example ----------- -->
         <!-- book example ----------- -->
-        <div id="book-1" class="book love open">
+        <div id="book-1" class="book cenas">
+          <div class="pictogram">
+            <img class="img-insider" src="img/suggested.png" />
+          </div>
+          <img class="img-book" src="img/book13.jpg" />
+        </div>
+        <!-- book example ----------- -->
+        <!-- book example ----------- -->
+        <div id="book-1" class="book fan">
+          <div class="pictogram">
+            <img class="img-insider" src="img/open.png" />
+          </div>
+          <img class="img-book" src="img/book5.jpg" />
+        </div>
+        <!-- book example ----------- -->
+        <!-- book example ----------- -->
+        <div id="book-1" class="book fiction">
+          <div class="pictogram">
+            <img class="img-insider" src="img/top.png" />
+          </div>
+          <img class="img-book" src="img/book10.jpg" />
+        </div>
+        <!-- book example ----------- -->
+        <!-- book example ----------- -->
+        <div id="book-1" class="book love">
+          <div class="pictogram">
+            <img class="img-insider" src="img/top.png" />
+          </div>
+          <img class="img-book" src="img/book9.jpg" />
+        </div>
+        <!-- book example ----------- -->
+        <!-- book example ----------- -->
+        <div id="book-1" class="book drama">
+          <div class="pictogram">
+            <img class="img-insider" src="img/open.png" />
+          </div>
+          <img class="img-book" src="img/book3.jpg" />
+        </div>
+        <!-- book example ----------- -->
+        <!-- book example ----------- -->
+        <div id="book-1" class="book fan">
+          <div class="pictogram">
+            <img class="img-insider" src="img/suggested.png" />
+          </div>
+          <img class="img-book" src="img/book14.jpg" />
+        </div>
+        <!-- book example ----------- -->
+        <!-- book example ----------- -->
+        <div id="book-1" class="book fiction">
+          <div class="pictogram">
+            <img class="img-insider" src="img/suggested.png" />
+          </div>
+          <img class="img-book" src="img/book15.jpg" />
+        </div>
+        <!-- book example ----------- -->
+        <!-- book example ----------- -->
+        <div id="book-1" class="book fan">
           <div class="pictogram">
             <img class="img-insider" src="img/open.png" />
           </div>
           <img class="img-book" src="img/book2.jpg" />
-        </div>
-        <!-- book example ----------- -->
-        <!-- book example ----------- -->
-        <div id="book-1" class="book fiction open">
-          <div class="pictogram">
-            <img class="img-insider" src="img/open.png" />
-          </div>
-          <img class="img-book" src="img/book12.jpg" />
-        </div>
-        <!-- book example ----------- -->
-        <!-- book example ----------- -->
-        <div id="book-1" class="book cenas read">
-          <div class="pictogram">
-            <img class="img-insider" src="img/read.png" />
-          </div>
-          <img class="img-book" src="img/book11.jpg" />
-        </div>
-        <!-- book example ----------- -->
-        <!-- book example ----------- -->
-        <div id="book-1" class="book cenas open">
-          <div class="pictogram">
-            <img class="img-insider" src="img/open.png" />
-          </div>
-          <img class="img-book" src="img/book6.jpg" />
-        </div>
-        <!-- book example ----------- -->
-        <!-- book example ----------- -->
-        <div id="book-1" class="book love read">
-          <div class="pictogram">
-            <img class="img-insider" src="img/read.png" />
-          </div>
-          <img class="img-book" src="img/book3.jpg" />
         </div>
         <!-- book example ----------- -->
       </div>
@@ -64,43 +88,23 @@ include ('includes/header.php');
           </form>
         </div>
         <!-- filtro ordenar ----------- -->
-        <!-- filtro leitura ----------- -->
-        <div id="reading" class="filters filters3">
-          <div class="filter-title">BOOKS</div>
-          <ul id="filters2">
-            <li>
-            <p><input id="check3.1" type="checkbox" name="categoria" value="read" checked><label for="check3.1">To Read</label></p>
-            <p><input id="check3.2" type="checkbox" name="categoria" value="open" checked><label for="check3.2">Reading</label></p>
-            </li>
-          </ul>
-        </div>
-        <!-- filtro leitura ----------- -->
         <!-- filtro categorias ----------- -->
         <div id="categories" class="filters filters2">
-          <div class="filter-title" class="filters">CATEGORIES</div>
-          <ul id="filters3">
+          <div class="filter-title">CATEGORIES</div>
+          <ul id="filters">
             <li>
               <p><input id="check2.1" type="checkbox" name="categoria" value="fiction" checked><label for="check2.1">Fiction</label></p>
               <p><input id="check2.2" type="checkbox" name="categoria" value="love" checked><label for="check2.2">Love Story</label></p>
               <p><input id="check2.3" type="checkbox" name="categoria" value="drama" checked><label for="check2.3">Drama</label></p>
               <p><input id="check2.4" type="checkbox" name="categoria" value="fan" checked><label for="check2.4">Fan Fiction</label></p>
               <p><input id="check2.5" type="checkbox" name="categoria" value="cenas" checked><label for="check2.5">Others</label></p>
-          </li>
-        </ul>
+            </li>
+          </ul>
         </div>
         <!-- filtro categorias ----------- -->
       </div>
   </div>
 
-  <script>
-  $(document).ready(function() {
-    $('#shelf-header').css({
-      "color": "black"
-    });
-  })
-  </script>
-
-
-  <?php
-  include ('includes/footer.php');
-  ?>
+<?php
+include ('includes/footer.php');
+?>
