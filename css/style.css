@@ -377,9 +377,9 @@ b{
 }
 /* PREVIEW---------------------*/
 #book-preview{
-  width: 300px;
-  height:400px;
-  margin-top:30px;
+  width: 250px;
+  height:350px;
+  margin-top:40px;
   float: left;
   margin-right: 10px;
   cursor:pointer;
@@ -387,9 +387,9 @@ b{
   margin-left: 5%;
 }
 #interaction{
-  width: 300px;
-  height:400px;
-  margin-top:30px;
+  width: 250px;
+  height:350px;
+  margin-top:40px;
   float: left;
   margin-right: 10px;
   cursor:pointer;
@@ -414,18 +414,21 @@ b{
   width: 95%;
   margin: auto;
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   color: black;
   font-family: Regular;
   line-height: 120%;
 }
 #links{
-  margin-left: 20px;
   float:left;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-right: 10%;
 }
 #read{
-  margin-top:300px;
+  margin-top:200px;
+}
+#view-reviews{
+  margin-top:30px;
 }
 .link{
   cursor: pointer;
@@ -435,12 +438,6 @@ b{
   padding: 10px;
   background: black;
   color:white;
-}
-.preview-links{
-  display:none;
-  margin:auto;
-  width:75%;
-  margin-top:30px;
 }
 .comment-author{
   margin-bottom:10px;
@@ -457,10 +454,32 @@ b{
   margin-bottom: 40px;
 }
 .close{
-  cursor:pointer;
-  float:right;
-  font-family:Bold;
-  font-size:16px;
+  margin-top:40px;
+  cursor: pointer;
+  font-family: Bold;
+  font-size: 20px;
+  font-family: Roboto;
+  padding: 10px;
+  background: black;
+  color:white;
+  float:left;
+}
+.close2{
+  float:right !important;
+  margin-top: 0px !important;
+}
+.preview-links{
+  display:none;
+  margin:auto;
+  width:60%;
+  margin-top:40px;
+}
+.preview-links{
+  padding: 20px;
+  border: 3px solid black;
+  z-index:9999999 !important;
+  margin-top:240px;
+  margin-bottom: 100px;
 }
 /* CREATE-REVIEW---------------------*/
 .review-textarea{
@@ -625,6 +644,20 @@ input[type=checkbox]:checked + label:before {
   100% { background: rgb(190,190,190); }
 }
 .form-submit:hover{
+  -webkit-animation: cor2 1s;
+  -moz-animation: cor2 1s;
+  -o-animation: cor2 1s;
+  animation: cor2 1s;
+  background: rgb(190,190,190);
+}
+.link:hover{
+  -webkit-animation: cor2 1s;
+  -moz-animation: cor2 1s;
+  -o-animation: cor2 1s;
+  animation: cor2 1s;
+  background: rgb(190,190,190);
+}
+.close:hover{
   -webkit-animation: cor2 1s;
   -moz-animation: cor2 1s;
   -o-animation: cor2 1s;
