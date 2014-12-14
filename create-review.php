@@ -18,6 +18,14 @@
     Review added to book with success.
   </div>
 
+  <script>
+  $(document).ready(function() {
+    $('#review-header').css({
+      "color": "black"
+    });
+  })
+  </script>
+
 
   <?php
   include ('includes/footer.php');
