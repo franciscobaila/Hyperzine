@@ -532,8 +532,11 @@ b{
 }
 /* HEADER---------------------*/
 #search-message{
-  font-family:Bold;
-  font-size:24px;
+  color: rgb(170,170,170);
+  margin-top: 40px;
+  margin-left: 5%;
+  font-family:Roboto;
+  font-size:18px;
   margin-bottom:30px;
 }
 
