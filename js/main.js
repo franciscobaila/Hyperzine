@@ -24,7 +24,7 @@ app.events = function() {
   $("#close-reviews").click(function() {
     $("#reviews").fadeOut(300);
   });
-  /* ADD REVIEW PAGE ---------------------*/
+
   $(".img-book").click(function() {
     window.location.href = "read.php";
   });
@@ -86,11 +86,10 @@ app.events = function() {
 }
 
 app.review = function() {
-  $("#container").fadeOut(10);
   $("#message").fadeIn(600);
   setTimeout(function() {
     window.location.href = "preview.php";
-  }, 500);
+  }, 700);
 }
 
 $(document).ready(function() {

@@ -484,33 +484,48 @@ b{
 /* CREATE-REVIEW---------------------*/
 .review-textarea{
   font-family: Regular;
-  font-size: 16px;
+  font-size: 18px;
   padding: 10px;
-  width: 500px;
+  width: 30%;
   height: 300px;
   resize: none;
-  border: 1px dashed black;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border: 3px dashed black;
   float: left;
-  margin-right: 30px;
+  margin-top: 40px;
+  margin-left: 5%;
+  margin-right: 20px;
 }
 #classification-form{
   float:left;
+  margin-top: 40px;
 }
 #input-review{
-  border: 1px dashed black;
-  height: 30px;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border: 3px dashed black;
+  height: 50px;
   padding: 5px;
-  width: 70px;
+  width: 100px;
 }
 #input-review-submit{
-  background:rgba(230,230,230, 0.8);
-  color: black;
-  padding:10px;
   text-align:center;
-  font-family:Bold;
-  font-size:20px;
-  cursor:pointer;
-  margin-left: 10px;
+  margin-top: 210px;
+  cursor: pointer;
+  font-family: Bold;
+  font-size: 20px;
+  font-family: Roboto;
+  padding: 10px;
+  background: black;
+  color:white;
+}
+#message{
+  display:none;
+  font-family: Bold;
+  font-size: 24px;
 }
 /* HEADER---------------------*/
 .element-header{
@@ -530,35 +545,25 @@ b{
 
 
 /*--------------------HACKS */
-
-
 textarea.review-textarea::-webkit-input-placeholder { /* WebKit browsers */
-  color:grey;
-  opacity: 0.8;
-  font-family: Regular;
-  font-size: 16px;
-  padding-top: -20px;
+  font-family: Roboto !important;
+  font-size: 18px;
+  color: rgb(190,190,190);
 }
 textarea.review-textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color:grey;
-  opacity: 0.8;
-  font-family: Regular;
-  font-size: 16px;
-  padding-top: -20px;
+  font-family: Roboto !important;
+  font-size: 18px;
+  color: rgb(190,190,190);
 }
 textarea.review-textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color:grey;
-  opacity: 0.8;
-  font-family: Regular;
-  font-size: 16px;
-  padding-top: -20px;
+  font-family: Roboto !important;
+  font-size: 18px;
+  color: rgb(190,190,190);
 }
 textarea.review-textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
-  color:grey;
-  opacity: 0.8;
-  font-family: Regular;
-  font-size: 16px;
-  padding-top: -20px;
+  font-family: Roboto !important;
+  font-size: 18px;
+  color: rgb(190,190,190);
 }
 
 
@@ -658,6 +663,13 @@ input[type=checkbox]:checked + label:before {
   background: rgb(190,190,190);
 }
 .close:hover{
+  -webkit-animation: cor2 1s;
+  -moz-animation: cor2 1s;
+  -o-animation: cor2 1s;
+  animation: cor2 1s;
+  background: rgb(190,190,190);
+}
+#input-review-submit:hover{
   -webkit-animation: cor2 1s;
   -moz-animation: cor2 1s;
   -o-animation: cor2 1s;
