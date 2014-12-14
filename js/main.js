@@ -12,17 +12,21 @@ app.events = function() {
   $("#view-comments").click(function() {
     $("#comments").fadeIn(300);
     $("#reviews").fadeOut(300);
+    window.scrollTo(0,600);
   });
   $("#close-comments").click(function() {
     $("#comments").fadeOut(300);
+    window.scrollTo(0,0);
   });
 
   $("#view-reviews").click(function() {
     $("#reviews").fadeIn(300);
     $("#comments").fadeOut(300);
+    window.scrollTo(0,600);
   });
   $("#close-reviews").click(function() {
     $("#reviews").fadeOut(300);
+    window.scrollTo(0,0);
   });
 
   $(".img-book").click(function() {
