@@ -37,8 +37,8 @@
 		<div class="element-header">
 			<form action="search.php" method="post">
 			<!-- probelmas – validação -->
-			<input class="search"  name="search" placeholder="Search" type="search"/>
-			<a href="search.php"><img width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-magnifier-icon.png&r=189&g=195&b=199"/></a>
+			<input id="search-input" class="search" name="search" placeholder="Search" type="search"/>
+			<img width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-magnifier-icon.png&r=189&g=195&b=199"/>
 			</form>
 		</div>
 
