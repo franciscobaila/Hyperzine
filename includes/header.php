@@ -62,7 +62,7 @@
 					EN/PT
 				</div>
 				<div id="log-header" class="inside-element">
-					LOG-OUT
+					LOG OUT
 				</div>
 			</div>
 </div>
