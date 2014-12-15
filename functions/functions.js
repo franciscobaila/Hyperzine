@@ -20,6 +20,7 @@ var linksPages = new Array();
 var currentPage = 0;
 
 var inUse = 0;
+var id = 111111111110;
 //variaveis para criação do graph
 /*var graph = new joint.dia.Graph;
 var paper = new joint.dia.Paper({
@@ -169,18 +170,22 @@ function endXML () {
    console.log( xw.flush() );
 }
 
-
-
-
-function getTextSelection(s,number){
-		//alert (s);
-        var field = document.getElementById(s);
+function getSelectiononl (s) {
+	var field = document.getElementsByClassName(s);
+       
        // console.log (field);
 		var startPos = field.selectionStart;
         var endPos = field.selectionEnd;        
         var field_value = field.value;
         var selectedText = field_value.substring(startPos,endPos);
-       // str.link(selectedText);
+         alert (selectedText);
+
+}
+
+
+function getTextSelection(s,number){
+		//alert (s);
+             // str.link(selectedText);
         var res = field_value.replace (selectedText, "<a href='book.php?p="+number+"'>"+selectedText+"</a>");
         document.getElementById(s).value = res;
        // alert (selectedText);

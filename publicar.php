@@ -1,4 +1,4 @@
-<?php include ('includes/header.php'); ?>
+<?php include ('includes/header-publicar.php'); ?>
  <script src="functions/jointJs/joint.js"></script>
 
 
@@ -9,28 +9,36 @@
   <!-- POP UP concect page -->
   <section id="pop-conect">
 	  <div id="closePP"><img class="closeP" id="closePage" width="30px" src="./icons/close.png"/></div>
+	  <br><br>
+	  <center><div class="normal-size"> Choose a page to link </div><br>
+	  
 	 <!-- <div id="page-list">
+	 
 		 <li id=""> </li>
 	  </div>  dropdown menu do http://codepen.io/Tombek/pen/JAvHC -->
 	  <dl class="dropdown">
-		  <dt><a><span id="test-altera">Dropdown n°2</span></a></dt>
-		  <dd>
-			<ul id="page-list">
-				<li><a class="default">Dropdown n°2</a></li>
-				<li><a>Option n°1</a></li>
-				<li><a>Option n°2</a></li>
-				<li><a>Option n°3</a></li>
-				<li><a>Option n°4</a></li>
-				<li><a>Option n°5</a></li>
-				<li><a>Option n°6</a></li>
+				<ul id="page-list">
+				<li><a class="default" id="changeName">Select the Page 
+				<img width="10px" class="rotate"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-arrow-25-icon.png&r=0&g=0&b=0" /></a>
+					<ul id="list-select"> 
+				<li id="1">Intro</li>
+				<li id="2">Check the Room</li>
+				<li id="3">Check your tv</li>
+				<li id="4">Bad Choise</li>
+				<li id="5">Page 2</li>
+				<li id="6">Hello again</li>
+				</ul>
+			</li>
 			</ul>
 		</dd>
-	</dl>
-	  <!-- <button id="ChangePage" class="button normal-size">Link</button>-->
+	</dl><br>
+	  
 </select>
+
+<button id="linkPage" class=" link normal-size">Link</button></center>
   </section>
  <!--  parte 1-->
- <section id="newBookPT1">
+ <section id="newBookPT1" style="heigth:400px">
 
  	<section id="newBook1-2" class="center-hor center-ver">
  	<!-- lol -->
@@ -46,7 +54,7 @@
 		<br>
 		<br>
 		<br>
-		<label class="normal-size "> Book Info:</label><br>
+		<div class="normal-size "> Book Info:</div><br>
 	 	<input type="text" class="input h1-size margin-b"  placeholder="Book's Name" id="bookName" name="bookName" required />
 	 	<br>
 	 	<br>
@@ -68,8 +76,8 @@
 
 	 </div>
 
-	 <div  id="c-div" class="counteudo">click to compose the page</div>
-	 <textarea id="c-textbox"class="counteudo normal-size" placeholder="compose the page"></textarea>
+	 <div  id="c-div" class="counteudo pageInfo">click to compose the page</div>
+	 <textarea id="c-textbox" class="counteudo normal-size pageInfo" placeholder="compose the page"></textarea>
 	 <button id="savePage" class="button normal-size">Save</button>
 	 <button id="ChangePage" class="button normal-size">Save</button>
  </section>
@@ -103,8 +111,8 @@
 var graph = new joint.dia.Graph;
  	var paper = new joint.dia.Paper({
 			el: $('#diagram'),
-			width: 1000,
-			height: 600,
+			width: 900,
+			height: 500,
 			model: graph,
 			gridSize: 1
 		});
@@ -148,8 +156,10 @@ var graph = new joint.dia.Graph;
 );
 
  $(function() {
-
-    setTimeout(function(){
+ 	// $( this ).css( "color", "red" );
+	 $('html').css ("height", "100% !important");  
+	 $('#header').css ("height", "70px");  
+	 setTimeout(function(){
    	 //$('#loading').fadeOut( "slow" );
    	 	$( "#loading" ).fadeOut( "slow", function() {
 			// Animation complete.
@@ -217,25 +227,23 @@ var graph = new joint.dia.Graph;
 
 	$('#create-link').click (function() {
 		//mudar a div que interessa
-		$("#page-list").html("<li>yolo</li>");
+		//$('#list-select').html("");
+		getSelectiononl ("c-div")
+		if (pages.length > 1) {
 		for (var i=0; i<pages.length; i++) {
 			console.log (pages[i][0]._previousAttributes.attrs.text.text);
 			//meter isto em lista
+			//$('#list-select').append("<li id='"+i+"'>"+pages[i][0]._previousAttributes.attrs.text.text+"</li>");
 		}
-		$('#test-altera').html ("teste");
+		
+	
+		
+		
 		$('#pop-conect').fadeIn("fast");
-
-		var pageFuture= 1;
-		if (pageFuture > currentPage) {
-			pageFuture = currentPage;
+		}else {
+			alert ("add more pages to link");
 		}
-		selection = getTextSelection("pageInfo",pageFuture);
-		var link = new joint.dia.Link({
-			source: { id: pages[inUse][0].id},
-			target: { id: pages[pageFuture][0].id }
-		});
-		linksPages.push([link]);
-		graph.addCells([link])
+		
 
 	});
 
@@ -298,7 +306,7 @@ var graph = new joint.dia.Graph;
 	});
 
 	//text area editavel
-	$( ".counteudo" ).click(divClicked);
+	$( "#c-div" ).click(divClicked);
 
 	$("#closePage").click(function(){
 		$( "#newPage-interface" ).fadeOut( "slow", function() {
@@ -347,7 +355,34 @@ function cleanFields () {
 $('#closePP').click(function(){
 	$('#pop-conect').fadeOut("fast");
 });
-
+ $('ul li ul li ').click(function(){
+	 $('#changeName').text($(this).text());
+	id = $(this).attr('id');
+	$('#linkPage').show();
+})
+$('#linkPage').click(function(){
+	if (id != 111111111110) {
+		//função de criar link	
+		
+		connectPeople();
+		
+	} 
+});
+function connectPeople() {	
+	var pageFuture= id;
+		if (pageFuture > currentPage) {
+			pageFuture = currentPage;
+		}
+		selection = getTextSelection("pageInfo",pageFuture);
+		
+		var link = new joint.dia.Link({
+			source: { id: pages[inUse][0].id},
+			target: { id: pages[pageFuture][0].id }
+		});
+		linksPages.push([link]);
+		graph.addCells([link]);
+		
+	}
  </script>
 
 
