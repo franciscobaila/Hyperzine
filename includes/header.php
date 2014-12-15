@@ -52,9 +52,6 @@
 				<div id="library-header" class="inside-element">
 					LIBRARY
 				</div>
-				<div id="review-header" class="inside-element">
-					MAKE A REVIEW
-				</div>
 			</div>
 
 			<div class="element-header">
