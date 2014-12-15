@@ -1,42 +1,36 @@
-<input type="button" value="Add Image" onclick="document.getElementById('read-text-editable').focus(); pasteHtmlAtCaret('<img src=' + 'uploads/porco.png' +'>'); ">
-
-<div id="contDiv" contenteditable="true">
-Place to Past Content
-</div>
-
-<script>
-function pasteHtmlAtCaret(html) {
-  var sel, range;
-  if (window.getSelection) {
-
-    // IE9 and non-IE
-    sel = window.getSelection();
-    if (sel.getRangeAt && sel.rangeCount) {
-      range = sel.getRangeAt(0);
-      range.deleteContents();
-
-      // Range.createContextualFragment() would be useful here but is
-      // non-standard and not supported in all browsers (IE9, for one)
-      var el = document.createElement("div");
-      el.innerHTML = html;
-      var frag = document.createDocumentFragment(), node, lastNode;
-      while ( (node = el.firstChild) ) {
-        lastNode = frag.appendChild(node);
-      }
-      range.insertNode(frag);
-
-      // Preserve the selection
-      if (lastNode) {
-        range = range.cloneRange();
-        range.setStartAfter(lastNode);
-        range.collapse(true);
-        sel.removeAllRanges();
-        sel.addRange(range);
+<head>
+<script type="text/javascript" src="../raptor.js"></script>
+<script type="text/javascript">
+jQuery(function($) {
+  $('.editable').raptor();
+  /*
+  $('.editable').raptor({
+    "plugins": {
+      "dock": {
+        "docked": true
+      },
+      "classMenu": {
+        "classes": {
+          "Blue background": "cms-blue-bg",
+          "Round corners": "cms-round-corners",
+          "Indent and center": "cms-indent-center"
+        }
+      },
+      "snippetMenu": {
+        "snippets": {
+          "Grey Box": "<div class=\"grey-box\"><h1>Grey Box<\/h1><ul><li>This is a list<\/li><\/ul><\/div>"
+        }
       }
     }
-   } else if (document.selection && document.selection.type != "Control") {
-     // IE < 9
-     document.selection.createRange().pasteHTML(html);
-   }
-}
+  });*/
+});
 </script>
+</head>
+<body>
+<div class="editable">
+  <p>
+    Raptor may be integrated into a site many ways.
+    This article aims to cover the simplest integration possible.
+  </p>
+</div>
+</body>

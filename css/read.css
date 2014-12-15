@@ -114,3 +114,17 @@
 	background-color:red;
 	padding: 5px;
 }
+
+#inputImage{
+	display:none;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	width: 55px;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+#inputImage.open{
+	display: inline;
+}

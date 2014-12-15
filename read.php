@@ -63,7 +63,7 @@
     <div id="read-text-editable" class="editavel"></div>
     <p contenteditable="true">Mr. And Mrs. Dursley, of number four, <a class="word-link">Privet Drive</a>, were proud to say that they were perfectly normal, thank you very much. They were the last people you'd expect to be involved in anything strange ormysterious, because they just didn't hold with such nonsense.<br><br> Mr. Dursley was the director of a firm called Grunnings, which made drills. He was a big, beefy man withhardly any neck, although he did have a very large mustache. Mrs. Dursley was thin and blonde and hadnearly twice the usual amount of neck, which came in very useful as she spent so much of her time craningover garden fences, spying on the neighbors. The Dursleys had a small son called Dudley and in theiropinion there was no finer boy anywhere. <br><br>The Dursleys had everything they wanted, but they also had a secret, and their greatest fear was thatsomebody would discover it. They didn't think they could bear it if anyone found out about the Potters. Mrs. Potter was Mrs. Dursley's sister, but they hadn't met for several years; in fact, Mrs. Dursley pretendedshe didn't have a sister, because her sister and her good-for-nothing husband were as unDursleyish as itwas possible to be. The Dursleys shuddered to think what the neighbors would say if the Potters arrived inthe street. The Dursleys knew that the Potters had a small son, too, but they had never even seen him. Thisboy was another good reason for keeping the Potters away; they didn't want Dudley mixing with a child like that.<br><br> When Mr. And Mrs. Dursley woke up on the dull, gray Tuesday our story starts, there was nothing aboutthe cloudy sky outside to suggest that strange and mysterious things would soon be happening all over thecountry. Mr. Dursley hummed as he picked out his most boring tie for work, and Mrs. Dursley gossipedaway happily as she wrestled a screaming Dudley into his high chair. <br><br>None of them noticed a large, tawny owl flutter past the window. <br><br>At half past eight, Mr. Dursley picked up his briefcase, pecked Mrs. Dursley on the cheek, and tried to kissDudley good-bye but missed, because Dudley was now having a tantrum and throwing his cereal at thewalls. "Little tyke, " chortled Mr. Dursley as he left the house. He got into his car and backed out of numberfour's drive. It was on the corner of the street that he noticed the first sign of something peculiar -- a cat reading amap. For a second, Mr. Dursley didn't realize what he had seen -- then he jerked his head around to look again. There was a tabby cat standing on the corner of Privet Drive, but there wasn't a map in sight. What could he have been thinking of? It must have been a trick of the light. Mr. Dursley blinked and stared at the cat. It stared back. As Mr. Dursley drove around the corner and up the road, he watched the cat in his mirror. It was now reading the sign that said Privet Drive -- no, looking at the sign; cats couldn't read maps or signs. Mr. Dursley gave himself a little shake and put the cat out of his mind. As he drove toward townhe thought of nothing except a large order of drills he was hoping to get that day.<br><br> But on the edge of town, drills were driven out of his mind by something else. As he sat in the usualmorning traffic jam, he couldn't help noticing that there seemed to be a lot of strangely dressed peopleabout. People in cloaks. Mr. Dursley couldn't bear people who dressed in funny clothes -- the getups you saw on young people!</p>
   </div>
-
+    <input style="color:red;" type="button" value="Adicionar" id="inputImage" onclick="document.getElementById('read-text-editable').focus(); pasteHtmlAtCaret('<img src=' + 'uploads/porco.png' +'>'); ">
   <!--  <div id="commentsWritten">
   <p> </p>
 </div>-->
@@ -75,7 +75,7 @@
   <input type="submit" id="commentBtn" value="Enviar" style="background-color:white; padding:10px; font-family: Bold;">
 </div>
 
-
+<!--
 <div class="addPops" id="addMedia">
   <img class="exitBtn" style="float:right;" width="10px" style="padding: 0 5px;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-x-mark-icon.png&r=255&g=255&b=255"/>
   <h1 style="font-family: Bold;">Escolher Media</h1>
@@ -91,13 +91,26 @@
   <img id="editTextMinus" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;"  src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-minus-2-icon.png&r=255&g=255&b=255"/>
   <img id="editTextContrast" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;"  src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-brightness-9-icon.png&r=255&g=255&b=255"/>
 </div>
-
-<div class="addPops" id="addImage">
-  <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
-    <h1 style="font-family:Bold;">Adicionar Imagem</h1></br>
-    Selecionar Ficheiro: <input type="file" name="imgFile" accept="image/*" id="imageArea"><br><br>
-    <input type="submit" name="submit" id="imageBtn" value="Adicionar" style="background-color:white; padding:10px; font-family: Bold;">
+-->
+<div class="addPops" id="addMedia">
+  <form action="">
+    <p>Adicionar Video</p></br>
+    Selecionar Ficheiro: <input type="file" name="image" accept="image/*"><br><br>
+    <button style="color:white;background-color:pink; width:100px; height: 50px;"  id="imageBtn" value="Video"></button>
   </form>
+</div>
+<!--
+<div class="addPops" id="addImage2">
+  <form  id="form" name="form">
+    <h1 style="font-family:Bold;">Escolher Imagem</h1></br>
+    Selecionar Ficheiro: <input type="file" id="imgFile" accept="image/*" ><br><br>
+    <input id="addImageBtn2" type="submit" style="background-color:white; padding:10px; font-family: Bold;">
+  </form>
+</div>
+-->
+
+<!--
+
 
   <?php
   if(isset($_POST['submit'])){
@@ -107,16 +120,14 @@
         echo "File name exists.";
       } else {
         move_uploaded_file($_FILES["imgFile"]["tmp_name"],"uploads/$filename");
-        echo "Upload Successful . <a href='uploads/$filename'>Click here</a> to view the uploaded image";
+        echo "Upload Successful. <a href='uploads/$filename'>Click here</a> to view the uploaded image";
       }
     } else {
       echo "invalid file.";
     }
   }
-  ?>
-</div>
+?>
 
-<!--
 <div id="addFilm">
 <form action="">
 <p>Adicionar Video</p></br>
@@ -155,7 +166,6 @@ editText = document.getElementById('editText'),
 showText = document.getElementById('read-nav-subnav-font'),
 popText = document.getElementById('word-link-pop' );
 helpIcon = document.getElementById('helpIcon');
-readTextEdit = document.getElementById('read-text-editable');
 
 var fontSize = parseInt($("body").css("font-size"));
 
@@ -180,8 +190,72 @@ $(helpIcon).click(function(){
   $(popInst).addClass("open");
 });
 
+$('#addMediaBtn').click(function(){
+  if ($('#addImage').hasClass("open")){
+    $('#addImage').removeClass("open");
+  } else {
+    $('#addImage').addClass("open");
+  }
+});
 
+
+$('#imageBtn').click(function(){
+  $('#inputImage').addClass("open");
+});
+
+function pasteHtmlAtCaret(html) {
+  var sel, range;
+  if (window.getSelection) {
+
+    // IE9 and non-IE
+    sel = window.getSelection();
+    if (sel.getRangeAt && sel.rangeCount) {
+      range = sel.getRangeAt(0);
+      range.deleteContents();
+
+      // Range.createContextualFragment() would be useful here but is
+      // non-standard and not supported in all browsers (IE9, for one)
+      var el = document.createElement("div");
+      el.innerHTML = html;
+      var frag = document.createDocumentFragment(), node, lastNode;
+      while ( (node = el.firstChild) ) {
+        lastNode = frag.appendChild(node);
+      }
+      range.insertNode(frag);
+
+      // Preserve the selection
+      if (lastNode) {
+        range = range.cloneRange();
+        range.setStartAfter(lastNode);
+        range.collapse(true);
+        sel.removeAllRanges();
+        sel.addRange(range);
+      }
+    }
+  } else if (document.selection && document.selection.type != "Control") {
+    // IE < 9
+    document.selection.createRange().pasteHTML(html);
+  }
+}
 /*
+$('#addImageBtn').click(function(){
+  if ($('#addImage').hasClass("open")){
+    $('#addImage').removeClass("open");
+  } else {
+    $('#addImage').addClass("open");
+  }
+});
+
+
+$('#addImageBtn2').click(function(){
+  if ($('#addImage').hasClass("open")){
+    $('#addImage').removeClass("open");
+  } else {
+    $('#addImage').addClass("open");
+  }
+});
+
+
 $( "#read-text-editable" ).click(divClicked);
 //função para o click e não click
 function divClicked() {
@@ -202,7 +276,7 @@ function editableTextBlurred() {
   // replace out the textarea
   $(this).replaceWith(viewableText);
 }
-*/
+
 
 
 

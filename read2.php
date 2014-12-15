@@ -40,6 +40,7 @@
     <img class="read-nav-a" id="addMediaBtn" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=255&g=255&b=255"/><br><br><br>
     <img class="read-nav-a" id="helpIcon" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-help-icon.png&r=255&g=255&b=255"/><br><br><br>
   </nav>
+
   <div id="navBtn">
     <img class="read-nav-a" id="navBtnImg" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-menu-icon.png&r=0&g=0&b=0"/><br>
   </div>
@@ -144,9 +145,6 @@ Selecionar Ficheiro: <input type="file" name="imagem" accept="audio/*"><br><br>
 <input type="submit" class="completeBtn" value="Enviar">
 </div>
 -->
-<div id="pageNumber">
-  <p style="float:right;">2</p>
-</div>
 
 <!-- Javascript at the bottom -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -172,7 +170,6 @@ $(navBtn).click(function(){
     $(navBtn).addClass("open");
   }
 });
-
 
 $('.exitBtn').click(function(){
   $(popInst).removeClass("open");
@@ -244,41 +241,6 @@ $('#addImageBtn').click(function(){
     $('#addImage').addClass("open");
   }
 });*/
-
-function pasteHtmlAtCaret(html) {
-  var sel, range;
-  if (window.getSelection) {
-
-    // IE9 and non-IE
-    sel = window.getSelection();
-    if (sel.getRangeAt && sel.rangeCount) {
-      range = sel.getRangeAt(0);
-      range.deleteContents();
-
-      // Range.createContextualFragment() would be useful here but is
-      // non-standard and not supported in all browsers (IE9, for one)
-      var el = document.createElement("div");
-      el.innerHTML = html;
-      var frag = document.createDocumentFragment(), node, lastNode;
-      while ( (node = el.firstChild) ) {
-        lastNode = frag.appendChild(node);
-      }
-      range.insertNode(frag);
-
-      // Preserve the selection
-      if (lastNode) {
-        range = range.cloneRange();
-        range.setStartAfter(lastNode);
-        range.collapse(true);
-        sel.removeAllRanges();
-        sel.addRange(range);
-      }
-    }
-  } else if (document.selection && document.selection.type != "Control") {
-    // IE < 9
-    document.selection.createRange().pasteHTML(html);
-  }
-}
 
 </script>
 </body>
