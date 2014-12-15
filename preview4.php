@@ -7,7 +7,7 @@
       <div class="pictogram">
         <img width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-15-icon.png&r=199&g=199&b=199"/>
       </div>
-      <img class="img-book" src="img/book.jpg" />
+      <img class="img-book" src="img/book4.jpg" />
     </div>
 
     <div id="interaction">

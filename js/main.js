@@ -28,10 +28,6 @@ app.events = function() {
     $("#reviews").fadeOut(300);
     window.scrollTo(0,0);
   });
-
-  $(".img-book").click(function() {
-    window.location.href = "read.php";
-  });
   $("#read").click(function() {
     window.location.href = "read.php";
   });
@@ -41,6 +37,21 @@ app.events = function() {
   /* HOME PAGE ---------------------*/
   $(".book").click(function() {
     window.location.href = "preview.php";
+  });
+  $("#book1").click(function() {
+    window.location.href = "preview.php";
+  });
+  $("#book2").click(function() {
+    window.location.href = "preview2.php";
+  });
+  $("#book3").click(function() {
+    window.location.href = "preview3.php";
+  });
+  $("#book4").click(function() {
+    window.location.href = "preview4.php";
+  });
+  $("#book5").click(function() {
+    window.location.href = "preview5.php";
   });
 
   $("#types-list :checkbox").click(function() {

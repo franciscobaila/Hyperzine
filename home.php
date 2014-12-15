@@ -13,14 +13,13 @@
 							<input id="check2.2" type="checkbox" name="categoria" value="top"><label for="check2.2">Top Books</label>
 							<img class="img-type" width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-2-icon.png&r=199&g=199&b=199"/>
 							<input id="check2.3" type="checkbox" name="categoria" value="suggested"><label for="check2.3">Suggested Books</label>
-
 						</li>
 						</li>
 					</ul>
 				</div>
 
         <!-- book example ----------- -->
-        <div id="book-1" class="book open">
+        <div id="book1" class="book open">
           <div class="pictogram">
 						<img width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-15-icon.png&r=199&g=199&b=199"/>
 					</div>
@@ -28,7 +27,7 @@
         </div>
         <!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book open">
+				<div id="book2" class="book open">
 					<div class="pictogram">
 						<img width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-15-icon.png&r=199&g=199&b=199"/>
 					</div>
@@ -36,7 +35,7 @@
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book open">
+				<div id="book3" class="book open">
 					<div class="pictogram">
 						<img width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-15-icon.png&r=199&g=199&b=199"/>
 					</div>
@@ -44,7 +43,7 @@
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book open">
+				<div id="book4" class="book open">
 					<div class="pictogram">
 						<img width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-15-icon.png&r=199&g=199&b=199"/>
 					</div>
@@ -52,7 +51,7 @@
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book open">
+				<div id="book5" class="book open">
 					<div class="pictogram">
 						<img width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-15-icon.png&r=199&g=199&b=199"/>
 					</div>
