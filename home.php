@@ -13,7 +13,7 @@
 							<input id="check2.2" type="checkbox" name="categoria" value="top"><label for="check2.2">Top Books</label>
 							<img class="img-type" width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-2-icon.png&r=199&g=199&b=199"/>
 							<input id="check2.3" type="checkbox" name="categoria" value="suggested"><label for="check2.3">Suggested Books</label>
-							<span id="hide" class="opacity">Suggested Books</span>
+
 						</li>
 						</li>
 					</ul>

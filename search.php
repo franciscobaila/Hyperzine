@@ -11,10 +11,10 @@ include ('includes/header.php');?>
         $result = mysql_query($search);
         $num = mysql_num_rows($result);
 
-        echo "<script>document.getElementById('search-input').value='".$data."'</script>";
+        //echo "<script>document.getElementById('search-input').value='".$data."'</script>";
 
         if ($num == 0){
-          echo "<div id='search-message'>NO RESULTS FOUND FOR ", $data ,"</div>";
+          //echo "<div id='search-message'>NO RESULTS FOUND FOR ", $data ,"</div>";
         }
         else if ($result && $num > 0){
           //echo "<div id='search-message'>RESULTS FOUND FOR ", $data ," :</div>";

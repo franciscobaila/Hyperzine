@@ -31,8 +31,6 @@ html {
 	 overflow-x: hidden;
 	 line-height: 16.2pt;
 	 font-size: 12pt;
-	 height: 100% !important;
-	 
 }
 body{
   -webkit-font-smoothing: subpixel-antialiased;
@@ -278,7 +276,7 @@ a:hover {
 
 	#newBookPT1 {
 		display:none;
-		
+
 
 	}
 	#newBookPT2 {
@@ -295,13 +293,13 @@ a:hover {
 			margin-left: 50px;
 			position: relative;
 			top: 50px;
-			
+
 		}
 		#diagram {
 			display: inline-block;
 			width: 85%;
 			top:50px;
-			
+
 			margin-right: 50px;
 			position: relative;
 			height: 500px;
@@ -570,10 +568,10 @@ background: white;
   -ms-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   -transition: opacity 0.2s;
- 
+
 }
-ul li ul li { 
-  display: block; 
+ul li ul li {
+  display: block;
   color: #7f8c8d;
 }
 ul li ul li:hover { background: #7f8c8d;  color:white !important;}
