@@ -107,7 +107,10 @@
 
  </section>
 <script>
-
+$( "body" ).click(function( event ) {
+	clicked_link = event.target.id;
+	console.log (clicked_link);
+});
 var graph = new joint.dia.Graph;
  	var paper = new joint.dia.Paper({
 			el: $('#diagram'),
@@ -168,6 +171,7 @@ var graph = new joint.dia.Graph;
 
 
     }, 2000);
+    $('#c-textbox').blur(editableTextBlurred);
 	$('#ChangePage').click(function(){
 		xw.root.c[inUse+1].c[0]="<title>"+$('#newPageName').text()+"</title>"+"<pageCode>"+$('#c-div').html()+"</pageCode>";
 		alert (xw.root.c[inUse+1].c[0]);
@@ -383,6 +387,9 @@ function connectPeople() {
 		graph.addCells([link]);
 		
 	}
+	
+
+
  </script>
 
 
