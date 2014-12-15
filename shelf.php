@@ -5,49 +5,49 @@ include ('includes/header.php');
       <div id="books-container">
         <!-- book example ----------- -->
         <div id="book-1" class="book fan read">
-          <div class="pictogram">
+          <!-- <div class="pictogram">
             <img class="img-insider" src="img/read.png" />
-          </div>
+          </div> -->
           <img class="img-book" src="img/book.jpg" />
         </div>
         <!-- book example ----------- -->
         <!-- book example ----------- -->
         <div id="book-1" class="book love open">
-          <div class="pictogram">
+          <!-- <div class="pictogram">
             <img class="img-insider" src="img/open.png" />
-          </div>
+          </div> -->
           <img class="img-book" src="img/book2.jpg" />
         </div>
         <!-- book example ----------- -->
         <!-- book example ----------- -->
         <div id="book-1" class="book fiction open">
-          <div class="pictogram">
+          <!-- <div class="pictogram">
             <img class="img-insider" src="img/open.png" />
-          </div>
+          </div> -->
           <img class="img-book" src="img/book12.jpg" />
         </div>
         <!-- book example ----------- -->
         <!-- book example ----------- -->
         <div id="book-1" class="book cenas read">
-          <div class="pictogram">
+          <!-- <div class="pictogram">
             <img class="img-insider" src="img/read.png" />
-          </div>
+          </div> -->
           <img class="img-book" src="img/book11.jpg" />
         </div>
         <!-- book example ----------- -->
         <!-- book example ----------- -->
         <div id="book-1" class="book cenas open">
-          <div class="pictogram">
+          <!-- <div class="pictogram">
             <img class="img-insider" src="img/open.png" />
-          </div>
+          </div> -->
           <img class="img-book" src="img/book6.jpg" />
         </div>
         <!-- book example ----------- -->
         <!-- book example ----------- -->
         <div id="book-1" class="book love read">
-          <div class="pictogram">
+          <!-- <div class="pictogram">
             <img class="img-insider" src="img/read.png" />
-          </div>
+          </div> -->
           <img class="img-book" src="img/book3.jpg" />
         </div>
         <!-- book example ----------- -->
