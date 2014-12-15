@@ -46,16 +46,32 @@
 				<div id="publish-header" class="swatch-black inside-element">
 					PUBLISH BOOK
 				</div>
-				
+				<div id="publish-header" class="swatch-black inside-element">
+					
+				</div>
 			</div>
 
 			<div class="element-header">
-				<div class="inside-element">
+				<div class="inside-element" onclick="end()">
 					SAVE PROJECT
 				</div>
-				<div class="inside-element">
+				<div class="inside-element" onclick="end()">
 					EXIT
 				</div>
 				
 			</div>
 </div>
+
+<script> 
+	function end() {
+		r = confirm("Save Project?");
+		if (r == true) {
+			alert ("project saved");
+			window.location.assign("home.php");
+		} else {
+			window.location.assign("home.php");
+		}
+	}
+	
+
+</script>

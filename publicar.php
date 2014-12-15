@@ -92,11 +92,12 @@
  </section>
  <section id="newBookPT2">
 	 <nav id="lateral-bar">
-	 		 <img class="lateral-bar-element"  id="new-page" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=135&g=135&b=135"/><br><br>
-		<img  class="lateral-bar-element" id="finish-process" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-check-mark-icon.png&r=189&g=195&b=199"/>
-
+	 		<img class="lateral-bar-element"  id="new-page" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=0&g=0&b=0"/><br><br>
+	 		<img  class="lateral-bar-element" onclick="saveProject()" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-save-icon.png&r=0&g=0&b=0"/><br><br>
+		<img  class="lateral-bar-element" id="finish-process" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-check-mark-icon.png&r=0&g=0&b=0"/><br><br>
+		
 	 </nav>
-	 <section id="diagram" class="big-text"> <span id="titlename" >Book Name </span> by <span id="autorname">Author name	</span> </section>
+	<section id="diagram" class="big-text"> <h1><span id="titlename" >Book Name </span> by <span id="autorname">Author name	</span> </section></h1>
 	 <section id="new-page-interface">
 		 <div id="cabecalho"> Pagina <span id="numero">01</span></div>
 		 <div id="write-text"> <textarea id="pageInfo" ></textarea></div>
@@ -169,7 +170,7 @@ var graph = new joint.dia.Graph;
 
  $(function() {
  	// $( this ).css( "color", "red" );
-	 $('html').css ("height", "100% !important");  
+	 $('html').css ("overflow", "hidden");  
 	 $('#header').css ("height", "70px");  
 	 setTimeout(function(){
    	 //$('#loading').fadeOut( "slow" );
@@ -403,7 +404,17 @@ function connectPeople() {
 	}
 	
 
-
+function saveProject () {
+	$( "#newBookPT2" ).fadeOut( "slow", function() {
+		// Animation complete.
+		$("#loading").text("The Book process is saved");
+		$("#loading").fadeIn( "slow" );
+		setTimeout(function(){
+			window.location.assign("home.php");
+		}, 1500)
+	});
+	
+}
  </script>
 
 

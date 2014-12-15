@@ -247,7 +247,9 @@ a:hover {
 
 
 
-
+  	#titlename {
+	  	font-size
+  	}
 
 	.big-text::-webkit-input-placeholder{
 		font-size: 24pt;
@@ -278,8 +280,8 @@ a:hover {
 
 	#loading {
 		width: 300px;
-		background: blue;
-		margin-top:500px;
+		
+		margin-top:200px;
 		position: relative;
 		margin-left: calc( 50% - 125px) !important;
 		font-family: Roboto-r;
@@ -601,4 +603,9 @@ dropdown.ul li:hover ul {
 	  -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
+}
+
+#png {
+	display: none;
+	size:blue;
 }
