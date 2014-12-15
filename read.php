@@ -138,11 +138,19 @@
   });
 
   $(helpIcon).click(function(){
+    if ($(popInst).hasClass("open")){
+      $(popInst).removeClass("open");
+      $('#addComment').removeClass("open");
+      $('#addMedia').removeClass("open");
+      $('#addRate').removeClass("open");
+      $('#editText').removeClass("open");
+    } else {
     $(popInst).addClass("open");
     $('#addComment').removeClass("open");
     $('#addMedia').removeClass("open");
     $('#addRate').removeClass("open");
     $('#editText').removeClass("open");
+  }
   });
 
   $('#addMediaBtn').click(function(){
