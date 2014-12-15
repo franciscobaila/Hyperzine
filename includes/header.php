@@ -31,7 +31,7 @@
 			<div class="inside-element" id="logo">HYPERZINE</div>
 		</div>
 
-		<div id="usar-name" class="element-header">HI,<br><b>SERGIOREBELO</b></div>
+		<div id="usar-name" class="element-header">HI,<br><b>sergiomrebelo</b></div>
 
 		<!-- search -->
 		<div class="element-header">
