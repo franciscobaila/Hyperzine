@@ -29,6 +29,9 @@
         Read
       </div>
     </div>
+    
+    <img class="social" width="40px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-facebook-2-icon.png&r=0&g=0&b=0"/>
+    <img class="social" width="40px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-twitter-2-icon.png&r=0&g=0&b=0"/>
   </div>
 
   <!-- VIEW COMMENTS ----------- -->
