@@ -4,122 +4,135 @@
 	?>
   <div id="container">
       <div id="books-container">
+				<div id="book-types">
+					<ul id="types-list">
+						<li>
+							<img width="20px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-15-icon.png&r=199&g=199&b=199"/>
+							<input id="check2.1" type="checkbox" name="categoria" value="open"><label for="check2.1">Open Books</label>
+							<img class="img-type" width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-certificate-icon.png&r=199&g=199&b=199"/>
+							<input id="check2.2" type="checkbox" name="categoria" value="top"><label for="check2.2">Top Books</label>
+							<img class="img-type" width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-2-icon.png&r=199&g=199&b=199"/>
+							<input id="check2.3" type="checkbox" name="categoria" value="suggested"><label for="check2.3">Suggested Books</label>
+						</li>
+					</ul>
+				</div>
+
         <!-- book example ----------- -->
-        <div id="book-1" class="book">
+        <div id="book-1" class="book open">
           <div class="pictogram">
-            <img class="img-insider" src="img/open.png" />
-          </div>
+						<img width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-15-icon.png&r=199&g=199&b=199"/>
+					</div>
           <img class="img-book" src="img/book.jpg" />
         </div>
         <!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book open">
 					<div class="pictogram">
-						<img class="img-insider" src="img/open.png" />
+						<img width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-15-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book2.jpg" />
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book open">
 					<div class="pictogram">
-						<img class="img-insider" src="img/open.png" />
+						<img width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-15-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book3.jpg" />
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book open">
 					<div class="pictogram">
-						<img class="img-insider" src="img/open.png" />
+						<img width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-15-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book4.jpg" />
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book open">
 					<div class="pictogram">
-						<img class="img-insider" src="img/open.png" />
+						<img width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-15-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book5.jpg" />
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book top">
 					<div class="pictogram">
-						<img class="img-insider" src="img/top.png" />
+						<img width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-certificate-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book6.jpg" />
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book top">
 					<div class="pictogram">
-						<img class="img-insider" src="img/top.png" />
+						<img width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-certificate-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book7.jpg" />
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book top">
 					<div class="pictogram">
-						<img class="img-insider" src="img/top.png" />
+						<img width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-certificate-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book8.jpg" />
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book top">
 					<div class="pictogram">
-						<img class="img-insider" src="img/top.png" />
+						<img width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-certificate-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book9.jpg" />
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book top">
 					<div class="pictogram">
-						<img class="img-insider" src="img/top.png" />
+						<img width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-certificate-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book10.jpg" />
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book suggested">
 					<div class="pictogram">
-						<img class="img-insider" src="img/suggested.png" />
+						<img width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-2-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book11.jpg" />
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book suggested">
 					<div class="pictogram">
-						<img class="img-insider" src="img/suggested.png" />
+						<img width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-2-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book12.jpg" />
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book suggested">
 					<div class="pictogram">
-						<img class="img-insider" src="img/suggested.png" />
+						<img width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-2-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book13.jpg" />
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book suggested">
 					<div class="pictogram">
-						<img class="img-insider" src="img/suggested.png" />
+						<img width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-2-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book14.jpg" />
 				</div>
 				<!-- book example ----------- -->
 				<!-- book example ----------- -->
-				<div id="book-1" class="book">
+				<div id="book-1" class="book suggested">
 					<div class="pictogram">
-						<img class="img-insider" src="img/suggested.png" />
+						<img width="20px"src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-2-icon.png&r=199&g=199&b=199"/>
 					</div>
 					<img class="img-book" src="img/book15.jpg" />
 				</div>

@@ -240,6 +240,12 @@ b{
   height:200px;
 }
 /* BOOKS---------------------*/
+#book-types{
+  margin-top: 10px;
+}
+.img-type{
+  margin-left: 5% !important;
+}
 #books-container{
   width:60%;
   height:1000px;

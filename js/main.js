@@ -42,6 +42,18 @@ app.events = function() {
   $(".book").click(function() {
     window.location.href = "preview.php";
   });
+
+  $("#types-list :checkbox").click(function() {
+    $(".book").hide();
+    $("#types-list :checkbox:checked").each(function() {
+      $("." + $(this).val()).show();
+    });
+    var boxes = $('input[name=categoria]:checked');
+    var checked = $(boxes).length;
+    if (checked == 0){
+      $(".book").show();
+    }
+  });
   /* LIBRARY PAGE ---------------------*/
   $("#filters :checkbox").click(function() {
     $(".book").hide();
