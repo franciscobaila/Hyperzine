@@ -102,22 +102,6 @@
 	left: 35%;
 }
 
-#addMedia{
-	display:none;
-}
-
-#addMedia.open{
-	display: inline;
-	padding: 20px;
-	width: 400px;
-	height: 380px;
-	color: white;
-	background-color: black;
-	position: fixed;
-	top: 25%;
-	left: 35%;
-}
-
 #exitBtn{
 	padding-top: -5px;
 }
