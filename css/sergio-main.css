@@ -40,6 +40,9 @@ body{
 }
 
 
+.edit {
+	color:blue;
+}
 
 
 /*Gerais*/
@@ -345,6 +348,8 @@ a:hover {
 		}
 		.lateral-bar-element {
 			cursor: pointer;
+			margin-left: 20px;
+			margin-right: 20px;
 
 		}
 

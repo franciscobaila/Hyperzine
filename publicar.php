@@ -71,8 +71,17 @@
  	<img class="closeP" id="closePage" width="30px" src="./icons/close.png"/>
 	 <div id="newPageName" class="h1-size marginTop"contenteditable="true">Page 1</h1></div><br><br>
 	 <div id="alterar">
-
-		<img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-pencil-10-icon.png&r=189&g=195&b=199"/><img class="lateral-bar-element" id="create-link" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-arrow-19-icon.png&r=189&g=195&b=199"/><img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-picture-add-icon.png&r=189&g=195&b=199"/><img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-video-add-icon.png&r=189&g=195&b=199"/><br><br>
+		 <img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-eye-6-icon.png&r=0&g=0&b=0" onclick="editableTextBlurred()">
+		<img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-edit-6-icon.png&r=0&g=0&b=0" onclick="addMedia (7)"/> 		<img class="lateral-bar-element" id="create-link" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-share-4-icon.png&r=0&g=0&b=0"/>
+			<img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-video-add-icon.png&r=0&g=0&b=0"/>
+			<img class="lateral-bar-element" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-picture-add-icon.png&r=0&g=0&b=0" onclick=" addMedia (2)"/> 
+		<img class="lateral-bar-element" width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-bold-icon.png&r=0&g=0&b=0" onclick="addMedia (4)">
+		
+		<img class="lateral-bar-element" width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-italic-icon.png&r=0&g=0&b=0" onclick="addMedia (5)">
+		<img class="lateral-bar-element" width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-font-size-icon.png&r=0&g=0&b=0-" onclick="addMedia (6)">
+		
+		<img class="lateral-bar-element" width="25px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-pilcrow-icon.png&r=0&g=0&b=0" onclick="addMedia (8)">
+		<br><br>
 
 	 </div>
 
@@ -171,7 +180,7 @@ var graph = new joint.dia.Graph;
 
 
     }, 2000);
-    $('#c-textbox').blur(editableTextBlurred);
+   // $('#c-textbox').blur(editableTextBlurred);
 	$('#ChangePage').click(function(){
 		xw.root.c[inUse+1].c[0]="<title>"+$('#newPageName').text()+"</title>"+"<pageCode>"+$('#c-div').html()+"</pageCode>";
 		alert (xw.root.c[inUse+1].c[0]);
@@ -232,7 +241,7 @@ var graph = new joint.dia.Graph;
 	$('#create-link').click (function() {
 		//mudar a div que interessa
 		//$('#list-select').html("");
-		getSelectiononl ("c-div")
+		//alert (getSelectiononl ("c-textarea"));
 		if (pages.length > 1) {
 		for (var i=0; i<pages.length; i++) {
 			console.log (pages[i][0]._previousAttributes.attrs.text.text);
@@ -367,17 +376,22 @@ $('#closePP').click(function(){
 $('#linkPage').click(function(){
 	if (id != 111111111110) {
 		//função de criar link	
-		
 		connectPeople();
-		
+		type = 1;
+		$('#pop-conect').fadeOut("fast");
 	} 
 });
+
+function addMedia (type) {
+	getTextSelection("c-textbox",0,type);
+}
+var type = 0;
 function connectPeople() {	
-	var pageFuture= id;
+	var pageFuture= id+1;
 		if (pageFuture > currentPage) {
 			pageFuture = currentPage;
 		}
-		selection = getTextSelection("pageInfo",pageFuture);
+		selection = getTextSelection("c-textbox",pageFuture, type);
 		
 		var link = new joint.dia.Link({
 			source: { id: pages[inUse][0].id},

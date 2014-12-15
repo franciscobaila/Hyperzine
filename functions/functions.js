@@ -170,23 +170,36 @@ function endXML () {
    console.log( xw.flush() );
 }
 
-function getSelectiononl (s) {
-	var field = document.getElementsByClassName(s);
-       
-       // console.log (field);
+
+
+function getTextSelection(s,number,type){
+		//alert (s);
+		//alert (number);
+		var field = document.getElementById(s);
 		var startPos = field.selectionStart;
         var endPos = field.selectionEnd;        
         var field_value = field.value;
         var selectedText = field_value.substring(startPos,endPos);
-         alert (selectedText);
-
-}
-
-
-function getTextSelection(s,number){
-		//alert (s);
-             // str.link(selectedText);
-        var res = field_value.replace (selectedText, "<a href='book.php?p="+number+"'>"+selectedText+"</a>");
+	    //    alert (selectedText);
+	    if (type == 1) {
+		    var res = field_value.replace (selectedText, "<a href='book.php?p="+number+"'>"+selectedText+"</a>");    
+	    }
+        else if (type == 2) {
+	        var res = field_value.replace (selectedText, selectedText+"<img width='100' src='http://data3.whicdn.com/images/35522772/large.gif'/img>");
+        } else if (type == 3) {
+	         var res = field_value.replace (selectedText, selectedText+'<iframe src="//player.vimeo.com/video/73395830" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+        } else if (type == 4) {
+	         var res = field_value.replace (selectedText, "<b>"+selectedText+"</b>"); 
+        } else if ( type == 5) {
+	        var res = field_value.replace (selectedText, "<i>"+selectedText+"</i>"); 
+        } else if (type == 6) {
+	        var res = field_value.replace (selectedText, "<h1>"+selectedText+"</h1>"); 
+        }
+        else if (type == 7) {
+	         var res = field_value.replace (selectedText, selectedText+"<br><span class='edit'>[parte editavel]</span>"); 
+        } else if (type == 8) {
+	         var res = field_value.replace (selectedText, selectedText+"<br>"); 
+        }
         document.getElementById(s).value = res;
        // alert (selectedText);
         return selectedText;
@@ -210,9 +223,9 @@ function divClicked() {
 
 function editableTextBlurred() {
 	//if (create-link != "create-link") {
-	console.log(clicked_link.valueOf());
+	//console.log(typeof(clicked_link));
 	if (clicked_link.valueOf() != "create-link") {
-		console.log("fljflfk");
+		
 		$('#c-textbox').hide();
 		if ($('#c-textbox').val() != "") {
 			$('#c-div').html($('#c-textbox').val());
