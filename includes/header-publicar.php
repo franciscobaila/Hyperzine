@@ -13,6 +13,7 @@
      <!-- CSS -->
      <link href="css/style.css" rel="stylesheet" type="text/css">
      <link href="css/sergio-main.css" rel="stylesheet" type="text/css">
+     <link href="css/sergio-main-2.css" rel="stylesheet" type="text/css">
      <!-- JS -->
      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <!-- Bibliotecas -->
