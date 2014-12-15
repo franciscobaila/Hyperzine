@@ -33,11 +33,12 @@
 <body>
 
   <nav id="read-nav">
-    <a href="preview.php"><img class="read-nav-a"  width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-5-icon.png&r=255&g=255&b=255"/></a><br><br><br>
+    <a href="preview.php"><img id="read-arrow" class="read-nav-a"  width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-sort-5-icon.png&r=255&g=255&b=255"/></a><br><br><br>
     <img class="read-nav-a" id="addCommentBtn" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-quote-13-icon.png&r=255&g=255&b=255"/><br><br><br>
     <img class="read-nav-a" id="addRateBtn" href="#" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-2-icon.png&r=255&g=255&b=255"/><br><br><br>
     <img class="read-nav-a" id="editTextBtn" href="#" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-font-size-icon.png&r=255&g=255&b=255"/><br><br><br>
     <img class="read-nav-a" id="addMediaBtn" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=255&g=255&b=255"/><br><br><br>
+    <a href="create-review.php"><img class="read-nav-a" id="addCritic" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-pen-12-icon.png&r=255&g=255&b=255"/></a><br><br><br>
     <img class="read-nav-a" id="helpIcon" width="30px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-help-icon.png&r=255&g=255&b=255"/><br><br><br>
   </nav>
 
@@ -50,11 +51,12 @@
     <img class="exitBtn" style="float:right;" width="10px" style="padding: 0 5px;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-x-mark-icon.png&r=255&g=255&b=255"/>
     <h1><b>You can edit the content of the book you're reading! :)</b></h1><br><br>
     <p>Click on <img width="20px" style="padding: 0 5px;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-menu-icon.png&r=255&g=255&b=255"/> to open the menu</p></br>
-    <p><img width="20px" style="padding: 0 5px;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-book-5-icon.png&r=255&g=255&b=255"/> to return to the book preview</p></br>
+    <p><img id="read-arrow" width="20px" style="padding: 0 5px;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-sort-5-icon.png&r=255&g=255&b=255"/> to return to the book preview</p></br>
     <p>To comment on that amazing part of the book, just click <img width="20px" style="padding: 0 5px;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-quote-13-icon.png&r=255&g=255&b=255"></p></br>
     <p>Rate the book! <img width="20px" style="padding: 0 5px;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-2-icon.png&r=255&g=255&b=255"></p></br>
     <p>Click on <img width="20px" style="padding: 0 5px;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-font-size-icon.png&r=255&g=255&b=255"> to format the text at your choice</p></br>
     <p>Choose <img width="20px" style="padding: 0 5px;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-icon.png&r=255&g=255&b=255"> to add a video, image or audio to the story</p></br>
+    <p>Click on <img width="20px" style="padding: 0 5px;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-pen-12-icon.png&r=255&g=255&b=255"> to write a review.</p></br>
     <p>And finally click on any part of the text to complement the book, to write a plot twist and even to create new characters.</p></br></br></br>
     <p><b>Have fun!</b></p>
   </div>
@@ -67,16 +69,9 @@
   <input type="button" value="Adicionar" id="inputImage" onclick="document.getElementById('read-text-editable').focus(); pasteHtmlAtCaret('<img src=' + 'uploads/porco.png' +'>');">
   <input type="button" value="Adicionar" id="inputVideo" onclick="document.getElementById('read-text-editable').focus(); pasteHtmlAtCaret('<iframe width='560' height='315' src=' + '//www.youtube.com/embed/gOfvs9M_XDo?rel=0' +  'frameborder='0' allowfullscreen></iframe>');">
 
-  <div class="addPops" id="addComment">
-    <img class="exitBtn" style="float:right;" width="10px" style="padding: 0 5px;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-x-mark-icon.png&r=255&g=255&b=255"/>
-    <h1 style="font-family: Bold;">Escrever Comentário</h1></br>
-    <textarea name="commentArea" style="width:98%; height:300px; background-color:white;" id="commentArea"></textarea><br><br>
-    <input type="submit" id="commentBtn" value="Enviar" style="background-color:white; padding:10px; font-family: Bold;">
-  </div>
-
   <div class="addPops" id="addRate" style="height: 150px;">
     <img class="exitBtn" style="float:right;" width="10px" style="padding: 0 5px;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-x-mark-icon.png&r=255&g=255&b=255"/>
-    <h1 style="font-family: Bold;">Classificar</h1>
+    <h1 style="font-family: Bold;">Rate</h1>
     <div id="stars" style="margin-left: 17%; padding-top: 50px">
     <img id="starRate1" width="50px" style="display: inline;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-5-icon.png&r=255&g=255&b=255"/>
     <img id="starRate2" width="50px" style="display: inline;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-5-icon.png&r=255&g=255&b=255"/>
@@ -88,7 +83,7 @@
 
   <div class="addPops" id="addMedia">
     <img class="exitBtn" style="float:right;" width="10px" style="padding: 0 5px;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-x-mark-icon.png&r=255&g=255&b=255"/>
-    <h1 style="font-family: Bold;">Escolher Media</h1>
+    <h1 style="font-family: Bold;">Choose Media</h1>
     <img id="addImageBtn" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-picture-icon.png&r=255&g=255&b=255"/><br>
     <img id="addVideoBtn" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-video-icon.png&r=255&g=255&b=255"/><br>
     <img id="addMusicBtn" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-audio-7-icon.png&r=255&g=255&b=255"/><br>
@@ -96,14 +91,24 @@
 
   <div class="addPops" id="editText">
     <img class="exitBtn" style="float:right;" width="10px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-x-mark-icon.png&r=255&g=255&b=255"/>
-    <h1 style="font-family: Bold;">Formatar Texto</h1>
+    <h1 style="font-family: Bold;">Format Text</h1>
     <img id="editTextPlus" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;"  src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-plus-2-icon.png&r=255&g=255&b=255"/>
     <img id="editTextMinus" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;"  src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-minus-2-icon.png&r=255&g=255&b=255"/>
     <img id="editTextContrast" width="80px" style="display:block; padding: 15px; margin-left: auto; margin-right: auto;"  src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-brightness-9-icon.png&r=255&g=255&b=255"/>
   </div>
 
-  <div id="pageNumber">
-    <p style="float:right;">2</p>
+  <div class="addPops" id="editComment">
+    <img class="exitBtn" style="float:right;" width="10px" src="http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-x-mark-icon.png&r=255&g=255&b=255"/>
+    <h1 style="font-family: Bold;">Add Comment</h1>
+    <div id="write-comment">
+      <textarea class="comment-textarea" placeholder="Write your review"></textarea>
+    </div>
+    <div class="comment-submit">
+      <b>Submit</b>
+    </div>
+    <div id="lol">
+      Comment added with success.
+    </div>
   </div>
 
   <!-- Javascript at the bottom -->
@@ -135,6 +140,7 @@
     $('#addMedia').removeClass("open");
     $('#addRate').removeClass("open");
     $('#editText').removeClass("open");
+    $('#editComment').removeClass("open");
   });
 
   $(helpIcon).click(function(){
@@ -144,12 +150,14 @@
       $('#addMedia').removeClass("open");
       $('#addRate').removeClass("open");
       $('#editText').removeClass("open");
+      $('#editComment').removeClass("open");
     } else {
     $(popInst).addClass("open");
     $('#addComment').removeClass("open");
     $('#addMedia').removeClass("open");
     $('#addRate').removeClass("open");
     $('#editText').removeClass("open");
+    $('#editComment').removeClass("open");
   }
   });
 
@@ -162,6 +170,7 @@
       $('#editText').removeClass("open");
       $(popInst).removeClass("open");
       $('#addComment').removeClass("open");
+      $('#editComment').removeClass("open");
       }
   });
 
@@ -174,8 +183,23 @@
       $('#editText').removeClass("open");
       $(popInst).removeClass("open");
       $('#addComment').removeClass("open");
+      $('#editComment').removeClass("open");
     }
   });
+
+  $('#addCommentBtn').click(function(){
+    if ($('#editComment').hasClass("open")){
+      $('#editComment').removeClass("open");
+    } else {
+      $('#editComment').addClass("open");
+      $('#addMedia').removeClass("open");
+      $('#editText').removeClass("open");
+      $(popInst).removeClass("open");
+      $('#addComment').removeClass("open");
+      $('#addRate').removeClass("open");
+    }
+  });
+
 
   $('#addImageBtn').click(function(){
     if ($('#addImage').hasClass("open")){
@@ -186,6 +210,7 @@
     $('#addMedia').removeClass("open");
     $(popInst).removeClass("open");
     $('#addRate').removeClass("open");
+    $('#editComment').removeClass("open");
   }
   });
 
@@ -194,6 +219,7 @@
     $('#inputImage').removeClass("open");
     $('#addMedia').removeClass("open");
     $(popInst).removeClass("open");
+    $('#editComment').removeClass("open");
 
   });
 
@@ -322,6 +348,20 @@
       $('#starRate5').attr('src', 'http://iconmonstr.com/g/gd/makefg.php?i=s2/default/iconmonstr-star-2-icon.png&r=255&g=255&b=255');
     }
   });
+
+  $('.comment-submit').click(function(){
+    $('#write-comment').fadeOut(300);
+    $('#comment-submit').fadeOut(300);
+    setTimeout(function() {
+      $('#lol').fadeIn(100);
+    }, 600);
+    setTimeout(function() {
+      $('#write-comment').fadeIn(300);
+      $('#comment-submit').fadeIn(300);
+      $('#lol').fadeOut(100);
+    }, 1600);
+  });
+
 
 /*
   $('#starRate2').click(function(){

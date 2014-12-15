@@ -31,9 +31,6 @@ app.events = function() {
   $("#read").click(function() {
     window.location.href = "read.php";
   });
-  $("#interaction").click(function() {
-    window.location.href = "read.php";
-  });
   /* HOME PAGE ---------------------*/
   $(".book").click(function() {
     window.location.href = "preview.php";
