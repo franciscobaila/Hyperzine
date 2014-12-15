@@ -59,7 +59,7 @@
 					SETTINGS
 				</div>
 				<div class="inside-element">
-					EN/PT
+					HELP
 				</div>
 				<div id="log-header" class="inside-element">
 					LOG OUT
