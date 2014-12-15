@@ -17,7 +17,7 @@ include ('includes/header.php');?>
           echo "<div id='search-message'>NO RESULTS FOUND FOR ", $data ,"</div>";
         }
         else if ($result && $num > 0){
-          echo "<div id='search-message'>RESULTS FOUND FOR ", $data ," :</div>";
+          //echo "<div id='search-message'>RESULTS FOUND FOR ", $data ," :</div>";
           while ($row = mysql_fetch_array($result, MYSQL_BOTH)) {
           //$bookName = $row ["book_image"];
           //$autor = $row ["author"];

@@ -240,8 +240,14 @@ b{
   height:200px;
 }
 /* BOOKS---------------------*/
+.opacity{
+  opacity:0 !important;
+  pointer-events:none;
+}
 #book-types{
   margin-top: 10px;
+  height:60px;
+  pointer-events:none !important;
 }
 .img-type{
   margin-left: 5% !important;
